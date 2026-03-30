@@ -1,0 +1,110 @@
+{
+  "run_id": "20260323_094514",
+  "timestamp": "2026-03-23T09:59:53.603389",
+  "config": {
+    "data": "data_processing/data/iedb.npz",
+    "out_dir": "outputs/iedb_benchmark_refine_without_shap_20260323",
+    "ar_ckpt": "outputs/generator_no_xai_ablation_20260323_0637/20260323_063426/ar_model.pt",
+    "alleles": "HLA-A*02:01",
+    "refine_mode": "without_shap",
+    "candidate_pool_size": 150,
+    "num_final": 50,
+    "netmhcpan": "/Users/pranavipanduga/Downloads/netMHCpan-4.2",
+    "shap_json": null,
+    "save_ar_preset": "generator/checkpoints/ar_transformer_latest.pt",
+    "config": null,
+    "max_alleles": 10,
+    "ar_embed_dim": 128,
+    "ar_epochs": 50,
+    "ar_batch_size": 64,
+    "ar_lr": 0.001,
+    "val_fraction": 0.1,
+    "early_stop_patience": 8,
+    "early_stop_min_delta": 0.0001,
+    "early_stop_min_epochs": 5,
+    "temperature": 1.0,
+    "top_p": 0.9,
+    "top_k": 0,
+    "samples_per_length": 3000,
+    "enable_refinement": true,
+    "refine_steps": 15,
+    "length_quotas": true,
+    "min_edit_distance": 2,
+    "max_jaccard": 0.7,
+    "device": "mps",
+    "seed": null,
+    "verbose": true,
+    "log_file": "outputs/iedb_benchmark_refine_without_shap_20260323/20260323_094514/run.log"
+  },
+  "num_alleles": 1,
+  "total_peptides": 50,
+  "allele_summaries": [
+    {
+      "allele": "HLA-A*02:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -0.9045258503692075,
+        "max": -0.13987908640123647,
+        "min": -4.59112083895345
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 92.0,
+        "pct_WB": 92.0,
+        "pct_IEDB_500nM": 92.0,
+        "median_nM": 4.234999999999999,
+        "mean_score": -0.9045258503692075,
+        "median_affinity_nM": 4.234999999999999
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.900408163265306,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 11,
+        "avg_pairwise_hamming": 7.602857142857143,
+        "unique_3mers": 330,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 9.7,
+        "median_nn_distance": 9.5,
+        "min_nn_distance": 9,
+        "max_nn_distance": 11,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 218,
+        "unique_after": 218,
+        "total_before": 218,
+        "total_after": 218,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "L": 0.8,
+          "M": 0.1,
+          "I": 0.04,
+          "V": 0.02,
+          "A": 0.02,
+          "E": 0.02
+        },
+        "P-1(C-term)": {
+          "L": 0.46,
+          "V": 0.42,
+          "I": 0.06,
+          "A": 0.06
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,689 @@
+{
+  "run_id": "20260329_153257",
+  "timestamp": "2026-03-29T22:59:52.256165",
+  "config": {
+    "data": "data_processing/data/iedb.npz",
+    "shap_json": "outputs/explainer_full_10alleles_20260328_1545/shap_results.json",
+    "out_dir": "outputs/iedb_test_full_10alleles_20260328_1545",
+    "alleles": "HLA-A*02:01,HLA-A*03:01,HLA-A*24:02,HLA-B*07:02,HLA-B*44:02,HLA-B*57:01,HLA-A*01:01,HLA-B*08:01,HLA-B*27:05,HLA-B*58:01",
+    "ar_ckpt": "/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/outputs/generator_full_10alleles_20260328_1545/20260329_064608/ar_model.pt",
+    "device": "cuda",
+    "netmhcpan": "/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/netmhcpan4.2/netMHCpan-4.2",
+    "save_ar_preset": "generator/checkpoints/ar_transformer_latest.pt",
+    "config": null,
+    "max_alleles": 10,
+    "ar_embed_dim": 128,
+    "ar_epochs": 50,
+    "ar_batch_size": 64,
+    "ar_lr": 0.001,
+    "val_fraction": 0.1,
+    "early_stop_patience": 8,
+    "early_stop_min_delta": 0.0001,
+    "early_stop_min_epochs": 5,
+    "temperature": 1.0,
+    "top_p": 0.9,
+    "top_k": 0,
+    "samples_per_length": 3000,
+    "candidate_pool_size": 400,
+    "enable_refinement": true,
+    "refine_steps": 15,
+    "refine_mode": "shap",
+    "length_weights": null,
+    "num_final": 50,
+    "length_quotas": true,
+    "min_edit_distance": 2,
+    "max_jaccard": 0.7,
+    "seed": null,
+    "verbose": true,
+    "log_file": "outputs/iedb_test_full_10alleles_20260328_1545/20260329_153257/run.log"
+  },
+  "num_alleles": 10,
+  "total_peptides": 500,
+  "allele_summaries": [
+    {
+      "allele": "HLA-A*02:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -0.7348764970146487,
+        "max": -0.17318626841227402,
+        "min": -3.4383508689402373
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 90.0,
+        "pct_WB": 94.0,
+        "pct_IEDB_500nM": 94.0,
+        "median_nM": 3.335,
+        "mean_score": -0.7348764970146487,
+        "median_affinity_nM": 3.335
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.851428571428571,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 11,
+        "avg_pairwise_hamming": 7.594285714285714,
+        "unique_3mers": 335,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.4,
+        "median_nn_distance": 3.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 494,
+        "unique_after": 494,
+        "total_before": 494,
+        "total_after": 494,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "L": 0.78,
+          "M": 0.2,
+          "I": 0.02
+        },
+        "P-1(C-term)": {
+          "V": 0.6,
+          "L": 0.34,
+          "I": 0.04,
+          "A": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-A*03:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.0260415814059707,
+        "max": -0.37474834601010387,
+        "min": -3.4166172112240245
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 90.0,
+        "pct_WB": 90.0,
+        "pct_IEDB_500nM": 90.0,
+        "median_nM": 6.039999999999999,
+        "mean_score": -1.0260415814059707,
+        "median_affinity_nM": 6.039999999999999
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.637551020408163,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.354285714285714,
+        "unique_3mers": 343,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.58,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "L": 0.34,
+          "M": 0.22,
+          "V": 0.18,
+          "I": 0.14,
+          "T": 0.12
+        },
+        "P-1(C-term)": {
+          "K": 1.0
+        }
+      }
+    },
+    {
+      "allele": "HLA-A*24:02",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.0201859194569216,
+        "max": -0.4099331233312945,
+        "min": -3.428716164872892
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 90.0,
+        "pct_WB": 94.0,
+        "pct_IEDB_500nM": 94.0,
+        "median_nM": 6.77,
+        "mean_score": -1.0201859194569216,
+        "median_affinity_nM": 6.77
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.6538775510204085,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.385714285714286,
+        "unique_3mers": 354,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.66,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "Y": 0.94,
+          "W": 0.06
+        },
+        "P-1(C-term)": {
+          "F": 0.78,
+          "L": 0.12,
+          "I": 0.08,
+          "W": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*07:02",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.0492699842943316,
+        "max": -0.250420002308894,
+        "min": -4.3453041202217335
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 88.0,
+        "pct_WB": 98.0,
+        "pct_IEDB_500nM": 98.0,
+        "median_nM": 5.4399999999999995,
+        "mean_score": -1.0492699842943316,
+        "median_affinity_nM": 5.4399999999999995
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.391020408163265,
+        "min_pairwise_edit_distance": 5,
+        "max_pairwise_edit_distance": 11,
+        "avg_pairwise_hamming": 7.225714285714286,
+        "unique_3mers": 312,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 2.88,
+        "median_nn_distance": 3.0,
+        "min_nn_distance": 1,
+        "max_nn_distance": 4,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "P": 0.98,
+          "F": 0.02
+        },
+        "P-1(C-term)": {
+          "L": 0.72,
+          "V": 0.1,
+          "M": 0.08,
+          "I": 0.04,
+          "F": 0.04,
+          "A": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*44:02",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.0817328684308685,
+        "max": -0.5301996982030822,
+        "min": -3.0778546237488342
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 90.0,
+        "pct_WB": 94.0,
+        "pct_IEDB_500nM": 94.0,
+        "median_nM": 8.58,
+        "mean_score": -1.0817328684308685,
+        "median_affinity_nM": 8.58
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.56,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.162857142857143,
+        "unique_3mers": 343,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.66,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "E": 1.0
+        },
+        "P-1(C-term)": {
+          "W": 0.76,
+          "F": 0.16,
+          "Y": 0.06,
+          "L": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*57:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -0.8407393563475598,
+        "max": -0.3961993470957364,
+        "min": -2.4243425157574707
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 90.0,
+        "pct_WB": 100.0,
+        "pct_IEDB_500nM": 100.0,
+        "median_nM": 4.755000000000001,
+        "mean_score": -0.8407393563475598,
+        "median_affinity_nM": 4.755000000000001
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.678367346938775,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.505714285714285,
+        "unique_3mers": 358,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.88,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 3,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 511,
+        "unique_after": 511,
+        "total_before": 511,
+        "total_after": 511,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "S": 0.62,
+          "T": 0.22,
+          "A": 0.14,
+          "R": 0.02
+        },
+        "P-1(C-term)": {
+          "W": 0.98,
+          "F": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-A*01:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.4593042062460384,
+        "max": -0.3820170425748684,
+        "min": -4.090355061578214
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 74.0,
+        "pct_WB": 90.0,
+        "pct_IEDB_500nM": 90.0,
+        "median_nM": 14.935,
+        "mean_score": -1.4593042062460384,
+        "median_affinity_nM": 14.935
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.554285714285714,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.242857142857143,
+        "unique_3mers": 340,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.48,
+        "median_nn_distance": 3.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "T": 0.48,
+          "S": 0.28,
+          "L": 0.08,
+          "V": 0.04,
+          "M": 0.04,
+          "I": 0.04,
+          "A": 0.04
+        },
+        "P-1(C-term)": {
+          "Y": 0.94,
+          "L": 0.04,
+          "F": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*08:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.5522917583780398,
+        "max": -0.37657695705651195,
+        "min": -2.8023152514043366
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 52.0,
+        "pct_WB": 96.0,
+        "pct_IEDB_500nM": 96.0,
+        "median_nM": 34.68,
+        "mean_score": -1.5522917583780398,
+        "median_affinity_nM": 34.68
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.763265306122449,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 11,
+        "avg_pairwise_hamming": 7.571428571428571,
+        "unique_3mers": 345,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.34,
+        "median_nn_distance": 3.0,
+        "min_nn_distance": 1,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 509,
+        "unique_after": 509,
+        "total_before": 509,
+        "total_after": 509,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "L": 0.3,
+          "P": 0.28,
+          "M": 0.16,
+          "A": 0.12,
+          "I": 0.1,
+          "V": 0.02,
+          "G": 0.02
+        },
+        "P-1(C-term)": {
+          "L": 0.78,
+          "I": 0.08,
+          "V": 0.08,
+          "F": 0.04,
+          "M": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*27:05",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -1.2786448528110474,
+        "max": -0.6866362692622934,
+        "min": -2.5708697052408205
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 88.0,
+        "pct_WB": 100.0,
+        "pct_IEDB_500nM": 100.0,
+        "median_nM": 15.835,
+        "mean_score": -1.2786448528110474,
+        "median_affinity_nM": 15.835
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.86204081632653,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.585714285714285,
+        "unique_3mers": 344,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.52,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 0,
+        "max_nn_distance": 5,
+        "num_exact_matches": 1,
+        "novelty_rate": 0.98
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "R": 1.0
+        },
+        "P-1(C-term)": {
+          "L": 0.32,
+          "F": 0.28,
+          "Y": 0.12,
+          "K": 0.1,
+          "M": 0.08,
+          "R": 0.04,
+          "I": 0.04,
+          "V": 0.02
+        }
+      }
+    },
+    {
+      "allele": "HLA-B*58:01",
+      "total_peptides": 50,
+      "score_stats": {
+        "mean": -0.6368938537155308,
+        "max": -0.24303804868629444,
+        "min": -2.6581354630718694
+      },
+      "binding_pass_rates": {
+        "n": 50,
+        "pct_SB": 92.0,
+        "pct_WB": 100.0,
+        "pct_IEDB_500nM": 100.0,
+        "median_nM": 2.925,
+        "mean_score": -0.6368938537155308,
+        "median_affinity_nM": 2.925
+      },
+      "diversity_stats": {
+        "count": 50,
+        "avg_pairwise_edit_distance": 7.746938775510204,
+        "min_pairwise_edit_distance": 6,
+        "max_pairwise_edit_distance": 10,
+        "avg_pairwise_hamming": 7.5685714285714285,
+        "unique_3mers": 353,
+        "length_distribution": {
+          "9": 20,
+          "10": 15,
+          "11": 10,
+          "8": 5
+        }
+      },
+      "novelty_stats": {
+        "mean_nn_distance": 3.74,
+        "median_nn_distance": 4.0,
+        "min_nn_distance": 2,
+        "max_nn_distance": 5,
+        "num_exact_matches": 0,
+        "novelty_rate": 1.0
+      },
+      "uniqueness_stats": {
+        "unique_before": 512,
+        "unique_after": 512,
+        "total_before": 512,
+        "total_after": 512,
+        "duplicates_before": 0,
+        "duplicates_after": 0,
+        "uniqueness_rate_before": 1.0,
+        "uniqueness_rate_after": 1.0,
+        "collapse_rate": 0.0
+      },
+      "motifs": {
+        "P2": {
+          "S": 0.56,
+          "A": 0.22,
+          "T": 0.2,
+          "G": 0.02
+        },
+        "P-1(C-term)": {
+          "W": 0.92,
+          "F": 0.08
+        }
+      }
+    }
+  ]
+}

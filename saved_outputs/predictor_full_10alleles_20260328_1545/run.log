@@ -1,0 +1,798 @@
+================================================================================
+NETMHCPAN 4.2 - COMBINED MHC1 DATASET EVALUATION
+================================================================================
+Working directory: /mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design
+
+Step 1: Setting up NetMHCpan...
+   [OK] Found: /mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/netmhcpan4.2/netMHCpan-4.2/Linux_x86_64/bin/netMHCpan-4.2
+   Set NETMHCpan=/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/netmhcpan4.2/netMHCpan-4.2
+
+================================================================================
+LOADING COMBINED MHC1 DATASET
+================================================================================
+
+Loading /mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/data_processing/data/mhc_class1.csv...
+   [OK] Loaded 636,232 samples
+   Unique alleles: 211
+   Unique peptides: 333,843
+
+Filtering data...
+   After length filter (8-11 aa): 636,232 samples
+   After AA filter: 636,232 samples
+
+Sampling 10,000 for evaluation...
+   (Full dataset would take ~1018 hours)
+
+Final evaluation dataset:
+   Samples: 10,000
+   Unique alleles: 157
+   Unique peptides: 9,655
+
+HLA Alpha Distribution:
+
+================================================================================
+RUNNING NETMHCPAN PREDICTIONS
+================================================================================
+
+Estimated time: 5.2 minutes
+
+   [1/157] 0.6% | Time: 0.0m | ETA: 0.0m | Predictions: 0
+
+[WARN] NetMHCpan stderr: 
+[WARN] NetMHCpan stdout length: 15653 chars
+[WARN] NetMHCpan stdout preview: # /mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/netmhcpan4.2/netMHCpan-4.2/Linux_x86_64/bin/netMHCpan-4.2 -p /tmp/tmppiyv4ui_.txt -a HLA-C16:01 -BA
+# Sat Mar 28 17:27:47 2026
+# User: root
+# PWD : /mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design
+# Host: Linux DaMMunaPC 6.6.87.2-microsoft-standard-WSL2 x86_64
+# -p       1                    Use peptide input
+# -a       HLA-C16:01           Allele for prediction (multiple alleles with ,)
+# -BA      1                    In
+[WARN] NetMHCpan stdout tail: PLIST 0.912564    0.017 0.778011    0.076    11.04 <= SB
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Protein PEPLIST. Allele HLA-C*16:01. Number of strong predictions 55. Number of weak predictions 10. Number of peptides 78
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+DEBUG parsing for HLA-C*16:01:
+   Header found at line: 51
+   Total lines: 137
+   Parsing from line: 53
+   First data line parts count: 18
+   First data line: 1 HLA-C*16:01          YSATHPTV YSA-THPTV  0  0  0  3  1          YSATHPTV         PEPLIST 0.552194    0.225 0.659473    0.339    39.82 <= SB
+   Peptide (parts[2]): YSATHPTV
+   Score_BA (parts[12]): 0.225
+   %Rank_BA (parts[13]): 0.659473
+   Aff (parts[15]): 39.82
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 2 HLA-C*16:01         FAAASREVL FAAASREVL  0  0  0  0  0         FAAASREVL         PEPLIST 0.912282    0.017 0.858120    0.011     4.64 <= SB
+   Peptide (parts[2]): FAAASREVL
+   Score_BA (parts[12]): 0.017
+   %Rank_BA (parts[13]): 0.858120
+   Aff (parts[15]): 4.64
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 3 HLA-C*16:01        RIYQYIQSRF RIYQYIQRF  0  7  1  0  0        RIYQYIQSRF         PEPLIST 0.003688    9.318 0.247078    7.725  3451.11
+   Peptide (parts[2]): RIYQYIQSRF
+   Score_BA (parts[12]): 9.318
+   %Rank_BA (parts[13]): 0.247078
+   Aff (parts[15]): 3451.11
+   First data line parts count: 18
+   First data line: 4 HLA-C*16:01         IAYIRDLAL IAYIRDLAL  0  0  0  0  0         IAYIRDLAL         PEPLIST 0.938515    0.012 0.882066    0.008     3.58 <= SB
+   Peptide (parts[2]): IAYIRDLAL
+   Score_BA (parts[12]): 0.012
+   %Rank_BA (parts[13]): 0.882066
+   Aff (parts[15]): 3.58
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 5 HLA-C*16:01         AAWLQVLPV AAWLQVLPV  0  0  0  0  0         AAWLQVLPV         PEPLIST 0.045644    2.762 0.594806    0.628    80.17
+   Peptide (parts[2]): AAWLQVLPV
+   Score_BA (parts[12]): 2.762
+   %Rank_BA (parts[13]): 0.594806
+   Aff (parts[15]): 80.17
+   First data line parts count: 18
+   First data line: 6 HLA-C*16:01         YAGIRCENF YAGIRCENF  0  0  0  0  0         YAGIRCENF         PEPLIST 0.192800    0.927 0.575581    0.745    98.70 <= WB
+   Peptide (parts[2]): YAGIRCENF
+   Score_BA (parts[12]): 0.927
+   %Rank_BA (parts[13]): 0.575581
+   Aff (parts[15]): 98.70
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 7 HLA-C*16:01         VVSVPQRIM VVSVPQRIM  0  0  0  0  0         VVSVPQRIM         PEPLIST 0.428449    0.357 0.574547    0.752    99.81 <= SB
+   Peptide (parts[2]): VVSVPQRIM
+   Score_BA (parts[12]): 0.357
+   %Rank_BA (parts[13]): 0.574547
+   Aff (parts[15]): 99.81
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 8 HLA-C*16:01         TSTTRALTF TSTTRALTF  0  0  0  0  0         TSTTRALTF         PEPLIST 0.822923    0.048 0.782292    0.073    10.54 <= SB
+   Peptide (parts[2]): TSTTRALTF
+   Score_BA (parts[12]): 0.048
+   %Rank_BA (parts[13]): 0.782292
+   Aff (parts[15]): 10.54
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 9 HLA-C*16:01          ASGLIHRV ASG-LIHRV  0  0  0  3  1          ASGLIHRV         PEPLIST 0.014374    5.094 0.197403   11.151  5907.18
+   Peptide (parts[2]): ASGLIHRV
+   Score_BA (parts[12]): 5.094
+   %Rank_BA (parts[13]): 0.197403
+   Aff (parts[15]): 5907.18
+   First data line parts count: 18
+   First data line: 10 HLA-C*16:01         TAVPPSRQY TAVPPSRQY  0  0  0  0  0         TAVPPSRQY         PEPLIST 0.932074    0.014 0.723692    0.175    19.88 <= SB
+   Peptide (parts[2]): TAVPPSRQY
+   Score_BA (parts[12]): 0.014
+   %Rank_BA (parts[13]): 0.723692
+   Aff (parts[15]): 19.88
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 11 HLA-C*16:01          ATDWRLIL ATD-WRLIL  0  0  0  3  1          ATDWRLIL         PEPLIST 0.073956    2.000 0.417358    2.436   546.78 <= WB
+   Peptide (parts[2]): ATDWRLIL
+   Score_BA (parts[12]): 2.000
+   %Rank_BA (parts[13]): 0.417358
+   Aff (parts[15]): 546.78
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 12 HLA-C*16:01          FSQIQPKL FSQ-IQPKL  0  0  0  3  1          FSQIQPKL         PEPLIST 0.473972    0.299 0.554678    0.886   123.75 <= SB
+   Peptide (parts[2]): FSQIQPKL
+   Score_BA (parts[12]): 0.299
+   %Rank_BA (parts[13]): 0.554678
+   Aff (parts[15]): 123.75
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 13 HLA-C*16:01          VSSSKISL VSS-SKISL  0  0  0  3  1          VSSSKISL         PEPLIST 0.545671    0.231 0.582987    0.696    91.10 <= SB
+   Peptide (parts[2]): VSSSKISL
+   Score_BA (parts[12]): 0.231
+   %Rank_BA (parts[13]): 0.582987
+   Aff (parts[15]): 91.10
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 14 HLA-C*16:01         LSKFYELEL LSKFYELEL  0  0  0  0  0         LSKFYELEL         PEPLIST 0.351469    0.469 0.706501    0.210    23.94 <= SB
+   Peptide (parts[2]): LSKFYELEL
+   Score_BA (parts[12]): 0.469
+   %Rank_BA (parts[13]): 0.706501
+   Aff (parts[15]): 23.94
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 15 HLA-C*16:01         VATIKSVSF VATIKSVSF  0  0  0  0  0         VATIKSVSF         PEPLIST 0.938969    0.012 0.825771    0.027     6.59 <= SB
+   Peptide (parts[2]): VATIKSVSF
+   Score_BA (parts[12]): 0.012
+   %Rank_BA (parts[13]): 0.825771
+   Aff (parts[15]): 6.59
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 16 HLA-C*16:01          FAKTKEEV FAK-TKEEV  0  0  0  3  1          FAKTKEEV         PEPLIST 0.391215    0.405 0.457390    1.833   354.58 <= SB
+   Peptide (parts[2]): FAKTKEEV
+   Score_BA (parts[12]): 0.405
+   %Rank_BA (parts[13]): 0.457390
+   Aff (parts[15]): 354.58
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 17 HLA-C*16:01         FSSENVKVF FSSENVKVF  0  0  0  0  0         FSSENVKVF         PEPLIST 0.932069    0.014 0.832881    0.022     6.10 <= SB
+   Peptide (parts[2]): FSSENVKVF
+   Score_BA (parts[12]): 0.014
+   %Rank_BA (parts[13]): 0.832881
+   Aff (parts[15]): 6.10
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 18 HLA-C*16:01         FAKFHPNLV FAKFHPNLV  0  0  0  0  0         FAKFHPNLV         PEPLIST 0.698892    0.115 0.748182    0.123    15.25 <= SB
+   Peptide (parts[2]): FAKFHPNLV
+   Score_BA (parts[12]): 0.115
+   %Rank_BA (parts[13]): 0.748182
+   Aff (parts[15]): 15.25
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 19 HLA-C*16:01         VATAQGRYY VATAQGRYY  0  0  0  0  0         VATAQGRYY         PEPLIST 0.872120    0.030 0.758126    0.106    13.69 <= SB
+   Peptide (parts[2]): VATAQGRYY
+   Score_BA (parts[12]): 0.030
+   %Rank_BA (parts[13]): 0.758126
+   Aff (parts[15]): 13.69
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 20 HLA-C*16:01         TAMDAQEAL TAMDAQEAL  0  0  0  0  0         TAMDAQEAL         PEPLIST 0.663080    0.137 0.727372    0.165    19.10 <= SB
+   Peptide (parts[2]): TAMDAQEAL
+   Score_BA (parts[12]): 0.137
+   %Rank_BA (parts[13]): 0.727372
+   Aff (parts[15]): 19.10
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 21 HLA-C*16:01          AASEQHVF AAS-EQHVF  0  0  0  3  1          AASEQHVF         PEPLIST 0.634652    0.154 0.563284    0.828   112.75 <= SB
+   Peptide (parts[2]): AASEQHVF
+   Score_BA (parts[12]): 0.154
+   %Rank_BA (parts[13]): 0.563284
+   Aff (parts[15]): 112.75
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 22 HLA-C*16:01         SANNRAEYY SANNRAEYY  0  0  0  0  0         SANNRAEYY         PEPLIST 0.838377    0.043 0.756492    0.109    13.94 <= SB
+   Peptide (parts[2]): SANNRAEYY
+   Score_BA (parts[12]): 0.043
+   %Rank_BA (parts[13]): 0.756492
+   Aff (parts[15]): 13.94
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 23 HLA-C*16:01         FATSALRSL FATSALRSL  0  0  0  0  0         FATSALRSL         PEPLIST 0.941498    0.011 0.876227    0.009     3.82 <= SB
+   Peptide (parts[2]): FATSALRSL
+   Score_BA (parts[12]): 0.011
+   %Rank_BA (parts[13]): 0.876227
+   Aff (parts[15]): 3.82
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 24 HLA-C*16:01        LFIIAGFNTL FIIAGFNTL  1  0  0  0  0         FIIAGFNTL         PEPLIST 0.000602   17.936 0.230629    8.683  4123.36
+   Peptide (parts[2]): LFIIAGFNTL
+   Score_BA (parts[12]): 17.936
+   %Rank_BA (parts[13]): 0.230629
+   Aff (parts[15]): 4123.36
+   First data line parts count: 18
+   First data line: 25 HLA-C*16:01         SAVEKKPTF SAVEKKPTF  0  0  0  0  0         SAVEKKPTF         PEPLIST 0.946553    0.010 0.739388    0.139    16.77 <= SB
+   Peptide (parts[2]): SAVEKKPTF
+   Score_BA (parts[12]): 0.010
+   %Rank_BA (parts[13]): 0.739388
+   Aff (parts[15]): 16.77
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 26 HLA-C*16:01         YAIFRILLY YAIFRILLY  0  0  0  0  0         YAIFRILLY         PEPLIST 0.839380    0.043 0.813196    0.037     7.55 <= SB
+   Peptide (parts[2]): YAIFRILLY
+   Score_BA (parts[12]): 0.043
+   %Rank_BA (parts[13]): 0.813196
+   Aff (parts[15]): 7.55
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 27 HLA-C*16:01         VATPVLIPK VATPVLIPK  0  0  0  0  0         VATPVLIPK         PEPLIST 0.013867    5.193 0.332401    4.287  1370.98
+   Peptide (parts[2]): VATPVLIPK
+   Score_BA (parts[12]): 5.193
+   %Rank_BA (parts[13]): 0.332401
+   Aff (parts[15]): 1370.98
+   First data line parts count: 16
+   First data line: 28 HLA-C*16:01         FQGFRLVPF FQGFRLVPF  0  0  0  0  0         FQGFRLVPF         PEPLIST 0.025951    3.773 0.467490    1.706   317.87
+   Peptide (parts[2]): FQGFRLVPF
+   Score_BA (parts[12]): 3.773
+   %Rank_BA (parts[13]): 0.467490
+   Aff (parts[15]): 317.87
+   First data line parts count: 18
+   First data line: 29 HLA-C*16:01          HTGERPFM HTGER-PFM  0  0  0  5  1          HTGERPFM         PEPLIST 0.080473    1.884 0.351048    3.804  1120.48 <= WB
+   Peptide (parts[2]): HTGERPFM
+   Score_BA (parts[12]): 1.884
+   %Rank_BA (parts[13]): 0.351048
+   Aff (parts[15]): 1120.48
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 30 HLA-C*16:01         AAAGRAYSF AAAGRAYSF  0  0  0  0  0         AAAGRAYSF         PEPLIST 0.956800    0.008 0.842796    0.018     5.48 <= SB
+   Peptide (parts[2]): AAAGRAYSF
+   Score_BA (parts[12]): 0.008
+   %Rank_BA (parts[13]): 0.842796
+   Aff (parts[15]): 5.48
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 31 HLA-C*16:01         SAGLRLFAL SAGLRLFAL  0  0  0  0  0         SAGLRLFAL         PEPLIST 0.410494    0.379 0.702372    0.219    25.03 <= SB
+   Peptide (parts[2]): SAGLRLFAL
+   Score_BA (parts[12]): 0.379
+   %Rank_BA (parts[13]): 0.702372
+   Aff (parts[15]): 25.03
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 32 HLA-C*16:01        SAAYIPAHTY SAAYIPHTY  0  6  1  0  0        SAAYIPAHTY         PEPLIST 0.613558    0.168 0.671256    0.299    35.06 <= SB
+   Peptide (parts[2]): SAAYIPAHTY
+   Score_BA (parts[12]): 0.168
+   %Rank_BA (parts[13]): 0.671256
+   Aff (parts[15]): 35.06
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 33 HLA-C*16:01         DAFSKDHQL DAFSKDHQL  0  0  0  0  0         DAFSKDHQL         PEPLIST 0.265410    0.662 0.421283    2.372   524.05 <= WB
+   Peptide (parts[2]): DAFSKDHQL
+   Score_BA (parts[12]): 0.662
+   %Rank_BA (parts[13]): 0.421283
+   Aff (parts[15]): 524.05
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 34 HLA-C*16:01        MIKEGDYNPL MIKEGYNPL  0  5  1  0  0        MIKEGDYNPL         PEPLIST 0.003328    9.697 0.283311    5.995  2331.84
+   Peptide (parts[2]): MIKEGDYNPL
+   Score_BA (parts[12]): 9.697
+   %Rank_BA (parts[13]): 0.283311
+   Aff (parts[15]): 2331.84
+   First data line parts count: 18
+   First data line: 35 HLA-C*16:01         FSGIRNISF FSGIRNISF  0  0  0  0  0         FSGIRNISF         PEPLIST 0.741592    0.092 0.777437    0.077    11.11 <= SB
+   Peptide (parts[2]): FSGIRNISF
+   Score_BA (parts[12]): 0.092
+   %Rank_BA (parts[13]): 0.777437
+   Aff (parts[15]): 11.11
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 36 HLA-C*16:01          SSSTRSVL SSS-TRSVL  0  0  0  3  1          SSSTRSVL         PEPLIST 0.457534    0.320 0.613125    0.529    65.75 <= SB
+   Peptide (parts[2]): SSSTRSVL
+   Score_BA (parts[12]): 0.320
+   %Rank_BA (parts[13]): 0.613125
+   Aff (parts[15]): 65.75
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 37 HLA-C*16:01         HTTILRPSY HTTILRPSY  0  0  0  0  0         HTTILRPSY         PEPLIST 0.438686    0.344 0.636691    0.421    50.95 <= SB
+   Peptide (parts[2]): HTTILRPSY
+   Score_BA (parts[12]): 0.344
+   %Rank_BA (parts[13]): 0.636691
+   Aff (parts[15]): 50.95
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 38 HLA-C*16:01        VASEALARVV VASELARVV  0  4  1  0  0        VASEALARVV         PEPLIST 0.087127    1.788 0.477562    1.600   285.05 <= WB
+   Peptide (parts[2]): VASEALARVV
+   Score_BA (parts[12]): 1.788
+   %Rank_BA (parts[13]): 0.477562
+   Aff (parts[15]): 285.05
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 39 HLA-C*16:01         LATIRLLDV LATIRLLDV  0  0  0  0  0         LATIRLLDV         PEPLIST 0.062779    2.268 0.510722    1.245   199.12
+   Peptide (parts[2]): LATIRLLDV
+   Score_BA (parts[12]): 2.268
+   %Rank_BA (parts[13]): 0.510722
+   Aff (parts[15]): 199.12
+   First data line parts count: 18
+   First data line: 40 HLA-C*16:01         ATTDWIAIY ATTDWIAIY  0  0  0  0  0         ATTDWIAIY         PEPLIST 0.332822    0.498 0.606012    0.566    71.01 <= SB
+   Peptide (parts[2]): ATTDWIAIY
+   Score_BA (parts[12]): 0.498
+   %Rank_BA (parts[13]): 0.606012
+   Aff (parts[15]): 71.01
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 41 HLA-C*16:01         ALRPPLPPL ALRPPLPPL  0  0  0  0  0         ALRPPLPPL         PEPLIST 0.062264    2.280 0.459657    1.802   345.99
+   Peptide (parts[2]): ALRPPLPPL
+   Score_BA (parts[12]): 2.280
+   %Rank_BA (parts[13]): 0.459657
+   Aff (parts[15]): 345.99
+   First data line parts count: 18
+   First data line: 42 HLA-C*16:01          FSFQRPLL FSF-QRPLL  0  0  0  3  1          FSFQRPLL         PEPLIST 0.625534    0.160 0.733007    0.151    17.97 <= SB
+   Peptide (parts[2]): FSFQRPLL
+   Score_BA (parts[12]): 0.160
+   %Rank_BA (parts[13]): 0.733007
+   Aff (parts[15]): 17.97
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 43 HLA-C*16:01         NSANRLFQY NSANRLFQY  0  0  0  0  0         NSANRLFQY         PEPLIST 0.603003    0.175 0.664577    0.321    37.68 <= SB
+   Peptide (parts[2]): NSANRLFQY
+   Score_BA (parts[12]): 0.175
+   %Rank_BA (parts[13]): 0.664577
+   Aff (parts[15]): 37.68
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 44 HLA-C*16:01         TVLKRAVEL TVLKRAVEL  0  0  0  0  0         TVLKRAVEL         PEPLIST 0.486344    0.288 0.593618    0.634    81.20 <= SB
+   Peptide (parts[2]): TVLKRAVEL
+   Score_BA (parts[12]): 0.288
+   %Rank_BA (parts[13]): 0.593618
+   Aff (parts[15]): 81.20
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 45 HLA-C*16:01         VAMYGGLVL VAMYGGLVL  0  0  0  0  0         VAMYGGLVL         PEPLIST 0.726586    0.098 0.870947    0.009     4.04 <= SB
+   Peptide (parts[2]): VAMYGGLVL
+   Score_BA (parts[12]): 0.098
+   %Rank_BA (parts[13]): 0.870947
+   Aff (parts[15]): 4.04
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 46 HLA-C*16:01          VAQIRMAF VAQ-IRMAF  0  0  0  3  1          VAQIRMAF         PEPLIST 0.750344    0.088 0.713021    0.196    22.31 <= SB
+   Peptide (parts[2]): VAQIRMAF
+   Score_BA (parts[12]): 0.088
+   %Rank_BA (parts[13]): 0.713021
+   Aff (parts[15]): 22.31
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 47 HLA-C*16:01         AAAHFYFEL AAAHFYFEL  0  0  0  0  0         AAAHFYFEL         PEPLIST 0.585352    0.192 0.768671    0.088    12.22 <= SB
+   Peptide (parts[2]): AAAHFYFEL
+   Score_BA (parts[12]): 0.192
+   %Rank_BA (parts[13]): 0.768671
+   Aff (parts[15]): 12.22
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 48 HLA-C*16:01         VAAALARLL VAAALARLL  0  0  0  0  0         VAAALARLL         PEPLIST 0.814927    0.052 0.803545    0.047     8.38 <= SB
+   Peptide (parts[2]): VAAALARLL
+   Score_BA (parts[12]): 0.052
+   %Rank_BA (parts[13]): 0.803545
+   Aff (parts[15]): 8.38
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 49 HLA-C*16:01         AASDVFKHY AASDVFKHY  0  0  0  0  0         AASDVFKHY         PEPLIST 0.890858    0.022 0.702272    0.219    25.06 <= SB
+   Peptide (parts[2]): AASDVFKHY
+   Score_BA (parts[12]): 0.022
+   %Rank_BA (parts[13]): 0.702272
+   Aff (parts[15]): 25.06
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 50 HLA-C*16:01          IVDRPVTL IVD-RPVTL  0  0  0  3  1          IVDRPVTL         PEPLIST 0.322319    0.520 0.395099    2.844   695.68 <= WB
+   Peptide (parts[2]): IVDRPVTL
+   Score_BA (parts[12]): 0.520
+   %Rank_BA (parts[13]): 0.395099
+   Aff (parts[15]): 695.68
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 51 HLA-C*16:01         SAVDRQREY SAVDRQREY  0  0  0  0  0         SAVDRQREY         PEPLIST 0.972788    0.005 0.818907    0.032     7.09 <= SB
+   Peptide (parts[2]): SAVDRQREY
+   Score_BA (parts[12]): 0.005
+   %Rank_BA (parts[13]): 0.818907
+   Aff (parts[15]): 7.09
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 52 HLA-C*16:01         FAKAIYERL FAKAIYERL  0  0  0  0  0         FAKAIYERL         PEPLIST 0.719585    0.102 0.688725    0.250    29.02 <= SB
+   Peptide (parts[2]): FAKAIYERL
+   Score_BA (parts[12]): 0.102
+   %Rank_BA (parts[13]): 0.688725
+   Aff (parts[15]): 29.02
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 53 HLA-C*16:01          FANKQLEL FAN-KQLEL  0  0  0  3  1          FANKQLEL         PEPLIST 0.952256    0.009 0.804618    0.046     8.28 <= SB
+   Peptide (parts[2]): FANKQLEL
+   Score_BA (parts[12]): 0.009
+   %Rank_BA (parts[13]): 0.804618
+   Aff (parts[15]): 8.28
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 54 HLA-C*16:01         LSLKGDQAL LSLKGDQAL  0  0  0  0  0         LSLKGDQAL         PEPLIST 0.200204    0.894 0.588612    0.663    85.72 <= WB
+   Peptide (parts[2]): LSLKGDQAL
+   Score_BA (parts[12]): 0.894
+   %Rank_BA (parts[13]): 0.588612
+   Aff (parts[15]): 85.72
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 55 HLA-C*16:01         QLSLRTVSL QLSLRTVSL  0  0  0  0  0         QLSLRTVSL         PEPLIST 0.041191    2.919 0.382035    3.103   801.30
+   Peptide (parts[2]): QLSLRTVSL
+   Score_BA (parts[12]): 2.919
+   %Rank_BA (parts[13]): 0.382035
+   Aff (parts[15]): 801.30
+   First data line parts count: 16
+   First data line: 56 HLA-C*16:01         GLSPARLAV GLSPARLAV  0  0  0  0  0         GLSPARLAV         PEPLIST 0.013812    5.204 0.331376    4.315  1386.25
+   Peptide (parts[2]): GLSPARLAV
+   Score_BA (parts[12]): 5.204
+   %Rank_BA (parts[13]): 0.331376
+   Aff (parts[15]): 1386.25
+   First data line parts count: 18
+   First data line: 57 HLA-C*16:01          NATVRTAM NAT-VRTAM  0  0  0  3  1          NATVRTAM         PEPLIST 0.519553    0.257 0.609599    0.547    68.31 <= SB
+   Peptide (parts[2]): NATVRTAM
+   Score_BA (parts[12]): 0.257
+   %Rank_BA (parts[13]): 0.609599
+   Aff (parts[15]): 68.31
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 58 HLA-C*16:01         IAFSRPVKY IAFSRPVKY  0  0  0  0  0         IAFSRPVKY         PEPLIST 0.979018    0.004 0.862439    0.010     4.43 <= SB
+   Peptide (parts[2]): IAFSRPVKY
+   Score_BA (parts[12]): 0.004
+   %Rank_BA (parts[13]): 0.862439
+   Aff (parts[15]): 4.43
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 59 HLA-C*16:01         YTRPDRPEY YTRPDRPEY  0  0  0  0  0         YTRPDRPEY         PEPLIST 0.842963    0.042 0.763842    0.096    12.87 <= SB
+   Peptide (parts[2]): YTRPDRPEY
+   Score_BA (parts[12]): 0.042
+   %Rank_BA (parts[13]): 0.763842
+   Aff (parts[15]): 12.87
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 60 HLA-C*16:01          TFTNHMVF -TFTNHMVF  0  0  0  0  1          TFTNHMVF         PEPLIST 0.022544    4.059 0.391141    2.918   726.12
+   Peptide (parts[2]): TFTNHMVF
+   Score_BA (parts[12]): 4.059
+   %Rank_BA (parts[13]): 0.391141
+   Aff (parts[15]): 726.12
+   First data line parts count: 18
+   First data line: 61 HLA-C*16:01          IANVAHTF IAN-VAHTF  0  0  0  3  1          IANVAHTF         PEPLIST 0.897716    0.020 0.746809    0.125    15.48 <= SB
+   Peptide (parts[2]): IANVAHTF
+   Score_BA (parts[12]): 0.020
+   %Rank_BA (parts[13]): 0.746809
+   Aff (parts[15]): 15.48
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 62 HLA-C*16:01         KSIKNVTEL KSIKNVTEL  0  0  0  0  0         KSIKNVTEL         PEPLIST 0.677237    0.128 0.669179    0.306    35.85 <= SB
+   Peptide (parts[2]): KSIKNVTEL
+   Score_BA (parts[12]): 0.128
+   %Rank_BA (parts[13]): 0.669179
+   Aff (parts[15]): 35.85
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 63 HLA-C*16:01         FITGLIRIM FITGLIRIM  0  0  0  0  0         FITGLIRIM         PEPLIST 0.236472    0.759 0.602092    0.587    74.09 <= WB
+   Peptide (parts[2]): FITGLIRIM
+   Score_BA (parts[12]): 0.759
+   %Rank_BA (parts[13]): 0.602092
+   Aff (parts[15]): 74.09
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 64 HLA-C*16:01         AAAAAQSVY AAAAAQSVY  0  0  0  0  0         AAAAAQSVY         PEPLIST 0.816948    0.050 0.796622    0.055     9.03 <= SB
+   Peptide (parts[2]): AAAAAQSVY
+   Score_BA (parts[12]): 0.050
+   %Rank_BA (parts[13]): 0.796622
+   Aff (parts[15]): 9.03
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 65 HLA-C*16:01         FALVRTIRY FALVRTIRY  0  0  0  0  0         FALVRTIRY         PEPLIST 0.902192    0.019 0.793136    0.058     9.38 <= SB
+   Peptide (parts[2]): FALVRTIRY
+   Score_BA (parts[12]): 0.019
+   %Rank_BA (parts[13]): 0.793136
+   Aff (parts[15]): 9.38
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 66 HLA-C*16:01         TAAPPKANF TAAPPKANF  0  0  0  0  0         TAAPPKANF         PEPLIST 0.818905    0.049 0.676804    0.283    33.01 <= SB
+   Peptide (parts[2]): TAAPPKANF
+   Score_BA (parts[12]): 0.049
+   %Rank_BA (parts[13]): 0.676804
+   Aff (parts[15]): 33.01
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 67 HLA-C*16:01         TATMHILVV TATMHILVV  0  0  0  0  0         TATMHILVV         PEPLIST 0.548669    0.228 0.762075    0.099    13.12 <= SB
+   Peptide (parts[2]): TATMHILVV
+   Score_BA (parts[12]): 0.228
+   %Rank_BA (parts[13]): 0.762075
+   Aff (parts[15]): 13.12
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 68 HLA-C*16:01         YAKPYFLRL YAKPYFLRL  0  0  0  0  0         YAKPYFLRL         PEPLIST 0.942618    0.011 0.822850    0.029     6.80 <= SB
+   Peptide (parts[2]): YAKPYFLRL
+   Score_BA (parts[12]): 0.011
+   %Rank_BA (parts[13]): 0.822850
+   Aff (parts[15]): 6.80
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 69 HLA-C*16:01         AAKFKTPEL AAKFKTPEL  0  0  0  0  0         AAKFKTPEL         PEPLIST 0.876574    0.028 0.750295    0.119    14.91 <= SB
+   Peptide (parts[2]): AAKFKTPEL
+   Score_BA (parts[12]): 0.028
+   %Rank_BA (parts[13]): 0.750295
+   Aff (parts[15]): 14.91
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 70 HLA-C*16:01         KSMETKVQF KSMETKVQF  0  0  0  0  0         KSMETKVQF         PEPLIST 0.791484    0.066 0.712412    0.197    22.46 <= SB
+   Peptide (parts[2]): KSMETKVQF
+   Score_BA (parts[12]): 0.066
+   %Rank_BA (parts[13]): 0.712412
+   Aff (parts[15]): 22.46
+   BindLevel (parts[16]): <=
+   First data line parts count: 16
+   First data line: 71 HLA-C*16:01        DEYGRPFLII DEYRPFLII  0  3  1  0  0        DEYGRPFLII         PEPLIST 0.000016   47.829 0.055343   43.349 27473.60
+   Peptide (parts[2]): DEYGRPFLII
+   Score_BA (parts[12]): 47.829
+   %Rank_BA (parts[13]): 0.055343
+   Aff (parts[15]): 27473.60
+   First data line parts count: 18
+   First data line: 72 HLA-C*16:01         VQALRTVSL VQALRTVSL  0  0  0  0  0         VQALRTVSL         PEPLIST 0.253849    0.700 0.533899    1.042   154.95 <= WB
+   Peptide (parts[2]): VQALRTVSL
+   Score_BA (parts[12]): 0.700
+   %Rank_BA (parts[13]): 0.533899
+   Aff (parts[15]): 154.95
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 73 HLA-C*16:01         RGTDFVRTL RGTDFVRTL  0  0  0  0  0         RGTDFVRTL         PEPLIST 0.552727    0.224 0.616002    0.514    63.74 <= SB
+   Peptide (parts[2]): RGTDFVRTL
+   Score_BA (parts[12]): 0.224
+   %Rank_BA (parts[13]): 0.616002
+   Aff (parts[15]): 63.74
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 74 HLA-C*16:01          STANRHVL STA-NRHVL  0  0  0  3  1          STANRHVL         PEPLIST 0.608368    0.172 0.606009    0.566    71.02 <= SB
+   Peptide (parts[2]): STANRHVL
+   Score_BA (parts[12]): 0.172
+   %Rank_BA (parts[13]): 0.606009
+   Aff (parts[15]): 71.02
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 75 HLA-C*16:01         LAMEPTPEL LAMEPTPEL  0  0  0  0  0         LAMEPTPEL         PEPLIST 0.915000    0.017 0.841032    0.019     5.58 <= SB
+   Peptide (parts[2]): LAMEPTPEL
+   Score_BA (parts[12]): 0.017
+   %Rank_BA (parts[13]): 0.841032
+   Aff (parts[15]): 5.58
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 76 HLA-C*16:01         ATTLRLSAY ATTLRLSAY  0  0  0  0  0         ATTLRLSAY         PEPLIST 0.349060    0.472 0.621000    0.490    60.38 <= SB
+   Peptide (parts[2]): ATTLRLSAY
+   Score_BA (parts[12]): 0.472
+   %Rank_BA (parts[13]): 0.621000
+   Aff (parts[15]): 60.38
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 77 HLA-C*16:01        FSLGSKGFYY FSLGKGFYY  0  4  1  0  0        FSLGSKGFYY         PEPLIST 0.243002    0.737 0.635296    0.427    51.73 <= WB
+   Peptide (parts[2]): FSLGSKGFYY
+   Score_BA (parts[12]): 0.737
+   %Rank_BA (parts[13]): 0.635296
+   Aff (parts[15]): 51.73
+   BindLevel (parts[16]): <=
+   First data line parts count: 18
+   First data line: 78 HLA-C*16:01         TAVYKVSEY TAVYKVSEY  0  0  0  0  0         TAVYKVSEY         PEPLIST 0.912564    0.017 0.778011    0.076    11.04 <= SB
+   Peptide (parts[2]): TAVYKVSEY
+   Score_BA (parts[12]): 0.017
+   %Rank_BA (parts[13]): 0.778011
+   Aff (parts[15]): 11.04
+   BindLevel (parts[16]): <=
+   [10/157] 6.4% | Time: 0.2m | ETA: 2.4m | Predictions: 1,397
+   [20/157] 12.7% | Time: 0.3m | ETA: 2.3m | Predictions: 3,132
+   [30/157] 19.1% | Time: 0.5m | ETA: 2.1m | Predictions: 4,091
+   [40/157] 25.5% | Time: 0.6m | ETA: 1.8m | Predictions: 4,720
+   [50/157] 31.8% | Time: 0.8m | ETA: 1.7m | Predictions: 5,751
+   [60/157] 38.2% | Time: 0.9m | ETA: 1.5m | Predictions: 6,857
+   [70/157] 44.6% | Time: 1.1m | ETA: 1.3m | Predictions: 7,941
+   [80/157] 51.0% | Time: 1.2m | ETA: 1.2m | Predictions: 8,462
+   [90/157] 57.3% | Time: 1.4m | ETA: 1.0m | Predictions: 8,875
+   [100/157] 63.7% | Time: 1.5m | ETA: 0.9m | Predictions: 9,264
+   [110/157] 70.1% | Time: 1.7m | ETA: 0.7m | Predictions: 9,511
+   [120/157] 76.4% | Time: 1.8m | ETA: 0.6m | Predictions: 9,774
+   [130/157] 82.8% | Time: 1.9m | ETA: 0.4m | Predictions: 9,892
+   [140/157] 89.2% | Time: 2.1m | ETA: 0.3m | Predictions: 9,967
+   [150/157] 95.5% | Time: 2.2m | ETA: 0.1m | Predictions: 9,984
+
+================================================================================
+[OK] PREDICTIONS COMPLETE in 2.3 minutes
+================================================================================
+   Predicted: 9,993 peptide-allele pairs
+
+Merging predictions with actual data...
+   Merged: 10,000 samples with predictions
+   Coverage: 100.0%
+
+================================================================================
+DIRECT NETMHCPAN + SHAP EXPLAINABILITY
+================================================================================
+
+   Alleles to explain: ['HLA-B*07:02', 'HLA-A*03:01', 'HLA-B*40:01', 'HLA-B*15:02', 'HLA-B*57:01', 'HLA-B*15:01', 'HLA-A*24:02', 'HLA-A*01:01', 'HLA-B*40:02', 'HLA-B*51:01']
+   Method: Direct NetMHCpan KernelSHAP (nsamples=32)
+   SHAP budgets: bg=64, fg=128, max_alleles=10, netmhcpan_jobs=4
+   HLA-B*07:02 | 8-mers: skipping (19 samples)
+   HLA-B*07:02 | 9-mers | pool=256 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:07,  1.95s/it]  2%|▏         | 2/128 [00:04<04:21,  2.08s/it]  2%|▏         | 3/128 [00:06<04:18,  2.06s/it]  3%|▎         | 4/128 [00:08<04:13,  2.04s/it]  4%|▍         | 5/128 [00:10<04:16,  2.08s/it]  5%|▍         | 6/128 [00:12<04:15,  2.09s/it]  5%|▌         | 7/128 [00:14<04:04,  2.02s/it]  6%|▋         | 8/128 [00:16<03:58,  1.99s/it]  7%|▋         | 9/128 [00:18<03:59,  2.01s/it]  8%|▊         | 10/128 [00:20<04:01,  2.05s/it]  9%|▊         | 11/128 [00:22<03:56,  2.02s/it]  9%|▉         | 12/128 [00:24<03:52,  2.00s/it] 10%|█         | 13/128 [00:26<03:50,  2.01s/it] 11%|█         | 14/128 [00:28<03:51,  2.03s/it] 12%|█▏        | 15/128 [00:30<03:46,  2.01s/it] 12%|█▎        | 16/128 [00:32<03:43,  1.99s/it] 13%|█▎        | 17/128 [00:34<03:45,  2.03s/it] 14%|█▍        | 18/128 [00:36<03:44,  2.04s/it] 15%|█▍        | 19/128 [00:38<03:40,  2.02s/it] 16%|█▌        | 20/128 [00:40<03:37,  2.01s/it] 16%|█▋        | 21/128 [00:42<03:35,  2.02s/it] 17%|█▋        | 22/128 [00:44<03:36,  2.04s/it] 18%|█▊        | 23/128 [00:46<03:35,  2.05s/it] 19%|█▉        | 24/128 [00:48<03:30,  2.02s/it] 20%|█▉        | 25/128 [00:50<03:32,  2.06s/it] 20%|██        | 26/128 [00:52<03:30,  2.07s/it] 21%|██        | 27/128 [00:54<03:28,  2.06s/it] 22%|██▏       | 28/128 [00:57<03:26,  2.07s/it] 23%|██▎       | 29/128 [00:59<03:25,  2.08s/it] 23%|██▎       | 30/128 [01:01<03:24,  2.09s/it] 24%|██▍       | 31/128 [01:03<03:20,  2.07s/it] 25%|██▌       | 32/128 [01:05<03:16,  2.05s/it] 26%|██▌       | 33/128 [01:07<03:13,  2.03s/it] 27%|██▋       | 34/128 [01:09<03:10,  2.02s/it] 27%|██▋       | 35/128 [01:11<03:09,  2.04s/it] 28%|██▊       | 36/128 [01:13<03:09,  2.06s/it] 29%|██▉       | 37/128 [01:15<03:04,  2.03s/it] 30%|██▉       | 38/128 [01:17<03:00,  2.01s/it] 30%|███       | 39/128 [01:19<02:59,  2.01s/it] 31%|███▏      | 40/128 [01:21<02:58,  2.03s/it] 32%|███▏      | 41/128 [01:23<02:53,  2.00s/it] 33%|███▎      | 42/128 [01:25<02:49,  1.97s/it] 34%|███▎      | 43/128 [01:27<02:48,  1.98s/it] 34%|███▍      | 44/128 [01:29<02:46,  1.98s/it] 35%|███▌      | 45/128 [01:31<02:44,  1.98s/it] 36%|███▌      | 46/128 [01:33<02:40,  1.96s/it] 37%|███▋      | 47/128 [01:35<02:41,  1.99s/it] 38%|███▊      | 48/128 [01:37<02:42,  2.03s/it] 38%|███▊      | 49/128 [01:39<02:42,  2.05s/it] 39%|███▉      | 50/128 [01:41<02:39,  2.05s/it] 40%|███▉      | 51/128 [01:43<02:36,  2.03s/it] 41%|████      | 52/128 [01:45<02:32,  2.00s/it] 41%|████▏     | 53/128 [01:47<02:28,  1.99s/it] 42%|████▏     | 54/128 [01:49<02:26,  1.98s/it] 43%|████▎     | 55/128 [01:51<02:24,  1.98s/it] 44%|████▍     | 56/128 [01:53<02:23,  1.99s/it] 45%|████▍     | 57/128 [01:55<02:26,  2.07s/it] 45%|████▌     | 58/128 [01:57<02:24,  2.07s/it] 46%|████▌     | 59/128 [01:59<02:22,  2.07s/it] 47%|████▋     | 60/128 [02:01<02:20,  2.07s/it] 48%|████▊     | 61/128 [02:03<02:17,  2.05s/it] 48%|████▊     | 62/128 [02:05<02:14,  2.03s/it] 49%|████▉     | 63/128 [02:07<02:12,  2.05s/it] 50%|█████     | 64/128 [02:09<02:11,  2.05s/it] 51%|█████     | 65/128 [02:11<02:08,  2.05s/it] 52%|█████▏    | 66/128 [02:13<02:05,  2.03s/it] 52%|█████▏    | 67/128 [02:15<02:03,  2.02s/it] 53%|█████▎    | 68/128 [02:17<02:00,  2.02s/it] 54%|█████▍    | 69/128 [02:19<01:58,  2.01s/it] 55%|█████▍    | 70/128 [02:21<01:54,  1.98s/it] 55%|█████▌    | 71/128 [02:23<01:53,  1.99s/it] 56%|█████▋    | 72/128 [02:25<01:51,  1.99s/it] 57%|█████▋    | 73/128 [02:27<01:49,  1.99s/it] 58%|█████▊    | 74/128 [02:29<01:47,  2.00s/it] 59%|█████▊    | 75/128 [02:31<01:46,  2.02s/it] 59%|█████▉    | 76/128 [02:33<01:45,  2.03s/it] 60%|██████    | 77/128 [02:35<01:41,  1.99s/it] 61%|██████    | 78/128 [02:37<01:39,  1.99s/it] 62%|██████▏   | 79/128 [02:39<01:37,  1.99s/it] 62%|██████▎   | 80/128 [02:41<01:35,  1.99s/it] 63%|██████▎   | 81/128 [02:43<01:35,  2.02s/it] 64%|██████▍   | 82/128 [02:45<01:32,  2.01s/it] 65%|██████▍   | 83/128 [02:48<01:31,  2.02s/it] 66%|██████▌   | 84/128 [02:50<01:29,  2.04s/it] 66%|██████▋   | 85/128 [02:52<01:27,  2.03s/it] 67%|██████▋   | 86/128 [02:54<01:25,  2.03s/it] 68%|██████▊   | 87/128 [02:56<01:23,  2.04s/it] 69%|██████▉   | 88/128 [02:58<01:21,  2.04s/it] 70%|██████▉   | 89/128 [03:00<01:18,  2.02s/it] 70%|███████   | 90/128 [03:02<01:17,  2.05s/it] 71%|███████   | 91/128 [03:04<01:15,  2.04s/it] 72%|███████▏  | 92/128 [03:06<01:14,  2.06s/it] 73%|███████▎  | 93/128 [03:08<01:11,  2.04s/it] 73%|███████▎  | 94/128 [03:10<01:08,  2.03s/it] 74%|███████▍  | 95/128 [03:12<01:06,  2.02s/it] 75%|███████▌  | 96/128 [03:14<01:04,  2.02s/it] 76%|███████▌  | 97/128 [03:16<01:02,  2.01s/it] 77%|███████▋  | 98/128 [03:18<00:59,  1.99s/it] 77%|███████▋  | 99/128 [03:20<00:58,  2.01s/it] 78%|███████▊  | 100/128 [03:22<00:56,  2.01s/it] 79%|███████▉  | 101/128 [03:24<00:53,  1.98s/it] 80%|███████▉  | 102/128 [03:26<00:51,  1.97s/it] 80%|████████  | 103/128 [03:28<00:49,  1.97s/it] 81%|████████▏ | 104/128 [03:30<00:47,  1.97s/it] 82%|████████▏ | 105/128 [03:32<00:45,  1.97s/it] 83%|████████▎ | 106/128 [03:34<00:43,  1.99s/it] 84%|████████▎ | 107/128 [03:36<00:42,  2.04s/it] 84%|████████▍ | 108/128 [03:38<00:40,  2.03s/it] 85%|████████▌ | 109/128 [03:40<00:38,  2.03s/it] 86%|████████▌ | 110/128 [03:42<00:36,  2.01s/it] 87%|████████▋ | 111/128 [03:44<00:34,  2.03s/it] 88%|████████▊ | 112/128 [03:46<00:33,  2.07s/it] 88%|████████▊ | 113/128 [03:48<00:30,  2.01s/it] 89%|████████▉ | 114/128 [03:50<00:27,  1.99s/it] 90%|████████▉ | 115/128 [03:52<00:25,  1.99s/it] 91%|█████████ | 116/128 [03:54<00:23,  1.99s/it] 91%|█████████▏| 117/128 [03:56<00:21,  1.98s/it] 92%|█████████▏| 118/128 [03:58<00:19,  1.97s/it] 93%|█████████▎| 119/128 [04:00<00:17,  1.99s/it] 94%|█████████▍| 120/128 [04:02<00:15,  2.00s/it] 95%|█████████▍| 121/128 [04:04<00:13,  1.99s/it] 95%|█████████▌| 122/128 [04:06<00:11,  2.00s/it] 96%|█████████▌| 123/128 [04:08<00:10,  2.02s/it] 97%|█████████▋| 124/128 [04:10<00:08,  2.05s/it] 98%|█████████▊| 125/128 [04:12<00:06,  2.04s/it] 98%|█████████▊| 126/128 [04:14<00:04,  2.02s/it] 99%|█████████▉| 127/128 [04:16<00:02,  2.01s/it]100%|██████████| 128/128 [04:18<00:00,  2.02s/it]100%|██████████| 128/128 [04:18<00:00,  2.02s/it]
+         Top positions: P2=0.0223, P9=0.0170, P3=0.0167
+   HLA-B*07:02 | 10-mers | pool=92 | bg=64 fg=92
+  0%|          | 0/92 [00:00<?, ?it/s]  1%|          | 1/92 [00:04<06:52,  4.53s/it]  2%|▏         | 2/92 [00:08<06:40,  4.45s/it]  3%|▎         | 3/92 [00:13<06:28,  4.37s/it]  4%|▍         | 4/92 [00:17<06:30,  4.43s/it]  5%|▌         | 5/92 [00:22<06:27,  4.46s/it]  7%|▋         | 6/92 [00:26<06:27,  4.51s/it]  8%|▊         | 7/92 [00:31<06:19,  4.47s/it]  9%|▊         | 8/92 [00:35<06:10,  4.41s/it] 10%|▉         | 9/92 [00:40<06:09,  4.45s/it] 11%|█         | 10/92 [00:44<06:07,  4.48s/it] 12%|█▏        | 11/92 [00:48<05:47,  4.29s/it] 13%|█▎        | 12/92 [00:53<05:53,  4.42s/it] 14%|█▍        | 13/92 [00:57<05:50,  4.43s/it] 15%|█▌        | 14/92 [01:01<05:34,  4.29s/it] 16%|█▋        | 15/92 [01:05<05:28,  4.26s/it] 17%|█▋        | 16/92 [01:10<05:35,  4.42s/it] 18%|█▊        | 17/92 [01:14<05:26,  4.35s/it] 20%|█▉        | 18/92 [01:18<05:16,  4.27s/it] 21%|██        | 19/92 [01:23<05:15,  4.32s/it] 22%|██▏       | 20/92 [01:27<05:10,  4.31s/it] 23%|██▎       | 21/92 [01:32<05:12,  4.40s/it] 24%|██▍       | 22/92 [01:36<05:10,  4.43s/it] 25%|██▌       | 23/92 [01:40<05:01,  4.37s/it] 26%|██▌       | 24/92 [01:45<04:55,  4.35s/it] 27%|██▋       | 25/92 [01:49<04:58,  4.45s/it] 28%|██▊       | 26/92 [01:54<04:56,  4.49s/it] 29%|██▉       | 27/92 [01:58<04:51,  4.48s/it] 30%|███       | 28/92 [02:03<04:46,  4.47s/it] 32%|███▏      | 29/92 [02:08<04:50,  4.61s/it] 33%|███▎      | 30/92 [02:12<04:47,  4.63s/it] 34%|███▎      | 31/92 [02:17<04:44,  4.66s/it] 35%|███▍      | 32/92 [02:22<04:33,  4.56s/it] 36%|███▌      | 33/92 [02:26<04:29,  4.57s/it] 37%|███▋      | 34/92 [02:31<04:23,  4.54s/it] 38%|███▊      | 35/92 [02:35<04:11,  4.42s/it] 39%|███▉      | 36/92 [02:39<04:10,  4.47s/it] 40%|████      | 37/92 [02:44<04:03,  4.43s/it] 41%|████▏     | 38/92 [02:48<04:03,  4.50s/it] 42%|████▏     | 39/92 [02:53<03:57,  4.47s/it] 43%|████▎     | 40/92 [02:57<03:55,  4.52s/it] 45%|████▍     | 41/92 [03:02<03:54,  4.59s/it] 46%|████▌     | 42/92 [03:07<03:46,  4.52s/it] 47%|████▋     | 43/92 [03:11<03:41,  4.53s/it] 48%|████▊     | 44/92 [03:16<03:39,  4.56s/it] 49%|████▉     | 45/92 [03:20<03:29,  4.45s/it] 50%|█████     | 46/92 [03:24<03:23,  4.43s/it] 51%|█████     | 47/92 [03:29<03:22,  4.50s/it] 52%|█████▏    | 48/92 [03:33<03:13,  4.41s/it] 53%|█████▎    | 49/92 [03:38<03:10,  4.43s/it] 54%|█████▍    | 50/92 [03:42<03:01,  4.32s/it] 55%|█████▌    | 51/92 [03:46<03:01,  4.42s/it] 57%|█████▋    | 52/92 [03:50<02:53,  4.33s/it] 58%|█████▊    | 53/92 [03:54<02:44,  4.21s/it] 59%|█████▊    | 54/92 [03:59<02:42,  4.26s/it] 60%|█████▉    | 55/92 [04:03<02:39,  4.31s/it] 61%|██████    | 56/92 [04:07<02:35,  4.31s/it] 62%|██████▏   | 57/92 [04:12<02:28,  4.26s/it] 63%|██████▎   | 58/92 [04:16<02:23,  4.23s/it] 64%|██████▍   | 59/92 [04:20<02:19,  4.23s/it] 65%|██████▌   | 60/92 [04:24<02:17,  4.30s/it] 66%|██████▋   | 61/92 [04:29<02:13,  4.29s/it] 67%|██████▋   | 62/92 [04:33<02:10,  4.35s/it] 68%|██████▊   | 63/92 [04:38<02:06,  4.35s/it] 70%|██████▉   | 64/92 [04:42<02:03,  4.40s/it] 71%|███████   | 65/92 [04:46<01:57,  4.36s/it] 72%|███████▏  | 66/92 [04:51<01:52,  4.31s/it] 73%|███████▎  | 67/92 [04:55<01:46,  4.25s/it] 74%|███████▍  | 68/92 [04:59<01:42,  4.28s/it] 75%|███████▌  | 69/92 [05:04<01:41,  4.40s/it] 76%|███████▌  | 70/92 [05:08<01:37,  4.45s/it] 77%|███████▋  | 71/92 [05:13<01:34,  4.50s/it] 78%|███████▊  | 72/92 [05:17<01:27,  4.36s/it] 79%|███████▉  | 73/92 [05:21<01:23,  4.39s/it] 80%|████████  | 74/92 [05:26<01:18,  4.38s/it] 82%|████████▏ | 75/92 [05:30<01:15,  4.42s/it] 83%|████████▎ | 76/92 [05:35<01:10,  4.38s/it] 84%|████████▎ | 77/92 [05:39<01:06,  4.45s/it] 85%|████████▍ | 78/92 [05:43<01:01,  4.37s/it] 86%|████████▌ | 79/92 [05:48<00:56,  4.34s/it] 87%|████████▋ | 80/92 [05:52<00:51,  4.26s/it] 88%|████████▊ | 81/92 [05:56<00:47,  4.33s/it] 89%|████████▉ | 82/92 [06:00<00:43,  4.30s/it] 90%|█████████ | 83/92 [06:05<00:38,  4.31s/it] 91%|█████████▏| 84/92 [06:09<00:34,  4.26s/it] 92%|█████████▏| 85/92 [06:13<00:30,  4.33s/it] 93%|█████████▎| 86/92 [06:18<00:26,  4.48s/it] 95%|█████████▍| 87/92 [06:23<00:22,  4.55s/it] 96%|█████████▌| 88/92 [06:28<00:18,  4.63s/it] 97%|█████████▋| 89/92 [06:32<00:13,  4.54s/it] 98%|█████████▊| 90/92 [06:36<00:08,  4.44s/it] 99%|█████████▉| 91/92 [06:40<00:04,  4.35s/it]100%|██████████| 92/92 [06:45<00:00,  4.28s/it]100%|██████████| 92/92 [06:45<00:00,  4.40s/it]
+         Top positions: P10=0.0189, P2=0.0186, P3=0.0169
+   HLA-B*07:02 | 11-mers | pool=48 | bg=48 fg=48
+  0%|          | 0/48 [00:00<?, ?it/s]  2%|▏         | 1/48 [00:07<05:56,  7.58s/it]  4%|▍         | 2/48 [00:14<05:38,  7.36s/it]  6%|▋         | 3/48 [00:21<05:08,  6.86s/it]  8%|▊         | 4/48 [00:27<05:00,  6.83s/it] 10%|█         | 5/48 [00:34<04:52,  6.80s/it] 12%|█▎        | 6/48 [00:41<04:46,  6.83s/it] 15%|█▍        | 7/48 [00:47<04:30,  6.59s/it] 17%|█▋        | 8/48 [00:54<04:27,  6.69s/it] 19%|█▉        | 9/48 [01:00<04:18,  6.63s/it] 21%|██        | 10/48 [01:07<04:13,  6.67s/it] 23%|██▎       | 11/48 [01:14<04:07,  6.68s/it] 25%|██▌       | 12/48 [01:21<04:05,  6.83s/it] 27%|██▋       | 13/48 [01:28<03:58,  6.80s/it] 29%|██▉       | 14/48 [01:35<03:50,  6.77s/it] 31%|███▏      | 15/48 [01:41<03:41,  6.71s/it] 33%|███▎      | 16/48 [01:47<03:27,  6.50s/it] 35%|███▌      | 17/48 [01:54<03:25,  6.63s/it] 38%|███▊      | 18/48 [02:01<03:20,  6.68s/it] 40%|███▉      | 19/48 [02:08<03:14,  6.69s/it] 42%|████▏     | 20/48 [02:15<03:12,  6.87s/it] 44%|████▍     | 21/48 [02:22<03:05,  6.88s/it] 46%|████▌     | 22/48 [02:29<02:58,  6.86s/it] 48%|████▊     | 23/48 [02:35<02:51,  6.88s/it] 50%|█████     | 24/48 [02:42<02:40,  6.68s/it] 52%|█████▏    | 25/48 [02:49<02:34,  6.73s/it] 54%|█████▍    | 26/48 [02:55<02:27,  6.72s/it] 56%|█████▋    | 27/48 [03:02<02:21,  6.75s/it] 58%|█████▊    | 28/48 [03:08<02:11,  6.60s/it] 60%|██████    | 29/48 [03:15<02:06,  6.64s/it] 62%|██████▎   | 30/48 [03:23<02:04,  6.89s/it] 65%|██████▍   | 31/48 [03:29<01:55,  6.82s/it] 67%|██████▋   | 32/48 [03:36<01:48,  6.77s/it] 69%|██████▉   | 33/48 [03:42<01:41,  6.73s/it] 71%|███████   | 34/48 [03:49<01:33,  6.69s/it] 73%|███████▎  | 35/48 [03:56<01:29,  6.90s/it] 75%|███████▌  | 36/48 [04:03<01:22,  6.88s/it] 77%|███████▋  | 37/48 [04:09<01:13,  6.68s/it] 79%|███████▉  | 38/48 [04:16<01:07,  6.76s/it] 81%|████████▏ | 39/48 [04:23<01:01,  6.79s/it] 83%|████████▎ | 40/48 [04:30<00:53,  6.74s/it] 85%|████████▌ | 41/48 [04:36<00:46,  6.69s/it] 88%|████████▊ | 42/48 [04:44<00:40,  6.79s/it] 90%|████████▉ | 43/48 [04:50<00:33,  6.76s/it] 92%|█████████▏| 44/48 [04:58<00:27,  6.96s/it] 94%|█████████▍| 45/48 [05:04<00:20,  6.82s/it] 96%|█████████▌| 46/48 [05:11<00:13,  6.89s/it] 98%|█████████▊| 47/48 [05:17<00:06,  6.71s/it]100%|██████████| 48/48 [05:24<00:00,  6.65s/it]100%|██████████| 48/48 [05:24<00:00,  6.76s/it]
+         Top positions: P2=0.0199, P3=0.0166, P11=0.0141
+   HLA-A*03:01 | 8-mers: skipping (8 samples)
+   HLA-A*03:01 | 9-mers | pool=211 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:05,  1.93s/it]  2%|▏         | 2/128 [00:03<04:00,  1.91s/it]  2%|▏         | 3/128 [00:05<03:58,  1.91s/it]  3%|▎         | 4/128 [00:07<03:58,  1.93s/it]  4%|▍         | 5/128 [00:09<03:56,  1.93s/it]  5%|▍         | 6/128 [00:11<03:53,  1.91s/it]  5%|▌         | 7/128 [00:13<03:51,  1.91s/it]  6%|▋         | 8/128 [00:15<03:48,  1.91s/it]  7%|▋         | 9/128 [00:17<03:48,  1.92s/it]  8%|▊         | 10/128 [00:19<03:45,  1.91s/it]  9%|▊         | 11/128 [00:21<03:44,  1.91s/it]  9%|▉         | 12/128 [00:23<03:43,  1.93s/it] 10%|█         | 13/128 [00:24<03:41,  1.93s/it] 11%|█         | 14/128 [00:26<03:37,  1.91s/it] 12%|█▏        | 15/128 [00:28<03:34,  1.90s/it] 12%|█▎        | 16/128 [00:30<03:33,  1.91s/it] 13%|█▎        | 17/128 [00:32<03:31,  1.91s/it] 14%|█▍        | 18/128 [00:34<03:31,  1.92s/it] 15%|█▍        | 19/128 [00:36<03:29,  1.92s/it] 16%|█▌        | 20/128 [00:38<03:27,  1.93s/it] 16%|█▋        | 21/128 [00:40<03:25,  1.92s/it] 17%|█▋        | 22/128 [00:42<03:21,  1.90s/it] 18%|█▊        | 23/128 [00:44<03:19,  1.90s/it] 19%|█▉        | 24/128 [00:46<03:33,  2.05s/it] 20%|█▉        | 25/128 [00:48<03:27,  2.02s/it] 20%|██        | 26/128 [00:50<03:22,  1.99s/it] 21%|██        | 27/128 [00:52<03:18,  1.97s/it] 22%|██▏       | 28/128 [00:54<03:15,  1.95s/it] 23%|██▎       | 29/128 [00:56<03:12,  1.94s/it] 23%|██▎       | 30/128 [00:57<03:08,  1.93s/it] 24%|██▍       | 31/128 [00:59<03:05,  1.92s/it] 25%|██▌       | 32/128 [01:01<03:03,  1.91s/it] 26%|██▌       | 33/128 [01:03<03:01,  1.91s/it] 27%|██▋       | 34/128 [01:05<02:59,  1.91s/it] 27%|██▋       | 35/128 [01:07<02:58,  1.92s/it] 28%|██▊       | 36/128 [01:09<02:56,  1.92s/it] 29%|██▉       | 37/128 [01:11<02:54,  1.92s/it] 30%|██▉       | 38/128 [01:13<02:52,  1.92s/it] 30%|███       | 39/128 [01:15<02:50,  1.92s/it] 31%|███▏      | 40/128 [01:17<02:48,  1.91s/it] 32%|███▏      | 41/128 [01:19<02:58,  2.05s/it] 33%|███▎      | 42/128 [01:21<02:53,  2.02s/it] 34%|███▎      | 43/128 [01:23<02:49,  1.99s/it] 34%|███▍      | 44/128 [01:25<02:45,  1.98s/it] 35%|███▌      | 45/128 [01:27<02:41,  1.95s/it] 36%|███▌      | 46/128 [01:29<02:39,  1.95s/it] 37%|███▋      | 47/128 [01:30<02:36,  1.93s/it] 38%|███▊      | 48/128 [01:32<02:36,  1.95s/it] 38%|███▊      | 49/128 [01:34<02:33,  1.94s/it] 39%|███▉      | 50/128 [01:36<02:31,  1.94s/it] 40%|███▉      | 51/128 [01:38<02:29,  1.94s/it] 41%|████      | 52/128 [01:40<02:26,  1.92s/it] 41%|████▏     | 53/128 [01:42<02:23,  1.92s/it] 42%|████▏     | 54/128 [01:44<02:22,  1.92s/it] 43%|████▎     | 55/128 [01:46<02:20,  1.92s/it] 44%|████▍     | 56/128 [01:48<02:17,  1.91s/it] 45%|████▍     | 57/128 [01:50<02:15,  1.91s/it] 45%|████▌     | 58/128 [01:52<02:13,  1.91s/it] 46%|████▌     | 59/128 [01:54<02:12,  1.93s/it] 47%|████▋     | 60/128 [01:56<02:12,  1.95s/it] 48%|████▊     | 61/128 [01:57<02:10,  1.95s/it] 48%|████▊     | 62/128 [01:59<02:08,  1.95s/it] 49%|████▉     | 63/128 [02:01<02:05,  1.94s/it] 50%|█████     | 64/128 [02:03<02:03,  1.94s/it] 51%|█████     | 65/128 [02:05<02:01,  1.93s/it] 52%|█████▏    | 66/128 [02:07<01:59,  1.93s/it] 52%|█████▏    | 67/128 [02:09<01:57,  1.92s/it] 53%|█████▎    | 68/128 [02:11<01:55,  1.93s/it] 54%|█████▍    | 69/128 [02:13<01:52,  1.91s/it] 55%|█████▍    | 70/128 [02:15<01:50,  1.91s/it] 55%|█████▌    | 71/128 [02:17<01:49,  1.91s/it] 56%|█████▋    | 72/128 [02:19<01:46,  1.91s/it] 57%|█████▋    | 73/128 [02:20<01:44,  1.90s/it] 58%|█████▊    | 74/128 [02:22<01:42,  1.90s/it] 59%|█████▊    | 75/128 [02:24<01:41,  1.91s/it] 59%|█████▉    | 76/128 [02:26<01:40,  1.93s/it] 60%|██████    | 77/128 [02:28<01:39,  1.94s/it] 61%|██████    | 78/128 [02:30<01:37,  1.95s/it] 62%|██████▏   | 79/128 [02:32<01:35,  1.95s/it] 62%|██████▎   | 80/128 [02:34<01:33,  1.95s/it] 63%|██████▎   | 81/128 [02:36<01:31,  1.95s/it] 64%|██████▍   | 82/128 [02:38<01:29,  1.94s/it] 65%|██████▍   | 83/128 [02:40<01:27,  1.94s/it] 66%|██████▌   | 84/128 [02:42<01:25,  1.93s/it] 66%|██████▋   | 85/128 [02:44<01:22,  1.92s/it] 67%|██████▋   | 86/128 [02:46<01:20,  1.91s/it] 68%|██████▊   | 87/128 [02:48<01:18,  1.92s/it] 69%|██████▉   | 88/128 [02:49<01:16,  1.91s/it] 70%|██████▉   | 89/128 [02:51<01:14,  1.90s/it] 70%|███████   | 90/128 [02:53<01:12,  1.90s/it] 71%|███████   | 91/128 [02:55<01:10,  1.90s/it] 72%|███████▏  | 92/128 [02:57<01:13,  2.04s/it] 73%|███████▎  | 93/128 [02:59<01:10,  2.01s/it] 73%|███████▎  | 94/128 [03:01<01:07,  1.98s/it] 74%|███████▍  | 95/128 [03:03<01:04,  1.96s/it] 75%|███████▌  | 96/128 [03:05<01:01,  1.94s/it] 76%|███████▌  | 97/128 [03:07<00:59,  1.93s/it] 77%|███████▋  | 98/128 [03:09<00:57,  1.91s/it] 77%|███████▋  | 99/128 [03:11<00:55,  1.91s/it] 78%|███████▊  | 100/128 [03:13<00:53,  1.90s/it] 79%|███████▉  | 101/128 [03:15<00:51,  1.90s/it] 80%|███████▉  | 102/128 [03:16<00:49,  1.90s/it] 80%|████████  | 103/128 [03:18<00:47,  1.91s/it] 81%|████████▏ | 104/128 [03:20<00:45,  1.91s/it] 82%|████████▏ | 105/128 [03:22<00:43,  1.91s/it] 83%|████████▎ | 106/128 [03:24<00:42,  1.91s/it] 84%|████████▎ | 107/128 [03:26<00:39,  1.90s/it] 84%|████████▍ | 108/128 [03:28<00:38,  1.90s/it] 85%|████████▌ | 109/128 [03:30<00:36,  1.90s/it] 86%|████████▌ | 110/128 [03:32<00:34,  1.93s/it] 87%|████████▋ | 111/128 [03:34<00:32,  1.94s/it] 88%|████████▊ | 112/128 [03:36<00:31,  1.94s/it] 88%|████████▊ | 113/128 [03:38<00:29,  1.95s/it] 89%|████████▉ | 114/128 [03:40<00:27,  1.95s/it] 90%|████████▉ | 115/128 [03:42<00:25,  1.95s/it] 91%|█████████ | 116/128 [03:43<00:23,  1.94s/it] 91%|█████████▏| 117/128 [03:45<00:21,  1.94s/it] 92%|█████████▏| 118/128 [03:47<00:19,  1.94s/it] 93%|█████████▎| 119/128 [03:49<00:17,  1.93s/it] 94%|█████████▍| 120/128 [03:51<00:15,  1.92s/it] 95%|█████████▍| 121/128 [03:53<00:13,  1.92s/it] 95%|█████████▌| 122/128 [03:55<00:11,  1.92s/it] 96%|█████████▌| 123/128 [03:57<00:09,  1.93s/it] 97%|█████████▋| 124/128 [03:59<00:07,  1.93s/it] 98%|█████████▊| 125/128 [04:01<00:05,  1.93s/it] 98%|█████████▊| 126/128 [04:03<00:03,  1.95s/it] 99%|█████████▉| 127/128 [04:05<00:01,  1.95s/it]100%|██████████| 128/128 [04:07<00:00,  1.96s/it]100%|██████████| 128/128 [04:07<00:00,  1.93s/it]
+         Top positions: P9=0.0302, P2=0.0138, P3=0.0133
+   HLA-A*03:01 | 10-mers | pool=93 | bg=64 fg=93
+  0%|          | 0/93 [00:00<?, ?it/s]  1%|          | 1/93 [00:04<06:42,  4.38s/it]  2%|▏         | 2/93 [00:08<06:38,  4.38s/it]  3%|▎         | 3/93 [00:13<06:32,  4.36s/it]  4%|▍         | 4/93 [00:17<06:25,  4.34s/it]  5%|▌         | 5/93 [00:21<06:17,  4.29s/it]  6%|▋         | 6/93 [00:25<06:16,  4.33s/it]  8%|▊         | 7/93 [00:30<06:11,  4.32s/it]  9%|▊         | 8/93 [00:34<06:05,  4.30s/it] 10%|▉         | 9/93 [00:38<05:53,  4.20s/it] 11%|█         | 10/93 [00:42<05:39,  4.09s/it] 12%|█▏        | 11/93 [00:46<05:39,  4.14s/it] 13%|█▎        | 12/93 [00:50<05:29,  4.07s/it] 14%|█▍        | 13/93 [00:54<05:28,  4.10s/it] 15%|█▌        | 14/93 [00:58<05:23,  4.10s/it] 16%|█▌        | 15/93 [01:03<05:31,  4.25s/it] 17%|█▋        | 16/93 [01:07<05:25,  4.23s/it] 18%|█▊        | 17/93 [01:11<05:17,  4.18s/it] 19%|█▉        | 18/93 [01:16<05:18,  4.24s/it] 20%|██        | 19/93 [01:20<05:14,  4.26s/it] 22%|██▏       | 20/93 [01:24<05:13,  4.30s/it] 23%|██▎       | 21/93 [01:28<05:03,  4.22s/it] 24%|██▎       | 22/93 [01:33<05:05,  4.31s/it] 25%|██▍       | 23/93 [01:37<04:57,  4.25s/it] 26%|██▌       | 24/93 [01:41<04:50,  4.21s/it] 27%|██▋       | 25/93 [01:45<04:36,  4.07s/it] 28%|██▊       | 26/93 [01:49<04:33,  4.08s/it] 29%|██▉       | 27/93 [01:53<04:29,  4.08s/it] 30%|███       | 28/93 [01:57<04:26,  4.10s/it] 31%|███       | 29/93 [02:01<04:25,  4.14s/it] 32%|███▏      | 30/93 [02:06<04:26,  4.23s/it] 33%|███▎      | 31/93 [02:10<04:21,  4.21s/it] 34%|███▍      | 32/93 [02:14<04:20,  4.27s/it] 35%|███▌      | 33/93 [02:18<04:13,  4.23s/it] 37%|███▋      | 34/93 [02:22<04:03,  4.13s/it] 38%|███▊      | 35/93 [02:27<04:05,  4.23s/it] 39%|███▊      | 36/93 [02:31<03:59,  4.20s/it] 40%|███▉      | 37/93 [02:36<04:04,  4.36s/it] 41%|████      | 38/93 [02:40<03:59,  4.36s/it] 42%|████▏     | 39/93 [02:44<03:47,  4.21s/it] 43%|████▎     | 40/93 [02:48<03:37,  4.11s/it] 44%|████▍     | 41/93 [02:52<03:31,  4.07s/it] 45%|████▌     | 42/93 [02:56<03:32,  4.17s/it] 46%|████▌     | 43/93 [03:01<03:31,  4.22s/it] 47%|████▋     | 44/93 [03:05<03:26,  4.21s/it] 48%|████▊     | 45/93 [03:09<03:19,  4.16s/it] 49%|████▉     | 46/93 [03:13<03:15,  4.16s/it] 51%|█████     | 47/93 [03:17<03:13,  4.21s/it] 52%|█████▏    | 48/93 [03:21<03:09,  4.20s/it] 53%|█████▎    | 49/93 [03:26<03:07,  4.27s/it] 54%|█████▍    | 50/93 [03:30<03:02,  4.23s/it] 55%|█████▍    | 51/93 [03:34<02:54,  4.15s/it] 56%|█████▌    | 52/93 [03:38<02:51,  4.18s/it] 57%|█████▋    | 53/93 [03:43<02:54,  4.35s/it] 58%|█████▊    | 54/93 [03:47<02:46,  4.28s/it] 59%|█████▉    | 55/93 [03:51<02:41,  4.26s/it] 60%|██████    | 56/93 [03:56<02:38,  4.28s/it] 61%|██████▏   | 57/93 [04:00<02:30,  4.17s/it] 62%|██████▏   | 58/93 [04:03<02:23,  4.09s/it] 63%|██████▎   | 59/93 [04:08<02:19,  4.10s/it] 65%|██████▍   | 60/93 [04:12<02:16,  4.13s/it] 66%|██████▌   | 61/93 [04:16<02:17,  4.30s/it] 67%|██████▋   | 62/93 [04:21<02:13,  4.31s/it] 68%|██████▊   | 63/93 [04:25<02:12,  4.40s/it] 69%|██████▉   | 64/93 [04:29<02:05,  4.32s/it] 70%|██████▉   | 65/93 [04:34<02:00,  4.32s/it] 71%|███████   | 66/93 [04:38<01:56,  4.30s/it] 72%|███████▏  | 67/93 [04:42<01:52,  4.33s/it] 73%|███████▎  | 68/93 [04:47<01:50,  4.42s/it] 74%|███████▍  | 69/93 [04:51<01:42,  4.29s/it] 75%|███████▌  | 70/93 [04:55<01:38,  4.27s/it] 76%|███████▋  | 71/93 [04:59<01:32,  4.22s/it] 77%|███████▋  | 72/93 [05:03<01:26,  4.13s/it] 78%|███████▊  | 73/93 [05:08<01:23,  4.16s/it] 80%|███████▉  | 74/93 [05:12<01:20,  4.24s/it] 81%|████████  | 75/93 [05:16<01:17,  4.32s/it] 82%|████████▏ | 76/93 [05:21<01:16,  4.49s/it] 83%|████████▎ | 77/93 [05:26<01:10,  4.42s/it] 84%|████████▍ | 78/93 [05:29<01:03,  4.21s/it] 85%|████████▍ | 79/93 [05:34<00:58,  4.21s/it] 86%|████████▌ | 80/93 [05:37<00:53,  4.11s/it] 87%|████████▋ | 81/93 [05:42<00:49,  4.13s/it] 88%|████████▊ | 82/93 [05:46<00:45,  4.13s/it] 89%|████████▉ | 83/93 [05:50<00:41,  4.20s/it] 90%|█████████ | 84/93 [05:55<00:39,  4.37s/it] 91%|█████████▏| 85/93 [05:59<00:34,  4.29s/it] 92%|█████████▏| 86/93 [06:03<00:29,  4.19s/it] 94%|█████████▎| 87/93 [06:07<00:25,  4.19s/it] 95%|█████████▍| 88/93 [06:11<00:20,  4.17s/it] 96%|█████████▌| 89/93 [06:15<00:16,  4.15s/it] 97%|█████████▋| 90/93 [06:19<00:12,  4.14s/it] 98%|█████████▊| 91/93 [06:24<00:08,  4.14s/it] 99%|█████████▉| 92/93 [06:28<00:04,  4.33s/it]100%|██████████| 93/93 [06:33<00:00,  4.35s/it]100%|██████████| 93/93 [06:33<00:00,  4.23s/it]
+         Top positions: P10=0.0245, P1=0.0132, P2=0.0131
+   HLA-A*03:01 | 11-mers | pool=34 | bg=34 fg=34
+  0%|          | 0/34 [00:00<?, ?it/s]  3%|▎         | 1/34 [00:05<02:47,  5.08s/it]  6%|▌         | 2/34 [00:10<02:51,  5.37s/it]  9%|▉         | 3/34 [00:15<02:45,  5.32s/it] 12%|█▏        | 4/34 [00:20<02:34,  5.16s/it] 15%|█▍        | 5/34 [00:26<02:40,  5.52s/it] 18%|█▊        | 6/34 [00:32<02:33,  5.48s/it] 21%|██        | 7/34 [00:37<02:27,  5.45s/it] 24%|██▎       | 8/34 [00:43<02:21,  5.45s/it] 26%|██▋       | 9/34 [00:48<02:14,  5.37s/it]/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 4 iterations, i.e. alpha=4.094e-03, with an active set of 4 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 5 iterations, i.e. alpha=3.399e-03, with an active set of 5 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 8 iterations, i.e. alpha=9.498e-04, with an active set of 8 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 8 iterations, i.e. alpha=2.843e-04, with an active set of 8 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 9 iterations, i.e. alpha=7.505e-05, with an active set of 9 regressors, and the smallest cholesky pivot element being 2.220e-16. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+ 29%|██▉       | 10/34 [00:53<02:06,  5.28s/it] 32%|███▏      | 11/34 [00:59<02:05,  5.47s/it] 35%|███▌      | 12/34 [01:05<02:01,  5.51s/it] 38%|███▊      | 13/34 [01:10<01:53,  5.43s/it] 41%|████      | 14/34 [01:15<01:48,  5.44s/it] 44%|████▍     | 15/34 [01:21<01:44,  5.49s/it] 47%|████▋     | 16/34 [01:26<01:37,  5.41s/it] 50%|█████     | 17/34 [01:32<01:32,  5.46s/it] 53%|█████▎    | 18/34 [01:37<01:27,  5.48s/it] 56%|█████▌    | 19/34 [01:43<01:21,  5.46s/it] 59%|█████▉    | 20/34 [01:48<01:16,  5.48s/it] 62%|██████▏   | 21/34 [01:54<01:11,  5.50s/it] 65%|██████▍   | 22/34 [01:59<01:05,  5.49s/it] 68%|██████▊   | 23/34 [02:05<01:01,  5.59s/it] 71%|███████   | 24/34 [02:10<00:55,  5.56s/it] 74%|███████▎  | 25/34 [02:16<00:49,  5.53s/it] 76%|███████▋  | 26/34 [02:21<00:43,  5.45s/it] 79%|███████▉  | 27/34 [02:26<00:37,  5.42s/it] 82%|████████▏ | 28/34 [02:32<00:32,  5.50s/it] 85%|████████▌ | 29/34 [02:38<00:28,  5.69s/it] 88%|████████▊ | 30/34 [02:43<00:21,  5.44s/it] 91%|█████████ | 31/34 [02:48<00:15,  5.19s/it] 94%|█████████▍| 32/34 [02:53<00:10,  5.27s/it] 97%|█████████▋| 33/34 [02:59<00:05,  5.28s/it]100%|██████████| 34/34 [03:04<00:00,  5.39s/it]100%|██████████| 34/34 [03:04<00:00,  5.43s/it]
+         Top positions: P11=0.0242, P3=0.0144, P1=0.0138
+   HLA-B*40:01 | 8-mers: skipping (11 samples)
+   HLA-B*40:01 | 9-mers | pool=161 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:02<05:09,  2.44s/it]  2%|▏         | 2/128 [00:04<04:23,  2.09s/it]  2%|▏         | 3/128 [00:06<04:10,  2.00s/it]  3%|▎         | 4/128 [00:08<04:06,  1.99s/it]  4%|▍         | 5/128 [00:10<04:08,  2.02s/it]  5%|▍         | 6/128 [00:12<04:04,  2.00s/it]  5%|▌         | 7/128 [00:14<04:03,  2.01s/it]  6%|▋         | 8/128 [00:16<03:59,  2.00s/it]  7%|▋         | 9/128 [00:18<03:54,  1.97s/it]  8%|▊         | 10/128 [00:20<03:50,  1.96s/it]  9%|▊         | 11/128 [00:21<03:44,  1.92s/it]  9%|▉         | 12/128 [00:23<03:40,  1.90s/it] 10%|█         | 13/128 [00:25<03:37,  1.89s/it] 11%|█         | 14/128 [00:27<03:35,  1.89s/it] 12%|█▏        | 15/128 [00:29<03:34,  1.89s/it] 12%|█▎        | 16/128 [00:31<03:31,  1.88s/it] 13%|█▎        | 17/128 [00:33<03:29,  1.89s/it] 14%|█▍        | 18/128 [00:35<03:27,  1.89s/it] 15%|█▍        | 19/128 [00:37<03:31,  1.94s/it] 16%|█▌        | 20/128 [00:39<03:33,  1.98s/it] 16%|█▋        | 21/128 [00:41<03:30,  1.97s/it] 17%|█▋        | 22/128 [00:43<03:26,  1.95s/it] 18%|█▊        | 23/128 [00:44<03:23,  1.93s/it] 19%|█▉        | 24/128 [00:46<03:21,  1.94s/it] 20%|█▉        | 25/128 [00:48<03:18,  1.92s/it] 20%|██        | 26/128 [00:50<03:16,  1.93s/it] 21%|██        | 27/128 [00:52<03:13,  1.92s/it] 22%|██▏       | 28/128 [00:54<03:10,  1.91s/it] 23%|██▎       | 29/128 [00:56<03:08,  1.91s/it] 23%|██▎       | 30/128 [00:58<03:06,  1.90s/it] 24%|██▍       | 31/128 [01:00<03:03,  1.89s/it] 25%|██▌       | 32/128 [01:01<02:59,  1.87s/it] 26%|██▌       | 33/128 [01:03<02:58,  1.88s/it] 27%|██▋       | 34/128 [01:05<02:54,  1.86s/it] 27%|██▋       | 35/128 [01:08<03:07,  2.02s/it] 28%|██▊       | 36/128 [01:09<03:02,  1.98s/it] 29%|██▉       | 37/128 [01:11<02:57,  1.95s/it] 30%|██▉       | 38/128 [01:13<02:53,  1.93s/it] 30%|███       | 39/128 [01:15<02:50,  1.92s/it] 31%|███▏      | 40/128 [01:17<02:48,  1.91s/it] 32%|███▏      | 41/128 [01:19<02:46,  1.92s/it] 33%|███▎      | 42/128 [01:21<02:44,  1.91s/it] 34%|███▎      | 43/128 [01:23<02:41,  1.90s/it] 34%|███▍      | 44/128 [01:25<02:39,  1.89s/it] 35%|███▌      | 45/128 [01:26<02:37,  1.89s/it] 36%|███▌      | 46/128 [01:28<02:36,  1.91s/it] 37%|███▋      | 47/128 [01:30<02:34,  1.90s/it] 38%|███▊      | 48/128 [01:32<02:31,  1.89s/it] 38%|███▊      | 49/128 [01:34<02:29,  1.89s/it] 39%|███▉      | 50/128 [01:36<02:26,  1.88s/it] 40%|███▉      | 51/128 [01:38<02:24,  1.87s/it] 41%|████      | 52/128 [01:40<02:33,  2.02s/it] 41%|████▏     | 53/128 [01:42<02:28,  1.98s/it] 42%|████▏     | 54/128 [01:44<02:24,  1.95s/it] 43%|████▎     | 55/128 [01:46<02:20,  1.93s/it] 44%|████▍     | 56/128 [01:48<02:17,  1.91s/it] 45%|████▍     | 57/128 [01:49<02:14,  1.89s/it] 45%|████▌     | 58/128 [01:51<02:12,  1.89s/it] 46%|████▌     | 59/128 [01:53<02:09,  1.88s/it] 47%|████▋     | 60/128 [01:55<02:08,  1.89s/it] 48%|████▊     | 61/128 [01:57<02:04,  1.86s/it] 48%|████▊     | 62/128 [01:59<02:02,  1.85s/it] 49%|████▉     | 63/128 [02:01<01:58,  1.83s/it] 50%|█████     | 64/128 [02:02<01:57,  1.83s/it] 51%|█████     | 65/128 [02:04<01:55,  1.83s/it] 52%|█████▏    | 66/128 [02:06<01:54,  1.85s/it] 52%|█████▏    | 67/128 [02:08<01:52,  1.85s/it] 53%|█████▎    | 68/128 [02:10<01:52,  1.87s/it] 54%|█████▍    | 69/128 [02:12<01:50,  1.87s/it] 55%|█████▍    | 70/128 [02:14<01:57,  2.02s/it] 55%|█████▌    | 71/128 [02:16<01:52,  1.97s/it] 56%|█████▋    | 72/128 [02:18<01:48,  1.94s/it] 57%|█████▋    | 73/128 [02:20<01:45,  1.91s/it] 58%|█████▊    | 74/128 [02:22<01:43,  1.91s/it] 59%|█████▊    | 75/128 [02:23<01:40,  1.89s/it] 59%|█████▉    | 76/128 [02:25<01:38,  1.89s/it] 60%|██████    | 77/128 [02:27<01:36,  1.88s/it] 61%|██████    | 78/128 [02:29<01:33,  1.87s/it] 62%|██████▏   | 79/128 [02:31<01:32,  1.88s/it] 62%|██████▎   | 80/128 [02:33<01:30,  1.89s/it] 63%|██████▎   | 81/128 [02:35<01:28,  1.89s/it] 64%|██████▍   | 82/128 [02:37<01:27,  1.90s/it] 65%|██████▍   | 83/128 [02:39<01:27,  1.94s/it] 66%|██████▌   | 84/128 [02:41<01:26,  1.97s/it] 66%|██████▋   | 85/128 [02:43<01:24,  1.97s/it] 67%|██████▋   | 86/128 [02:45<01:22,  1.97s/it] 68%|██████▊   | 87/128 [02:47<01:25,  2.10s/it] 69%|██████▉   | 88/128 [02:49<01:21,  2.04s/it] 70%|██████▉   | 89/128 [02:51<01:18,  2.01s/it] 70%|███████   | 90/128 [02:53<01:15,  1.98s/it] 71%|███████   | 91/128 [02:55<01:12,  1.95s/it] 72%|███████▏  | 92/128 [02:57<01:09,  1.93s/it] 73%|███████▎  | 93/128 [02:58<01:06,  1.91s/it] 73%|███████▎  | 94/128 [03:00<01:04,  1.90s/it] 74%|███████▍  | 95/128 [03:02<01:02,  1.90s/it] 75%|███████▌  | 96/128 [03:04<01:00,  1.89s/it] 76%|███████▌  | 97/128 [03:06<00:58,  1.88s/it] 77%|███████▋  | 98/128 [03:08<00:56,  1.87s/it] 77%|███████▋  | 99/128 [03:10<00:54,  1.87s/it] 78%|███████▊  | 100/128 [03:12<00:52,  1.88s/it] 79%|███████▉  | 101/128 [03:13<00:50,  1.87s/it] 80%|███████▉  | 102/128 [03:15<00:48,  1.88s/it] 80%|████████  | 103/128 [03:17<00:47,  1.88s/it] 81%|████████▏ | 104/128 [03:20<00:49,  2.04s/it] 82%|████████▏ | 105/128 [03:22<00:46,  2.00s/it] 83%|████████▎ | 106/128 [03:23<00:43,  1.97s/it] 84%|████████▎ | 107/128 [03:25<00:40,  1.94s/it] 84%|████████▍ | 108/128 [03:27<00:38,  1.92s/it] 85%|████████▌ | 109/128 [03:29<00:36,  1.93s/it] 86%|████████▌ | 110/128 [03:31<00:34,  1.93s/it] 87%|████████▋ | 111/128 [03:33<00:32,  1.91s/it] 88%|████████▊ | 112/128 [03:35<00:30,  1.89s/it] 88%|████████▊ | 113/128 [03:37<00:28,  1.88s/it] 89%|████████▉ | 114/128 [03:38<00:26,  1.89s/it] 90%|████████▉ | 115/128 [03:40<00:24,  1.90s/it] 91%|█████████ | 116/128 [03:42<00:22,  1.90s/it] 91%|█████████▏| 117/128 [03:44<00:20,  1.89s/it] 92%|█████████▏| 118/128 [03:46<00:18,  1.89s/it] 93%|█████████▎| 119/128 [03:48<00:17,  1.89s/it] 94%|█████████▍| 120/128 [03:50<00:15,  1.89s/it] 95%|█████████▍| 121/128 [03:52<00:14,  2.05s/it] 95%|█████████▌| 122/128 [03:54<00:12,  2.00s/it] 96%|█████████▌| 123/128 [03:56<00:09,  1.96s/it] 97%|█████████▋| 124/128 [03:58<00:07,  1.95s/it] 98%|█████████▊| 125/128 [04:00<00:05,  1.92s/it] 98%|█████████▊| 126/128 [04:02<00:03,  1.91s/it] 99%|█████████▉| 127/128 [04:04<00:01,  1.90s/it]100%|██████████| 128/128 [04:05<00:00,  1.90s/it]100%|██████████| 128/128 [04:05<00:00,  1.92s/it]
+         Top positions: P9=0.0203, P2=0.0149, P3=0.0104
+   HLA-B*40:01 | 10-mers | pool=80 | bg=64 fg=80
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:04<05:35,  4.25s/it]  2%|▎         | 2/80 [00:08<05:19,  4.09s/it]  4%|▍         | 3/80 [00:11<04:57,  3.86s/it]  5%|▌         | 4/80 [00:16<05:03,  4.00s/it]  6%|▋         | 5/80 [00:20<05:00,  4.00s/it]  8%|▊         | 6/80 [00:23<04:54,  3.98s/it]  9%|▉         | 7/80 [00:27<04:49,  3.96s/it] 10%|█         | 8/80 [00:32<05:01,  4.18s/it] 11%|█▏        | 9/80 [00:36<04:54,  4.15s/it] 12%|█▎        | 10/80 [00:40<04:52,  4.17s/it] 14%|█▍        | 11/80 [00:44<04:45,  4.13s/it] 15%|█▌        | 12/80 [00:48<04:33,  4.03s/it] 16%|█▋        | 13/80 [00:52<04:23,  3.93s/it] 18%|█▊        | 14/80 [00:56<04:18,  3.91s/it] 19%|█▉        | 15/80 [00:59<04:09,  3.84s/it] 20%|██        | 16/80 [01:04<04:11,  3.93s/it] 21%|██▏       | 17/80 [01:08<04:13,  4.02s/it] 22%|██▎       | 18/80 [01:12<04:11,  4.06s/it] 24%|██▍       | 19/80 [01:16<04:07,  4.05s/it] 25%|██▌       | 20/80 [01:20<04:03,  4.06s/it] 26%|██▋       | 21/80 [01:24<03:52,  3.94s/it] 28%|██▊       | 22/80 [01:28<03:50,  3.98s/it] 29%|██▉       | 23/80 [01:32<03:43,  3.93s/it] 30%|███       | 24/80 [01:36<03:47,  4.06s/it] 31%|███▏      | 25/80 [01:40<03:50,  4.19s/it] 32%|███▎      | 26/80 [01:44<03:39,  4.07s/it] 34%|███▍      | 27/80 [01:48<03:33,  4.03s/it] 35%|███▌      | 28/80 [01:52<03:26,  3.97s/it] 36%|███▋      | 29/80 [01:56<03:25,  4.04s/it] 38%|███▊      | 30/80 [02:00<03:20,  4.00s/it] 39%|███▉      | 31/80 [02:04<03:20,  4.09s/it] 40%|████      | 32/80 [02:08<03:09,  3.96s/it] 41%|████▏     | 33/80 [02:13<03:19,  4.24s/it] 42%|████▎     | 34/80 [02:17<03:08,  4.09s/it] 44%|████▍     | 35/80 [02:21<03:02,  4.06s/it] 45%|████▌     | 36/80 [02:24<02:53,  3.94s/it] 46%|████▋     | 37/80 [02:28<02:48,  3.92s/it] 48%|████▊     | 38/80 [02:32<02:47,  4.00s/it] 49%|████▉     | 39/80 [02:36<02:43,  3.99s/it] 50%|█████     | 40/80 [02:40<02:38,  3.97s/it] 51%|█████▏    | 41/80 [02:45<02:39,  4.09s/it] 52%|█████▎    | 42/80 [02:49<02:36,  4.11s/it] 54%|█████▍    | 43/80 [02:53<02:33,  4.15s/it] 55%|█████▌    | 44/80 [02:57<02:27,  4.10s/it] 56%|█████▋    | 45/80 [03:01<02:21,  4.05s/it] 57%|█████▊    | 46/80 [03:05<02:18,  4.09s/it] 59%|█████▉    | 47/80 [03:09<02:10,  3.96s/it] 60%|██████    | 48/80 [03:12<02:02,  3.83s/it] 61%|██████▏   | 49/80 [03:17<02:04,  4.02s/it] 62%|██████▎   | 50/80 [03:21<02:01,  4.03s/it] 64%|██████▍   | 51/80 [03:25<01:57,  4.06s/it] 65%|██████▌   | 52/80 [03:29<01:54,  4.09s/it] 66%|██████▋   | 53/80 [03:33<01:46,  3.95s/it] 68%|██████▊   | 54/80 [03:37<01:45,  4.05s/it] 69%|██████▉   | 55/80 [03:41<01:39,  3.99s/it] 70%|███████   | 56/80 [03:45<01:34,  3.94s/it] 71%|███████▏  | 57/80 [03:49<01:29,  3.89s/it] 72%|███████▎  | 58/80 [03:53<01:28,  4.01s/it] 74%|███████▍  | 59/80 [03:57<01:24,  4.01s/it] 75%|███████▌  | 60/80 [04:01<01:20,  4.03s/it] 76%|███████▋  | 61/80 [04:05<01:17,  4.09s/it] 78%|███████▊  | 62/80 [04:09<01:11,  3.98s/it] 79%|███████▉  | 63/80 [04:13<01:07,  3.95s/it] 80%|████████  | 64/80 [04:17<01:03,  3.96s/it] 81%|████████▏ | 65/80 [04:21<01:00,  4.04s/it] 82%|████████▎ | 66/80 [04:26<00:59,  4.25s/it] 84%|████████▍ | 67/80 [04:30<00:54,  4.18s/it] 85%|████████▌ | 68/80 [04:34<00:49,  4.14s/it] 86%|████████▋ | 69/80 [04:38<00:44,  4.05s/it] 88%|████████▊ | 70/80 [04:42<00:40,  4.06s/it] 89%|████████▉ | 71/80 [04:46<00:36,  4.04s/it] 90%|█████████ | 72/80 [04:50<00:32,  4.02s/it] 91%|█████████▏| 73/80 [04:54<00:28,  4.03s/it] 92%|█████████▎| 74/80 [04:58<00:24,  4.16s/it] 94%|█████████▍| 75/80 [05:02<00:20,  4.03s/it] 95%|█████████▌| 76/80 [05:06<00:15,  3.99s/it] 96%|█████████▋| 77/80 [05:10<00:12,  4.02s/it] 98%|█████████▊| 78/80 [05:14<00:08,  4.06s/it] 99%|█████████▉| 79/80 [05:18<00:04,  4.03s/it]100%|██████████| 80/80 [05:22<00:00,  4.03s/it]100%|██████████| 80/80 [05:22<00:00,  4.03s/it]
+         Top positions: P10=0.0135, P1=0.0110, P9=0.0086
+   HLA-B*40:01 | 11-mers | pool=50 | bg=50 fg=50
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:07<06:10,  7.56s/it]  4%|▍         | 2/50 [00:14<05:51,  7.33s/it]  6%|▌         | 3/50 [00:21<05:42,  7.28s/it]  8%|▊         | 4/50 [00:28<05:15,  6.86s/it] 10%|█         | 5/50 [00:35<05:12,  6.95s/it] 12%|█▏        | 6/50 [00:43<05:17,  7.22s/it] 14%|█▍        | 7/50 [00:50<05:13,  7.29s/it] 16%|█▌        | 8/50 [00:57<04:59,  7.13s/it] 18%|█▊        | 9/50 [01:03<04:47,  7.01s/it] 20%|██        | 10/50 [01:11<04:43,  7.08s/it] 22%|██▏       | 11/50 [01:18<04:39,  7.16s/it] 24%|██▍       | 12/50 [01:25<04:28,  7.05s/it] 26%|██▌       | 13/50 [01:32<04:22,  7.08s/it] 28%|██▊       | 14/50 [01:39<04:15,  7.10s/it] 30%|███       | 15/50 [01:47<04:15,  7.30s/it] 32%|███▏      | 16/50 [01:54<04:04,  7.18s/it] 34%|███▍      | 17/50 [02:01<03:56,  7.16s/it] 36%|███▌      | 18/50 [02:08<03:48,  7.15s/it] 38%|███▊      | 19/50 [02:15<03:39,  7.07s/it] 40%|████      | 20/50 [02:23<03:36,  7.22s/it] 42%|████▏     | 21/50 [02:29<03:25,  7.10s/it] 44%|████▍     | 22/50 [02:36<03:13,  6.92s/it] 46%|████▌     | 23/50 [02:43<03:06,  6.92s/it] 48%|████▊     | 24/50 [02:50<03:05,  7.15s/it] 50%|█████     | 25/50 [02:58<02:58,  7.15s/it] 52%|█████▏    | 26/50 [03:04<02:48,  7.01s/it] 54%|█████▍    | 27/50 [03:11<02:41,  7.01s/it] 56%|█████▌    | 28/50 [03:18<02:29,  6.79s/it] 58%|█████▊    | 29/50 [03:25<02:26,  6.98s/it] 60%|██████    | 30/50 [03:32<02:20,  7.01s/it] 62%|██████▏   | 31/50 [03:39<02:11,  6.93s/it] 64%|██████▍   | 32/50 [03:45<02:03,  6.85s/it] 66%|██████▌   | 33/50 [03:52<01:56,  6.88s/it] 68%|██████▊   | 34/50 [04:00<01:51,  6.96s/it] 70%|███████   | 35/50 [04:07<01:44,  6.99s/it] 72%|███████▏  | 36/50 [04:14<01:38,  7.02s/it] 74%|███████▍  | 37/50 [04:20<01:30,  6.95s/it] 76%|███████▌  | 38/50 [04:28<01:27,  7.25s/it] 78%|███████▊  | 39/50 [04:35<01:17,  7.01s/it] 80%|████████  | 40/50 [04:42<01:10,  7.02s/it] 82%|████████▏ | 41/50 [04:48<01:01,  6.85s/it] 84%|████████▍ | 42/50 [04:55<00:55,  6.91s/it] 86%|████████▌ | 43/50 [05:03<00:50,  7.17s/it] 88%|████████▊ | 44/50 [05:10<00:42,  7.15s/it] 90%|█████████ | 45/50 [05:17<00:35,  7.15s/it] 92%|█████████▏| 46/50 [05:25<00:28,  7.14s/it] 94%|█████████▍| 47/50 [05:32<00:21,  7.24s/it] 96%|█████████▌| 48/50 [05:39<00:14,  7.14s/it] 98%|█████████▊| 49/50 [05:46<00:07,  7.17s/it]100%|██████████| 50/50 [05:53<00:00,  7.07s/it]100%|██████████| 50/50 [05:53<00:00,  7.07s/it]
+         Top positions: P10=0.0109, P1=0.0106, P3=0.0092
+   HLA-B*15:02 | 8-mers | pool=47 | bg=47 fg=47
+  0%|          | 0/47 [00:00<?, ?it/s]  2%|▏         | 1/47 [00:03<02:29,  3.24s/it]  4%|▍         | 2/47 [00:06<02:25,  3.24s/it]  6%|▋         | 3/47 [00:09<02:23,  3.26s/it]  9%|▊         | 4/47 [00:13<02:28,  3.46s/it] 11%|█         | 5/47 [00:16<02:23,  3.41s/it] 13%|█▎        | 6/47 [00:20<02:16,  3.34s/it] 15%|█▍        | 7/47 [00:23<02:09,  3.25s/it] 17%|█▋        | 8/47 [00:26<02:03,  3.16s/it] 19%|█▉        | 9/47 [00:29<02:00,  3.16s/it] 21%|██▏       | 10/47 [00:32<01:58,  3.20s/it] 23%|██▎       | 11/47 [00:35<01:53,  3.17s/it] 26%|██▌       | 12/47 [00:38<01:50,  3.17s/it] 28%|██▊       | 13/47 [00:41<01:47,  3.16s/it] 30%|██▉       | 14/47 [00:45<01:46,  3.21s/it] 32%|███▏      | 15/47 [00:49<01:47,  3.37s/it] 34%|███▍      | 16/47 [00:52<01:43,  3.33s/it] 36%|███▌      | 17/47 [00:55<01:39,  3.33s/it] 38%|███▊      | 18/47 [00:58<01:35,  3.29s/it] 40%|████      | 19/47 [01:02<01:32,  3.30s/it] 43%|████▎     | 20/47 [01:05<01:27,  3.22s/it] 45%|████▍     | 21/47 [01:08<01:22,  3.17s/it] 47%|████▋     | 22/47 [01:11<01:19,  3.17s/it] 49%|████▉     | 23/47 [01:14<01:16,  3.18s/it] 51%|█████     | 24/47 [01:17<01:12,  3.16s/it] 53%|█████▎    | 25/47 [01:21<01:13,  3.34s/it] 55%|█████▌    | 26/47 [01:24<01:10,  3.33s/it] 57%|█████▋    | 27/47 [01:28<01:06,  3.31s/it] 60%|█████▉    | 28/47 [01:31<01:02,  3.28s/it] 62%|██████▏   | 29/47 [01:34<00:58,  3.25s/it] 64%|██████▍   | 30/47 [01:37<00:54,  3.23s/it] 66%|██████▌   | 31/47 [01:40<00:50,  3.19s/it] 68%|██████▊   | 32/47 [01:43<00:47,  3.17s/it] 70%|███████   | 33/47 [01:46<00:44,  3.17s/it] 72%|███████▏  | 34/47 [01:50<00:41,  3.22s/it] 74%|███████▍  | 35/47 [01:54<00:41,  3.46s/it] 77%|███████▋  | 36/47 [01:57<00:38,  3.47s/it] 79%|███████▊  | 37/47 [02:01<00:34,  3.48s/it] 81%|████████  | 38/47 [02:04<00:30,  3.44s/it] 83%|████████▎ | 39/47 [02:07<00:26,  3.35s/it] 85%|████████▌ | 40/47 [02:11<00:23,  3.34s/it] 87%|████████▋ | 41/47 [02:14<00:19,  3.32s/it] 89%|████████▉ | 42/47 [02:17<00:16,  3.34s/it] 91%|█████████▏| 43/47 [02:21<00:13,  3.37s/it] 94%|█████████▎| 44/47 [02:24<00:10,  3.34s/it] 96%|█████████▌| 45/47 [02:28<00:07,  3.53s/it] 98%|█████████▊| 46/47 [02:31<00:03,  3.46s/it]100%|██████████| 47/47 [02:35<00:00,  3.40s/it]100%|██████████| 47/47 [02:35<00:00,  3.30s/it]
+         Top positions: P8=0.0178, P2=0.0080, P7=0.0080
+   HLA-B*15:02 | 9-mers | pool=173 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:00,  1.89s/it]  2%|▏         | 2/128 [00:03<03:57,  1.89s/it]  2%|▏         | 3/128 [00:05<03:56,  1.90s/it]  3%|▎         | 4/128 [00:07<03:55,  1.90s/it]  4%|▍         | 5/128 [00:09<03:54,  1.91s/it]  5%|▍         | 6/128 [00:11<03:53,  1.91s/it]  5%|▌         | 7/128 [00:13<03:50,  1.90s/it]  6%|▋         | 8/128 [00:15<03:48,  1.90s/it]  7%|▋         | 9/128 [00:17<03:46,  1.90s/it]  8%|▊         | 10/128 [00:19<03:45,  1.91s/it]  9%|▊         | 11/128 [00:21<04:01,  2.06s/it]  9%|▉         | 12/128 [00:23<03:55,  2.03s/it] 10%|█         | 13/128 [00:25<03:49,  1.99s/it] 11%|█         | 14/128 [00:27<03:45,  1.97s/it] 12%|█▏        | 15/128 [00:29<03:40,  1.95s/it] 12%|█▎        | 16/128 [00:31<03:36,  1.93s/it] 13%|█▎        | 17/128 [00:32<03:33,  1.92s/it] 14%|█▍        | 18/128 [00:34<03:31,  1.92s/it] 15%|█▍        | 19/128 [00:36<03:29,  1.92s/it] 16%|█▌        | 20/128 [00:38<03:26,  1.92s/it] 16%|█▋        | 21/128 [00:40<03:24,  1.92s/it] 17%|█▋        | 22/128 [00:42<03:23,  1.92s/it] 18%|█▊        | 23/128 [00:44<03:20,  1.91s/it] 19%|█▉        | 24/128 [00:46<03:16,  1.89s/it] 20%|█▉        | 25/128 [00:48<03:15,  1.90s/it] 20%|██        | 26/128 [00:50<03:13,  1.89s/it] 21%|██        | 27/128 [00:51<03:10,  1.88s/it] 22%|██▏       | 28/128 [00:54<03:22,  2.02s/it] 23%|██▎       | 29/128 [00:56<03:15,  1.98s/it] 23%|██▎       | 30/128 [00:58<03:11,  1.95s/it] 24%|██▍       | 31/128 [00:59<03:08,  1.94s/it] 25%|██▌       | 32/128 [01:01<03:04,  1.92s/it] 26%|██▌       | 33/128 [01:03<03:00,  1.90s/it] 27%|██▋       | 34/128 [01:05<02:58,  1.90s/it] 27%|██▋       | 35/128 [01:07<02:57,  1.90s/it] 28%|██▊       | 36/128 [01:09<02:53,  1.89s/it] 29%|██▉       | 37/128 [01:11<02:51,  1.89s/it] 30%|██▉       | 38/128 [01:13<02:49,  1.89s/it] 30%|███       | 39/128 [01:14<02:47,  1.88s/it] 31%|███▏      | 40/128 [01:16<02:45,  1.88s/it] 32%|███▏      | 41/128 [01:18<02:44,  1.89s/it] 33%|███▎      | 42/128 [01:20<02:41,  1.87s/it] 34%|███▎      | 43/128 [01:22<02:40,  1.89s/it] 34%|███▍      | 44/128 [01:24<02:37,  1.88s/it] 35%|███▌      | 45/128 [01:26<02:35,  1.88s/it] 36%|███▌      | 46/128 [01:28<02:46,  2.03s/it] 37%|███▋      | 47/128 [01:30<02:40,  1.98s/it] 38%|███▊      | 48/128 [01:32<02:35,  1.95s/it] 38%|███▊      | 49/128 [01:34<02:33,  1.94s/it] 39%|███▉      | 50/128 [01:36<02:29,  1.91s/it] 40%|███▉      | 51/128 [01:38<02:26,  1.91s/it] 41%|████      | 52/128 [01:39<02:24,  1.90s/it] 41%|████▏     | 53/128 [01:41<02:22,  1.90s/it] 42%|████▏     | 54/128 [01:43<02:20,  1.89s/it] 43%|████▎     | 55/128 [01:45<02:17,  1.88s/it] 44%|████▍     | 56/128 [01:47<02:15,  1.88s/it] 45%|████▍     | 57/128 [01:49<02:14,  1.90s/it] 45%|████▌     | 58/128 [01:51<02:12,  1.89s/it] 46%|████▌     | 59/128 [01:53<02:10,  1.89s/it] 47%|████▋     | 60/128 [01:55<02:08,  1.90s/it] 48%|████▊     | 61/128 [01:56<02:06,  1.89s/it] 48%|████▊     | 62/128 [01:58<02:04,  1.89s/it] 49%|████▉     | 63/128 [02:01<02:12,  2.04s/it] 50%|█████     | 64/128 [02:03<02:07,  1.98s/it] 51%|█████     | 65/128 [02:04<02:03,  1.96s/it] 52%|█████▏    | 66/128 [02:06<01:59,  1.93s/it] 52%|█████▏    | 67/128 [02:08<01:56,  1.91s/it] 53%|█████▎    | 68/128 [02:10<01:53,  1.89s/it] 54%|█████▍    | 69/128 [02:12<01:51,  1.89s/it] 55%|█████▍    | 70/128 [02:14<01:50,  1.90s/it] 55%|█████▌    | 71/128 [02:16<01:48,  1.90s/it] 56%|█████▋    | 72/128 [02:18<01:46,  1.90s/it] 57%|█████▋    | 73/128 [02:19<01:44,  1.89s/it] 58%|█████▊    | 74/128 [02:21<01:42,  1.90s/it] 59%|█████▊    | 75/128 [02:23<01:40,  1.90s/it] 59%|█████▉    | 76/128 [02:25<01:37,  1.88s/it] 60%|██████    | 77/128 [02:27<01:36,  1.88s/it] 61%|██████    | 78/128 [02:29<01:34,  1.88s/it] 62%|██████▏   | 79/128 [02:31<01:32,  1.89s/it] 62%|██████▎   | 80/128 [02:33<01:37,  2.04s/it] 63%|██████▎   | 81/128 [02:35<01:33,  1.99s/it] 64%|██████▍   | 82/128 [02:37<01:30,  1.96s/it] 65%|██████▍   | 83/128 [02:39<01:26,  1.93s/it] 66%|██████▌   | 84/128 [02:41<01:23,  1.90s/it] 66%|██████▋   | 85/128 [02:43<01:21,  1.90s/it] 67%|██████▋   | 86/128 [02:44<01:19,  1.90s/it] 68%|██████▊   | 87/128 [02:46<01:18,  1.91s/it] 69%|██████▉   | 88/128 [02:48<01:16,  1.90s/it] 70%|██████▉   | 89/128 [02:50<01:15,  1.93s/it] 70%|███████   | 90/128 [02:52<01:08,  1.81s/it] 71%|███████   | 91/128 [02:54<01:07,  1.82s/it] 72%|███████▏  | 92/128 [02:56<01:06,  1.84s/it] 73%|███████▎  | 93/128 [02:57<01:05,  1.86s/it] 73%|███████▎  | 94/128 [02:59<01:03,  1.86s/it] 74%|███████▍  | 95/128 [03:01<01:01,  1.87s/it] 75%|███████▌  | 96/128 [03:03<01:00,  1.88s/it] 76%|███████▌  | 97/128 [03:06<01:03,  2.05s/it] 77%|███████▋  | 98/128 [03:07<01:00,  2.01s/it] 77%|███████▋  | 99/128 [03:09<00:57,  1.98s/it] 78%|███████▊  | 100/128 [03:11<00:54,  1.96s/it] 79%|███████▉  | 101/128 [03:13<00:52,  1.94s/it] 80%|███████▉  | 102/128 [03:15<00:49,  1.92s/it] 80%|████████  | 103/128 [03:17<00:47,  1.89s/it] 81%|████████▏ | 104/128 [03:19<00:45,  1.89s/it] 82%|████████▏ | 105/128 [03:21<00:43,  1.88s/it] 83%|████████▎ | 106/128 [03:23<00:41,  1.89s/it] 84%|████████▎ | 107/128 [03:24<00:39,  1.89s/it] 84%|████████▍ | 108/128 [03:26<00:37,  1.89s/it] 85%|████████▌ | 109/128 [03:28<00:35,  1.89s/it] 86%|████████▌ | 110/128 [03:30<00:33,  1.89s/it] 87%|████████▋ | 111/128 [03:32<00:32,  1.90s/it] 88%|████████▊ | 112/128 [03:34<00:30,  1.90s/it] 88%|████████▊ | 113/128 [03:36<00:28,  1.90s/it] 89%|████████▉ | 114/128 [03:38<00:28,  2.06s/it] 90%|████████▉ | 115/128 [03:40<00:26,  2.01s/it] 91%|█████████ | 116/128 [03:42<00:23,  1.97s/it] 91%|█████████▏| 117/128 [03:44<00:21,  1.96s/it] 92%|█████████▏| 118/128 [03:46<00:19,  1.95s/it] 93%|█████████▎| 119/128 [03:48<00:17,  1.95s/it] 94%|█████████▍| 120/128 [03:50<00:15,  1.94s/it] 95%|█████████▍| 121/128 [03:52<00:13,  1.93s/it] 95%|█████████▌| 122/128 [03:54<00:11,  1.91s/it] 96%|█████████▌| 123/128 [03:55<00:09,  1.91s/it] 97%|█████████▋| 124/128 [03:57<00:07,  1.91s/it] 98%|█████████▊| 125/128 [03:59<00:05,  1.92s/it] 98%|█████████▊| 126/128 [04:01<00:03,  1.90s/it] 99%|█████████▉| 127/128 [04:03<00:01,  1.91s/it]100%|██████████| 128/128 [04:05<00:00,  1.89s/it]100%|██████████| 128/128 [04:05<00:00,  1.92s/it]
+         Top positions: P9=0.0155, P2=0.0136, P8=0.0123
+   HLA-B*15:02 | 10-mers | pool=51 | bg=51 fg=51
+  0%|          | 0/51 [00:00<?, ?it/s]  2%|▏         | 1/51 [00:03<03:06,  3.73s/it]  4%|▍         | 2/51 [00:07<03:17,  4.02s/it]  6%|▌         | 3/51 [00:11<03:01,  3.79s/it]  8%|▊         | 4/51 [00:14<02:52,  3.67s/it] 10%|▉         | 5/51 [00:18<02:50,  3.70s/it] 12%|█▏        | 6/51 [00:22<02:46,  3.70s/it] 14%|█▎        | 7/51 [00:26<02:42,  3.70s/it] 16%|█▌        | 8/51 [00:29<02:40,  3.73s/it] 18%|█▊        | 9/51 [00:33<02:36,  3.73s/it] 20%|█▉        | 10/51 [00:37<02:31,  3.68s/it] 22%|██▏       | 11/51 [00:41<02:33,  3.83s/it] 24%|██▎       | 12/51 [00:45<02:27,  3.79s/it] 25%|██▌       | 13/51 [00:48<02:24,  3.79s/it] 27%|██▋       | 14/51 [00:52<02:18,  3.73s/it]/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 8 iterations, i.e. alpha=2.424e-05, with an active set of 8 regressors, and the smallest cholesky pivot element being 2.107e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+/mnt/c/Users/adams/Epitote-HLA-Binding-Prediction-and-Design/.venv_wsl/lib/python3.12/site-packages/sklearn/linear_model/_least_angle.py:723: ConvergenceWarning: Regressors in active set degenerate. Dropping a regressor, after 9 iterations, i.e. alpha=1.212e-05, with an active set of 9 regressors, and the smallest cholesky pivot element being 2.107e-08. Reduce max_iter or increase eps parameters.
+  warnings.warn(
+ 29%|██▉       | 15/51 [00:55<02:12,  3.67s/it] 31%|███▏      | 16/51 [00:59<02:09,  3.70s/it] 33%|███▎      | 17/51 [01:03<02:06,  3.72s/it] 35%|███▌      | 18/51 [01:07<02:03,  3.74s/it] 37%|███▋      | 19/51 [01:11<02:04,  3.89s/it] 39%|███▉      | 20/51 [01:15<01:57,  3.80s/it] 41%|████      | 21/51 [01:19<01:58,  3.94s/it] 43%|████▎     | 22/51 [01:22<01:51,  3.83s/it] 45%|████▌     | 23/51 [01:26<01:46,  3.82s/it] 47%|████▋     | 24/51 [01:30<01:41,  3.76s/it] 49%|████▉     | 25/51 [01:34<01:36,  3.73s/it] 51%|█████     | 26/51 [01:37<01:34,  3.77s/it] 53%|█████▎    | 27/51 [01:41<01:29,  3.73s/it] 55%|█████▍    | 28/51 [01:45<01:28,  3.87s/it] 57%|█████▋    | 29/51 [01:49<01:24,  3.85s/it] 59%|█████▉    | 30/51 [01:53<01:20,  3.84s/it] 61%|██████    | 31/51 [01:56<01:15,  3.76s/it] 63%|██████▎   | 32/51 [02:00<01:10,  3.72s/it] 65%|██████▍   | 33/51 [02:04<01:07,  3.73s/it] 67%|██████▋   | 34/51 [02:07<01:02,  3.69s/it] 69%|██████▊   | 35/51 [02:11<01:00,  3.75s/it] 71%|███████   | 36/51 [02:15<00:55,  3.71s/it] 73%|███████▎  | 37/51 [02:19<00:53,  3.82s/it] 75%|███████▍  | 38/51 [02:23<00:48,  3.75s/it] 76%|███████▋  | 39/51 [02:26<00:45,  3.76s/it] 78%|███████▊  | 40/51 [02:30<00:41,  3.78s/it] 80%|████████  | 41/51 [02:34<00:37,  3.71s/it] 82%|████████▏ | 42/51 [02:38<00:33,  3.75s/it] 84%|████████▍ | 43/51 [02:41<00:30,  3.75s/it] 86%|████████▋ | 44/51 [02:45<00:26,  3.74s/it] 88%|████████▊ | 45/51 [02:49<00:23,  3.91s/it] 90%|█████████ | 46/51 [02:53<00:19,  3.87s/it] 92%|█████████▏| 47/51 [02:57<00:15,  3.79s/it] 94%|█████████▍| 48/51 [03:00<00:11,  3.73s/it] 96%|█████████▌| 49/51 [03:04<00:07,  3.71s/it] 98%|█████████▊| 50/51 [03:08<00:03,  3.73s/it]100%|██████████| 51/51 [03:11<00:00,  3.73s/it]100%|██████████| 51/51 [03:11<00:00,  3.76s/it]
+         Top positions: P10=0.0164, P2=0.0143, P1=0.0125
+   HLA-B*15:02 | 11-mers: skipping (21 samples)
+   HLA-B*57:01 | 8-mers: skipping (16 samples)
+   HLA-B*57:01 | 9-mers | pool=144 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:05,  1.93s/it]  2%|▏         | 2/128 [00:03<04:03,  1.93s/it]  2%|▏         | 3/128 [00:05<04:01,  1.93s/it]  3%|▎         | 4/128 [00:08<04:23,  2.12s/it]  4%|▍         | 5/128 [00:10<04:11,  2.04s/it]  5%|▍         | 6/128 [00:12<04:04,  2.00s/it]  5%|▌         | 7/128 [00:13<03:58,  1.97s/it]  6%|▋         | 8/128 [00:15<03:53,  1.94s/it]  7%|▋         | 9/128 [00:17<03:50,  1.94s/it]  8%|▊         | 10/128 [00:19<03:46,  1.92s/it]  9%|▊         | 11/128 [00:21<03:43,  1.91s/it]  9%|▉         | 12/128 [00:23<03:42,  1.91s/it] 10%|█         | 13/128 [00:25<03:39,  1.91s/it] 11%|█         | 14/128 [00:27<03:37,  1.91s/it] 12%|█▏        | 15/128 [00:29<03:36,  1.91s/it] 12%|█▎        | 16/128 [00:31<03:34,  1.91s/it] 13%|█▎        | 17/128 [00:33<03:32,  1.92s/it] 14%|█▍        | 18/128 [00:34<03:31,  1.92s/it] 15%|█▍        | 19/128 [00:36<03:28,  1.91s/it] 16%|█▌        | 20/128 [00:38<03:26,  1.91s/it] 16%|█▋        | 21/128 [00:41<03:39,  2.06s/it] 17%|█▋        | 22/128 [00:43<03:33,  2.01s/it] 18%|█▊        | 23/128 [00:44<03:28,  1.98s/it] 19%|█▉        | 24/128 [00:46<03:22,  1.95s/it] 20%|█▉        | 25/128 [00:48<03:18,  1.93s/it] 20%|██        | 26/128 [00:50<03:14,  1.91s/it] 21%|██        | 27/128 [00:52<03:12,  1.90s/it] 22%|██▏       | 28/128 [00:54<03:11,  1.91s/it] 23%|██▎       | 29/128 [00:56<03:11,  1.93s/it] 23%|██▎       | 30/128 [00:58<03:08,  1.92s/it] 24%|██▍       | 31/128 [01:00<03:05,  1.91s/it] 25%|██▌       | 32/128 [01:02<03:03,  1.92s/it] 26%|██▌       | 33/128 [01:04<03:02,  1.92s/it] 27%|██▋       | 34/128 [01:05<03:00,  1.92s/it] 27%|██▋       | 35/128 [01:07<02:58,  1.92s/it] 28%|██▊       | 36/128 [01:09<02:56,  1.92s/it] 29%|██▉       | 37/128 [01:11<02:53,  1.91s/it] 30%|██▉       | 38/128 [01:14<03:05,  2.06s/it] 30%|███       | 39/128 [01:15<02:58,  2.01s/it] 31%|███▏      | 40/128 [01:17<02:54,  1.98s/it] 32%|███▏      | 41/128 [01:19<02:50,  1.96s/it] 33%|███▎      | 42/128 [01:21<02:47,  1.95s/it] 34%|███▎      | 43/128 [01:23<02:44,  1.94s/it] 34%|███▍      | 44/128 [01:25<02:41,  1.93s/it] 35%|███▌      | 45/128 [01:27<02:39,  1.92s/it] 36%|███▌      | 46/128 [01:29<02:36,  1.91s/it] 37%|███▋      | 47/128 [01:31<02:34,  1.91s/it] 38%|███▊      | 48/128 [01:33<02:31,  1.90s/it] 38%|███▊      | 49/128 [01:34<02:29,  1.90s/it] 39%|███▉      | 50/128 [01:36<02:28,  1.90s/it] 40%|███▉      | 51/128 [01:38<02:25,  1.90s/it] 41%|████      | 52/128 [01:40<02:23,  1.89s/it] 41%|████▏     | 53/128 [01:42<02:21,  1.89s/it] 42%|████▏     | 54/128 [01:44<02:19,  1.89s/it] 43%|████▎     | 55/128 [01:46<02:17,  1.88s/it] 44%|████▍     | 56/128 [01:48<02:27,  2.04s/it] 45%|████▍     | 57/128 [01:50<02:21,  1.99s/it] 45%|████▌     | 58/128 [01:52<02:17,  1.97s/it] 46%|████▌     | 59/128 [01:54<02:14,  1.94s/it] 47%|████▋     | 60/128 [01:56<02:10,  1.92s/it] 48%|████▊     | 61/128 [01:58<02:08,  1.92s/it] 48%|████▊     | 62/128 [02:00<02:05,  1.91s/it] 49%|████▉     | 63/128 [02:01<02:04,  1.91s/it] 50%|█████     | 64/128 [02:03<02:02,  1.91s/it] 51%|█████     | 65/128 [02:05<01:59,  1.90s/it] 52%|█████▏    | 66/128 [02:07<01:57,  1.90s/it] 52%|█████▏    | 67/128 [02:09<01:55,  1.90s/it] 53%|█████▎    | 68/128 [02:11<01:53,  1.89s/it] 54%|█████▍    | 69/128 [02:13<01:52,  1.90s/it] 55%|█████▍    | 70/128 [02:15<01:49,  1.90s/it] 55%|█████▌    | 71/128 [02:17<01:47,  1.89s/it] 56%|█████▋    | 72/128 [02:19<01:56,  2.08s/it] 57%|█████▋    | 73/128 [02:21<01:51,  2.03s/it] 58%|█████▊    | 74/128 [02:23<01:47,  1.99s/it] 59%|█████▊    | 75/128 [02:25<01:44,  1.97s/it] 59%|█████▉    | 76/128 [02:27<01:41,  1.95s/it] 60%|██████    | 77/128 [02:29<01:38,  1.93s/it] 61%|██████    | 78/128 [02:31<01:36,  1.93s/it] 62%|██████▏   | 79/128 [02:33<01:34,  1.93s/it] 62%|██████▎   | 80/128 [02:34<01:32,  1.93s/it] 63%|██████▎   | 81/128 [02:36<01:30,  1.92s/it] 64%|██████▍   | 82/128 [02:38<01:28,  1.92s/it] 65%|██████▍   | 83/128 [02:40<01:26,  1.92s/it] 66%|██████▌   | 84/128 [02:42<01:24,  1.92s/it] 66%|██████▋   | 85/128 [02:44<01:22,  1.91s/it] 67%|██████▋   | 86/128 [02:46<01:20,  1.91s/it] 68%|██████▊   | 87/128 [02:48<01:18,  1.91s/it] 69%|██████▉   | 88/128 [02:50<01:16,  1.92s/it] 70%|██████▉   | 89/128 [02:52<01:20,  2.08s/it] 70%|███████   | 90/128 [02:54<01:17,  2.03s/it] 71%|███████   | 91/128 [02:56<01:14,  2.01s/it] 72%|███████▏  | 92/128 [02:58<01:11,  1.99s/it] 73%|███████▎  | 93/128 [03:00<01:08,  1.95s/it] 73%|███████▎  | 94/128 [03:02<01:05,  1.93s/it] 74%|███████▍  | 95/128 [03:04<01:03,  1.93s/it] 75%|███████▌  | 96/128 [03:06<01:01,  1.91s/it] 76%|███████▌  | 97/128 [03:08<00:59,  1.92s/it] 77%|███████▋  | 98/128 [03:09<00:57,  1.91s/it] 77%|███████▋  | 99/128 [03:11<00:55,  1.92s/it] 78%|███████▊  | 100/128 [03:13<00:53,  1.92s/it] 79%|███████▉  | 101/128 [03:15<00:51,  1.91s/it] 80%|███████▉  | 102/128 [03:17<00:49,  1.91s/it] 80%|████████  | 103/128 [03:19<00:47,  1.91s/it] 81%|████████▏ | 104/128 [03:21<00:45,  1.91s/it] 82%|████████▏ | 105/128 [03:23<00:43,  1.91s/it] 83%|████████▎ | 106/128 [03:25<00:46,  2.09s/it] 84%|████████▎ | 107/128 [03:27<00:43,  2.05s/it] 84%|████████▍ | 108/128 [03:29<00:40,  2.01s/it] 85%|████████▌ | 109/128 [03:31<00:37,  1.99s/it] 86%|████████▌ | 110/128 [03:33<00:35,  1.96s/it] 87%|████████▋ | 111/128 [03:35<00:33,  1.94s/it] 88%|████████▊ | 112/128 [03:37<00:30,  1.93s/it] 88%|████████▊ | 113/128 [03:39<00:28,  1.92s/it] 89%|████████▉ | 114/128 [03:41<00:27,  1.93s/it] 90%|████████▉ | 115/128 [03:43<00:24,  1.92s/it] 91%|█████████ | 116/128 [03:44<00:23,  1.92s/it] 91%|█████████▏| 117/128 [03:46<00:21,  1.91s/it] 92%|█████████▏| 118/128 [03:48<00:19,  1.92s/it] 93%|█████████▎| 119/128 [03:50<00:17,  1.92s/it] 94%|█████████▍| 120/128 [03:52<00:15,  1.93s/it] 95%|█████████▍| 121/128 [03:54<00:13,  1.92s/it] 95%|█████████▌| 122/128 [03:56<00:11,  1.92s/it] 96%|█████████▌| 123/128 [03:58<00:10,  2.09s/it] 97%|█████████▋| 124/128 [04:00<00:08,  2.05s/it] 98%|█████████▊| 125/128 [04:02<00:06,  2.00s/it] 98%|█████████▊| 126/128 [04:04<00:03,  1.97s/it] 99%|█████████▉| 127/128 [04:06<00:01,  1.94s/it]100%|██████████| 128/128 [04:08<00:00,  1.93s/it]100%|██████████| 128/128 [04:08<00:00,  1.94s/it]
+         Top positions: P9=0.0309, P2=0.0277, P1=0.0131
+   HLA-B*57:01 | 10-mers | pool=78 | bg=64 fg=78
+  0%|          | 0/78 [00:00<?, ?it/s]  1%|▏         | 1/78 [00:03<05:04,  3.95s/it]  3%|▎         | 2/78 [00:08<05:16,  4.16s/it]  4%|▍         | 3/78 [00:12<05:10,  4.14s/it]  5%|▌         | 4/78 [00:16<05:12,  4.22s/it]  6%|▋         | 5/78 [00:21<05:27,  4.49s/it]  8%|▊         | 6/78 [00:25<05:15,  4.38s/it]  9%|▉         | 7/78 [00:30<05:08,  4.35s/it] 10%|█         | 8/78 [00:34<05:03,  4.34s/it] 12%|█▏        | 9/78 [00:38<04:53,  4.25s/it] 13%|█▎        | 10/78 [00:42<04:47,  4.23s/it] 14%|█▍        | 11/78 [00:47<04:45,  4.27s/it] 15%|█▌        | 12/78 [00:51<04:39,  4.24s/it] 17%|█▋        | 13/78 [00:56<04:47,  4.42s/it] 18%|█▊        | 14/78 [01:00<04:35,  4.30s/it] 19%|█▉        | 15/78 [01:04<04:30,  4.29s/it] 21%|██        | 16/78 [01:08<04:24,  4.27s/it] 22%|██▏       | 17/78 [01:12<04:21,  4.29s/it] 23%|██▎       | 18/78 [01:16<04:12,  4.21s/it] 24%|██▍       | 19/78 [01:21<04:08,  4.20s/it] 26%|██▌       | 20/78 [01:25<04:07,  4.26s/it] 27%|██▋       | 21/78 [01:30<04:12,  4.42s/it] 28%|██▊       | 22/78 [01:34<04:06,  4.39s/it] 29%|██▉       | 23/78 [01:38<03:55,  4.28s/it] 31%|███       | 24/78 [01:42<03:49,  4.25s/it] 32%|███▏      | 25/78 [01:47<03:45,  4.25s/it] 33%|███▎      | 26/78 [01:51<03:43,  4.29s/it] 35%|███▍      | 27/78 [01:55<03:40,  4.33s/it] 36%|███▌      | 28/78 [02:00<03:44,  4.49s/it] 37%|███▋      | 29/78 [02:05<03:37,  4.43s/it] 38%|███▊      | 30/78 [02:09<03:28,  4.35s/it] 40%|███▉      | 31/78 [02:13<03:23,  4.34s/it] 41%|████      | 32/78 [02:17<03:18,  4.32s/it] 42%|████▏     | 33/78 [02:22<03:13,  4.30s/it] 44%|████▎     | 34/78 [02:26<03:08,  4.29s/it] 45%|████▍     | 35/78 [02:30<03:06,  4.34s/it] 46%|████▌     | 36/78 [02:35<03:04,  4.40s/it] 47%|████▋     | 37/78 [02:39<02:59,  4.38s/it] 49%|████▊     | 38/78 [02:43<02:52,  4.32s/it] 50%|█████     | 39/78 [02:47<02:43,  4.20s/it] 51%|█████▏    | 40/78 [02:51<02:36,  4.12s/it] 53%|█████▎    | 41/78 [02:55<02:31,  4.09s/it] 54%|█████▍    | 42/78 [02:59<02:29,  4.15s/it] 55%|█████▌    | 43/78 [03:04<02:26,  4.19s/it] 56%|█████▋    | 44/78 [03:09<02:28,  4.38s/it] 58%|█████▊    | 45/78 [03:13<02:23,  4.36s/it] 59%|█████▉    | 46/78 [03:17<02:17,  4.29s/it] 60%|██████    | 47/78 [03:21<02:10,  4.21s/it] 62%|██████▏   | 48/78 [03:25<02:04,  4.15s/it] 63%|██████▎   | 49/78 [03:29<02:01,  4.19s/it] 64%|██████▍   | 50/78 [03:34<01:57,  4.21s/it] 65%|██████▌   | 51/78 [03:39<01:59,  4.42s/it] 67%|██████▋   | 52/78 [03:43<01:55,  4.42s/it] 68%|██████▊   | 53/78 [03:47<01:48,  4.35s/it] 69%|██████▉   | 54/78 [03:51<01:41,  4.23s/it] 71%|███████   | 55/78 [03:55<01:36,  4.19s/it] 72%|███████▏  | 56/78 [04:00<01:33,  4.23s/it] 73%|███████▎  | 57/78 [04:04<01:28,  4.20s/it] 74%|███████▍  | 58/78 [04:08<01:22,  4.12s/it] 76%|███████▌  | 59/78 [04:12<01:21,  4.29s/it] 77%|███████▋  | 60/78 [04:16<01:15,  4.21s/it] 78%|███████▊  | 61/78 [04:20<01:11,  4.19s/it] 79%|███████▉  | 62/78 [04:25<01:08,  4.25s/it] 81%|████████  | 63/78 [04:29<01:03,  4.22s/it] 82%|████████▏ | 64/78 [04:33<00:58,  4.20s/it] 83%|████████▎ | 65/78 [04:37<00:53,  4.14s/it] 85%|████████▍ | 66/78 [04:41<00:50,  4.17s/it] 86%|████████▌ | 67/78 [04:46<00:47,  4.34s/it] 87%|████████▋ | 68/78 [04:50<00:43,  4.31s/it] 88%|████████▊ | 69/78 [04:55<00:38,  4.30s/it] 90%|████████▉ | 70/78 [04:59<00:34,  4.30s/it] 91%|█████████ | 71/78 [05:03<00:29,  4.25s/it] 92%|█████████▏| 72/78 [05:07<00:25,  4.22s/it] 94%|█████████▎| 73/78 [05:11<00:21,  4.22s/it] 95%|█████████▍| 74/78 [05:16<00:17,  4.27s/it] 96%|█████████▌| 75/78 [05:20<00:13,  4.39s/it] 97%|█████████▋| 76/78 [05:25<00:08,  4.37s/it] 99%|█████████▊| 77/78 [05:29<00:04,  4.36s/it]100%|██████████| 78/78 [05:34<00:00,  4.36s/it]100%|██████████| 78/78 [05:34<00:00,  4.28s/it]
+         Top positions: P10=0.0399, P2=0.0197, P1=0.0120
+   HLA-B*57:01 | 11-mers | pool=53 | bg=53 fg=53
+  0%|          | 0/53 [00:00<?, ?it/s]  2%|▏         | 1/53 [00:07<06:40,  7.70s/it]  4%|▍         | 2/53 [00:16<06:52,  8.08s/it]  6%|▌         | 3/53 [00:23<06:26,  7.73s/it]  8%|▊         | 4/53 [00:30<06:10,  7.57s/it]  9%|▉         | 5/53 [00:38<06:01,  7.53s/it] 11%|█▏        | 6/53 [00:45<05:57,  7.61s/it] 13%|█▎        | 7/53 [00:53<05:52,  7.66s/it] 15%|█▌        | 8/53 [01:01<05:43,  7.64s/it] 17%|█▋        | 9/53 [01:08<05:31,  7.54s/it] 19%|█▉        | 10/53 [01:15<05:09,  7.20s/it] 21%|██        | 11/53 [01:23<05:14,  7.50s/it] 23%|██▎       | 12/53 [01:30<05:09,  7.55s/it] 25%|██▍       | 13/53 [01:38<05:02,  7.55s/it] 26%|██▋       | 14/53 [01:45<04:53,  7.52s/it] 28%|██▊       | 15/53 [01:53<04:51,  7.67s/it] 30%|███       | 16/53 [02:02<04:53,  7.92s/it] 32%|███▏      | 17/53 [02:09<04:40,  7.79s/it] 34%|███▍      | 18/53 [02:17<04:25,  7.59s/it] 36%|███▌      | 19/53 [02:24<04:15,  7.50s/it] 38%|███▊      | 20/53 [02:32<04:13,  7.69s/it] 40%|███▉      | 21/53 [02:40<04:07,  7.72s/it] 42%|████▏     | 22/53 [02:47<03:52,  7.51s/it] 43%|████▎     | 23/53 [02:54<03:43,  7.45s/it] 45%|████▌     | 24/53 [03:02<03:36,  7.47s/it] 47%|████▋     | 25/53 [03:09<03:29,  7.49s/it] 49%|████▉     | 26/53 [03:17<03:21,  7.46s/it] 51%|█████     | 27/53 [03:24<03:18,  7.62s/it] 53%|█████▎    | 28/53 [03:33<03:14,  7.77s/it] 55%|█████▍    | 29/53 [03:41<03:08,  7.86s/it] 57%|█████▋    | 30/53 [03:48<02:58,  7.76s/it] 58%|█████▊    | 31/53 [03:56<02:48,  7.66s/it] 60%|██████    | 32/53 [04:04<02:42,  7.75s/it] 62%|██████▏   | 33/53 [04:11<02:35,  7.77s/it] 64%|██████▍   | 34/53 [04:19<02:25,  7.65s/it] 66%|██████▌   | 35/53 [04:26<02:13,  7.40s/it] 68%|██████▊   | 36/53 [04:33<02:08,  7.53s/it] 70%|██████▉   | 37/53 [04:41<02:00,  7.54s/it] 72%|███████▏  | 38/53 [04:48<01:50,  7.37s/it] 74%|███████▎  | 39/53 [04:55<01:43,  7.37s/it] 75%|███████▌  | 40/53 [05:03<01:35,  7.32s/it] 77%|███████▋  | 41/53 [05:10<01:27,  7.29s/it] 79%|███████▉  | 42/53 [05:18<01:22,  7.48s/it] 81%|████████  | 43/53 [05:25<01:15,  7.57s/it] 83%|████████▎ | 44/53 [05:33<01:07,  7.47s/it] 85%|████████▍ | 45/53 [05:40<01:00,  7.53s/it] 87%|████████▋ | 46/53 [05:48<00:53,  7.62s/it] 89%|████████▊ | 47/53 [05:55<00:44,  7.49s/it] 91%|█████████ | 48/53 [06:03<00:37,  7.49s/it] 92%|█████████▏| 49/53 [06:10<00:29,  7.40s/it] 94%|█████████▍| 50/53 [06:17<00:22,  7.41s/it] 96%|█████████▌| 51/53 [06:26<00:15,  7.62s/it] 98%|█████████▊| 52/53 [06:33<00:07,  7.63s/it]100%|██████████| 53/53 [06:41<00:00,  7.67s/it]100%|██████████| 53/53 [06:41<00:00,  7.58s/it]
+         Top positions: P11=0.0405, P2=0.0222, P1=0.0115
+   HLA-B*15:01 | 8-mers: skipping (14 samples)
+   HLA-B*15:01 | 9-mers | pool=197 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:04,  1.92s/it]  2%|▏         | 2/128 [00:03<04:00,  1.91s/it]  2%|▏         | 3/128 [00:05<03:59,  1.92s/it]  3%|▎         | 4/128 [00:07<03:56,  1.91s/it]  4%|▍         | 5/128 [00:10<04:17,  2.10s/it]  5%|▍         | 6/128 [00:12<04:09,  2.05s/it]  5%|▌         | 7/128 [00:13<04:03,  2.01s/it]  6%|▋         | 8/128 [00:15<03:56,  1.97s/it]  7%|▋         | 9/128 [00:17<03:53,  1.96s/it]  8%|▊         | 10/128 [00:19<03:48,  1.94s/it]  9%|▊         | 11/128 [00:21<03:45,  1.93s/it]  9%|▉         | 12/128 [00:23<03:42,  1.92s/it] 10%|█         | 13/128 [00:25<03:39,  1.91s/it] 11%|█         | 14/128 [00:27<03:36,  1.90s/it] 12%|█▏        | 15/128 [00:29<03:34,  1.90s/it] 12%|█▎        | 16/128 [00:31<03:32,  1.90s/it] 13%|█▎        | 17/128 [00:32<03:31,  1.91s/it] 14%|█▍        | 18/128 [00:34<03:30,  1.91s/it] 15%|█▍        | 19/128 [00:36<03:29,  1.92s/it] 16%|█▌        | 20/128 [00:38<03:25,  1.91s/it] 16%|█▋        | 21/128 [00:40<03:23,  1.90s/it] 17%|█▋        | 22/128 [00:43<03:39,  2.07s/it] 18%|█▊        | 23/128 [00:44<03:31,  2.02s/it] 19%|█▉        | 24/128 [00:46<03:26,  1.98s/it] 20%|█▉        | 25/128 [00:48<03:21,  1.96s/it] 20%|██        | 26/128 [00:50<03:18,  1.94s/it] 21%|██        | 27/128 [00:52<03:14,  1.93s/it] 22%|██▏       | 28/128 [00:54<03:12,  1.92s/it] 23%|██▎       | 29/128 [00:56<03:10,  1.93s/it] 23%|██▎       | 30/128 [00:58<03:08,  1.92s/it] 24%|██▍       | 31/128 [01:00<03:05,  1.91s/it] 25%|██▌       | 32/128 [01:02<03:03,  1.91s/it] 26%|██▌       | 33/128 [01:03<03:00,  1.90s/it] 27%|██▋       | 34/128 [01:05<02:59,  1.91s/it] 27%|██▋       | 35/128 [01:07<02:57,  1.91s/it] 28%|██▊       | 36/128 [01:09<02:55,  1.91s/it] 29%|██▉       | 37/128 [01:11<02:52,  1.89s/it] 30%|██▉       | 38/128 [01:13<02:50,  1.89s/it] 30%|███       | 39/128 [01:15<03:02,  2.05s/it] 31%|███▏      | 40/128 [01:17<02:57,  2.01s/it] 32%|███▏      | 41/128 [01:19<02:52,  1.99s/it] 33%|███▎      | 42/128 [01:21<02:49,  1.97s/it] 34%|███▎      | 43/128 [01:23<02:45,  1.95s/it] 34%|███▍      | 44/128 [01:25<02:42,  1.94s/it] 35%|███▌      | 45/128 [01:27<02:40,  1.93s/it] 36%|███▌      | 46/128 [01:29<02:37,  1.92s/it] 37%|███▋      | 47/128 [01:31<02:35,  1.92s/it] 38%|███▊      | 48/128 [01:33<02:33,  1.92s/it] 38%|███▊      | 49/128 [01:35<02:31,  1.92s/it] 39%|███▉      | 50/128 [01:36<02:29,  1.92s/it] 40%|███▉      | 51/128 [01:38<02:28,  1.92s/it] 41%|████      | 52/128 [01:40<02:25,  1.91s/it] 41%|████▏     | 53/128 [01:42<02:23,  1.91s/it] 42%|████▏     | 54/128 [01:44<02:21,  1.91s/it] 43%|████▎     | 55/128 [01:46<02:19,  1.91s/it] 44%|████▍     | 56/128 [01:48<02:29,  2.08s/it] 45%|████▍     | 57/128 [01:50<02:24,  2.03s/it] 45%|████▌     | 58/128 [01:52<02:19,  2.00s/it] 46%|████▌     | 59/128 [01:54<02:15,  1.97s/it] 47%|████▋     | 60/128 [01:56<02:13,  1.96s/it] 48%|████▊     | 61/128 [01:58<02:10,  1.95s/it] 48%|████▊     | 62/128 [02:00<02:07,  1.93s/it] 49%|████▉     | 63/128 [02:02<02:05,  1.92s/it] 50%|█████     | 64/128 [02:04<02:02,  1.92s/it] 51%|█████     | 65/128 [02:06<02:00,  1.92s/it] 52%|█████▏    | 66/128 [02:08<01:58,  1.92s/it] 52%|█████▏    | 67/128 [02:10<01:56,  1.91s/it] 53%|█████▎    | 68/128 [02:11<01:54,  1.91s/it] 54%|█████▍    | 69/128 [02:13<01:52,  1.90s/it] 55%|█████▍    | 70/128 [02:15<01:50,  1.90s/it] 55%|█████▌    | 71/128 [02:17<01:48,  1.90s/it] 56%|█████▋    | 72/128 [02:19<01:47,  1.91s/it] 57%|█████▋    | 73/128 [02:21<01:44,  1.91s/it] 58%|█████▊    | 74/128 [02:23<01:43,  1.91s/it] 59%|█████▊    | 75/128 [02:25<01:41,  1.92s/it] 59%|█████▉    | 76/128 [02:27<01:40,  1.92s/it] 60%|██████    | 77/128 [02:29<01:37,  1.91s/it] 61%|██████    | 78/128 [02:30<01:34,  1.90s/it] 62%|██████▏   | 79/128 [02:32<01:32,  1.89s/it] 62%|██████▎   | 80/128 [02:35<01:42,  2.13s/it] 63%|██████▎   | 81/128 [02:37<01:37,  2.07s/it] 64%|██████▍   | 82/128 [02:39<01:32,  2.02s/it] 65%|██████▍   | 83/128 [02:41<01:29,  1.99s/it] 66%|██████▌   | 84/128 [02:43<01:26,  1.97s/it] 66%|██████▋   | 85/128 [02:45<01:24,  1.96s/it] 67%|██████▋   | 86/128 [02:47<01:21,  1.94s/it] 68%|██████▊   | 87/128 [02:48<01:18,  1.92s/it] 69%|██████▉   | 88/128 [02:50<01:16,  1.90s/it] 70%|██████▉   | 89/128 [02:52<01:14,  1.90s/it] 70%|███████   | 90/128 [02:54<01:12,  1.91s/it] 71%|███████   | 91/128 [02:56<01:10,  1.91s/it] 72%|███████▏  | 92/128 [02:58<01:08,  1.91s/it] 73%|███████▎  | 93/128 [03:00<01:06,  1.91s/it] 73%|███████▎  | 94/128 [03:02<01:05,  1.91s/it] 74%|███████▍  | 95/128 [03:04<01:03,  1.91s/it] 75%|███████▌  | 96/128 [03:06<01:00,  1.90s/it] 76%|███████▌  | 97/128 [03:08<01:04,  2.08s/it] 77%|███████▋  | 98/128 [03:10<01:00,  2.02s/it] 77%|███████▋  | 99/128 [03:12<00:57,  1.98s/it] 78%|███████▊  | 100/128 [03:14<00:55,  1.97s/it] 79%|███████▉  | 101/128 [03:16<00:52,  1.95s/it] 80%|███████▉  | 102/128 [03:18<00:50,  1.93s/it] 80%|████████  | 103/128 [03:19<00:47,  1.92s/it] 81%|████████▏ | 104/128 [03:21<00:45,  1.91s/it] 82%|████████▏ | 105/128 [03:23<00:43,  1.91s/it] 83%|████████▎ | 106/128 [03:25<00:41,  1.90s/it] 84%|████████▎ | 107/128 [03:27<00:40,  1.91s/it] 84%|████████▍ | 108/128 [03:29<00:38,  1.91s/it] 85%|████████▌ | 109/128 [03:31<00:36,  1.92s/it] 86%|████████▌ | 110/128 [03:33<00:34,  1.92s/it] 87%|████████▋ | 111/128 [03:35<00:32,  1.91s/it] 88%|████████▊ | 112/128 [03:37<00:30,  1.92s/it] 88%|████████▊ | 113/128 [03:39<00:28,  1.92s/it] 89%|████████▉ | 114/128 [03:41<00:29,  2.08s/it] 90%|████████▉ | 115/128 [03:43<00:26,  2.03s/it] 91%|█████████ | 116/128 [03:45<00:23,  1.99s/it] 91%|█████████▏| 117/128 [03:47<00:21,  1.97s/it] 92%|█████████▏| 118/128 [03:49<00:19,  1.94s/it] 93%|█████████▎| 119/128 [03:51<00:17,  1.94s/it] 94%|█████████▍| 120/128 [03:52<00:15,  1.92s/it] 95%|█████████▍| 121/128 [03:54<00:13,  1.92s/it] 95%|█████████▌| 122/128 [03:56<00:11,  1.92s/it] 96%|█████████▌| 123/128 [03:58<00:09,  1.93s/it] 97%|█████████▋| 124/128 [04:00<00:07,  1.92s/it] 98%|█████████▊| 125/128 [04:02<00:05,  1.93s/it] 98%|█████████▊| 126/128 [04:04<00:03,  1.92s/it] 99%|█████████▉| 127/128 [04:06<00:01,  1.91s/it]100%|██████████| 128/128 [04:08<00:00,  1.91s/it]100%|██████████| 128/128 [04:08<00:00,  1.94s/it]
+         Top positions: P9=0.0229, P2=0.0221, P1=0.0106
+   HLA-B*15:01 | 10-mers | pool=43 | bg=43 fg=43
+  0%|          | 0/43 [00:00<?, ?it/s]  2%|▏         | 1/43 [00:03<02:20,  3.35s/it]  5%|▍         | 2/43 [00:07<02:31,  3.69s/it]  7%|▋         | 3/43 [00:10<02:20,  3.51s/it]  9%|▉         | 4/43 [00:13<02:15,  3.46s/it] 12%|█▏        | 5/43 [00:17<02:08,  3.39s/it] 14%|█▍        | 6/43 [00:20<02:05,  3.38s/it] 16%|█▋        | 7/43 [00:23<02:01,  3.37s/it] 19%|█▊        | 8/43 [00:27<01:59,  3.41s/it] 21%|██        | 9/43 [00:30<01:55,  3.41s/it] 23%|██▎       | 10/43 [00:34<01:51,  3.37s/it] 26%|██▌       | 11/43 [00:37<01:46,  3.33s/it] 28%|██▊       | 12/43 [00:41<01:47,  3.48s/it] 30%|███       | 13/43 [00:44<01:42,  3.40s/it] 33%|███▎      | 14/43 [00:47<01:36,  3.33s/it] 35%|███▍      | 15/43 [00:50<01:33,  3.33s/it] 37%|███▋      | 16/43 [00:54<01:29,  3.30s/it] 40%|███▉      | 17/43 [00:57<01:25,  3.29s/it] 42%|████▏     | 18/43 [01:00<01:22,  3.31s/it] 44%|████▍     | 19/43 [01:04<01:19,  3.31s/it] 47%|████▋     | 20/43 [01:07<01:18,  3.41s/it] 49%|████▉     | 21/43 [01:11<01:17,  3.54s/it] 51%|█████     | 22/43 [01:14<01:12,  3.47s/it] 53%|█████▎    | 23/43 [01:18<01:08,  3.40s/it] 56%|█████▌    | 24/43 [01:21<01:04,  3.38s/it] 58%|█████▊    | 25/43 [01:24<01:00,  3.39s/it] 60%|██████    | 26/43 [01:28<00:56,  3.33s/it] 63%|██████▎   | 27/43 [01:31<00:53,  3.32s/it] 65%|██████▌   | 28/43 [01:34<00:49,  3.30s/it] 67%|██████▋   | 29/43 [01:37<00:46,  3.30s/it] 70%|██████▉   | 30/43 [01:41<00:42,  3.31s/it] 72%|███████▏  | 31/43 [01:45<00:41,  3.47s/it] 74%|███████▍  | 32/43 [01:48<00:37,  3.43s/it] 77%|███████▋  | 33/43 [01:51<00:33,  3.39s/it] 79%|███████▉  | 34/43 [01:55<00:30,  3.37s/it] 81%|████████▏ | 35/43 [01:58<00:26,  3.35s/it] 84%|████████▎ | 36/43 [02:01<00:23,  3.35s/it] 86%|████████▌ | 37/43 [02:05<00:20,  3.34s/it] 88%|████████▊ | 38/43 [02:08<00:16,  3.31s/it] 91%|█████████ | 39/43 [02:11<00:13,  3.35s/it] 93%|█████████▎| 40/43 [02:15<00:10,  3.37s/it] 95%|█████████▌| 41/43 [02:19<00:07,  3.54s/it] 98%|█████████▊| 42/43 [02:22<00:03,  3.49s/it]100%|██████████| 43/43 [02:25<00:00,  3.45s/it]100%|██████████| 43/43 [02:25<00:00,  3.39s/it]
+         Top positions: P2=0.0184, P10=0.0134, P3=0.0116
+   HLA-B*15:01 | 11-mers: skipping (14 samples)
+   HLA-A*24:02 | 8-mers: skipping (15 samples)
+   HLA-A*24:02 | 9-mers | pool=177 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:03,  1.92s/it]  2%|▏         | 2/128 [00:03<04:02,  1.92s/it]  2%|▏         | 3/128 [00:05<03:58,  1.90s/it]  3%|▎         | 4/128 [00:07<03:55,  1.90s/it]  4%|▍         | 5/128 [00:09<03:53,  1.89s/it]  5%|▍         | 6/128 [00:11<03:51,  1.90s/it]  5%|▌         | 7/128 [00:13<03:47,  1.88s/it]  6%|▋         | 8/128 [00:15<03:46,  1.89s/it]  7%|▋         | 9/128 [00:17<03:45,  1.89s/it]  8%|▊         | 10/128 [00:18<03:44,  1.90s/it]  9%|▊         | 11/128 [00:20<03:43,  1.91s/it]  9%|▉         | 12/128 [00:23<04:03,  2.10s/it] 10%|█         | 13/128 [00:25<03:55,  2.05s/it] 11%|█         | 14/128 [00:27<03:50,  2.02s/it] 12%|█▏        | 15/128 [00:29<03:44,  1.98s/it] 12%|█▎        | 16/128 [00:31<03:40,  1.97s/it] 13%|█▎        | 17/128 [00:33<03:36,  1.95s/it] 14%|█▍        | 18/128 [00:34<03:32,  1.93s/it] 15%|█▍        | 19/128 [00:36<03:29,  1.92s/it] 16%|█▌        | 20/128 [00:38<03:24,  1.89s/it] 16%|█▋        | 21/128 [00:40<03:21,  1.88s/it] 17%|█▋        | 22/128 [00:42<03:20,  1.89s/it] 18%|█▊        | 23/128 [00:44<03:17,  1.88s/it] 19%|█▉        | 24/128 [00:46<03:17,  1.90s/it] 20%|█▉        | 25/128 [00:48<03:15,  1.90s/it] 20%|██        | 26/128 [00:50<03:14,  1.90s/it] 21%|██        | 27/128 [00:51<03:11,  1.90s/it] 22%|██▏       | 28/128 [00:53<03:09,  1.90s/it] 23%|██▎       | 29/128 [00:56<03:25,  2.08s/it] 23%|██▎       | 30/128 [00:58<03:19,  2.03s/it] 24%|██▍       | 31/128 [01:00<03:13,  2.00s/it] 25%|██▌       | 32/128 [01:02<03:09,  1.98s/it] 26%|██▌       | 33/128 [01:04<03:06,  1.96s/it] 27%|██▋       | 34/128 [01:05<03:02,  1.94s/it] 27%|██▋       | 35/128 [01:07<02:58,  1.92s/it] 28%|██▊       | 36/128 [01:09<02:56,  1.92s/it] 29%|██▉       | 37/128 [01:11<02:54,  1.92s/it] 30%|██▉       | 38/128 [01:13<02:52,  1.92s/it] 30%|███       | 39/128 [01:15<02:50,  1.92s/it] 31%|███▏      | 40/128 [01:17<02:49,  1.92s/it] 32%|███▏      | 41/128 [01:19<02:47,  1.92s/it] 33%|███▎      | 42/128 [01:21<02:45,  1.92s/it] 34%|███▎      | 43/128 [01:23<02:42,  1.91s/it] 34%|███▍      | 44/128 [01:25<02:39,  1.90s/it] 35%|███▌      | 45/128 [01:26<02:39,  1.92s/it] 36%|███▌      | 46/128 [01:29<02:53,  2.12s/it] 37%|███▋      | 47/128 [01:31<02:47,  2.07s/it] 38%|███▊      | 48/128 [01:33<02:41,  2.02s/it] 38%|███▊      | 49/128 [01:35<02:37,  1.99s/it] 39%|███▉      | 50/128 [01:37<02:33,  1.97s/it] 40%|███▉      | 51/128 [01:39<02:29,  1.94s/it] 41%|████      | 52/128 [01:40<02:25,  1.92s/it] 41%|████▏     | 53/128 [01:42<02:23,  1.91s/it] 42%|████▏     | 54/128 [01:44<02:21,  1.91s/it] 43%|████▎     | 55/128 [01:46<02:19,  1.91s/it] 44%|████▍     | 56/128 [01:48<02:17,  1.90s/it] 45%|████▍     | 57/128 [01:50<02:14,  1.90s/it] 45%|████▌     | 58/128 [01:52<02:13,  1.91s/it] 46%|████▌     | 59/128 [01:54<02:11,  1.91s/it] 47%|████▋     | 60/128 [01:56<02:08,  1.89s/it] 48%|████▊     | 61/128 [01:58<02:06,  1.89s/it] 48%|████▊     | 62/128 [01:59<02:05,  1.90s/it] 49%|████▉     | 63/128 [02:02<02:15,  2.08s/it] 50%|█████     | 64/128 [02:04<02:09,  2.02s/it] 51%|█████     | 65/128 [02:06<02:04,  1.98s/it] 52%|█████▏    | 66/128 [02:08<02:01,  1.96s/it] 52%|█████▏    | 67/128 [02:10<01:58,  1.94s/it] 53%|█████▎    | 68/128 [02:11<01:55,  1.93s/it] 54%|█████▍    | 69/128 [02:13<01:52,  1.91s/it] 55%|█████▍    | 70/128 [02:15<01:50,  1.90s/it] 55%|█████▌    | 71/128 [02:17<01:48,  1.90s/it] 56%|█████▋    | 72/128 [02:19<01:46,  1.90s/it] 57%|█████▋    | 73/128 [02:21<01:44,  1.90s/it] 58%|█████▊    | 74/128 [02:23<01:42,  1.89s/it] 59%|█████▊    | 75/128 [02:25<01:40,  1.89s/it] 59%|█████▉    | 76/128 [02:27<01:38,  1.89s/it] 60%|██████    | 77/128 [02:28<01:36,  1.90s/it] 61%|██████    | 78/128 [02:30<01:35,  1.91s/it] 62%|██████▏   | 79/128 [02:32<01:33,  1.92s/it] 62%|██████▎   | 80/128 [02:35<01:39,  2.08s/it] 63%|██████▎   | 81/128 [02:37<01:35,  2.03s/it] 64%|██████▍   | 82/128 [02:39<01:32,  2.00s/it] 65%|██████▍   | 83/128 [02:41<01:28,  1.97s/it] 66%|██████▌   | 84/128 [02:42<01:25,  1.94s/it] 66%|██████▋   | 85/128 [02:44<01:22,  1.92s/it] 67%|██████▋   | 86/128 [02:46<01:20,  1.92s/it] 68%|██████▊   | 87/128 [02:48<01:18,  1.91s/it] 69%|██████▉   | 88/128 [02:50<01:16,  1.92s/it] 70%|██████▉   | 89/128 [02:52<01:15,  1.92s/it] 70%|███████   | 90/128 [02:54<01:13,  1.92s/it] 71%|███████   | 91/128 [02:56<01:10,  1.91s/it] 72%|███████▏  | 92/128 [02:58<01:09,  1.92s/it] 73%|███████▎  | 93/128 [03:00<01:07,  1.92s/it] 73%|███████▎  | 94/128 [03:02<01:05,  1.92s/it] 74%|███████▍  | 95/128 [03:03<01:03,  1.92s/it] 75%|███████▌  | 96/128 [03:05<01:01,  1.92s/it] 76%|███████▌  | 97/128 [03:08<01:04,  2.09s/it] 77%|███████▋  | 98/128 [03:10<01:01,  2.03s/it] 77%|███████▋  | 99/128 [03:12<00:58,  2.00s/it] 78%|███████▊  | 100/128 [03:14<00:55,  1.98s/it] 79%|███████▉  | 101/128 [03:16<00:52,  1.96s/it] 80%|███████▉  | 102/128 [03:18<00:51,  1.96s/it] 80%|████████  | 103/128 [03:20<00:49,  1.96s/it] 81%|████████▏ | 104/128 [03:21<00:46,  1.94s/it] 82%|████████▏ | 105/128 [03:23<00:44,  1.93s/it] 83%|████████▎ | 106/128 [03:25<00:42,  1.94s/it] 84%|████████▎ | 107/128 [03:27<00:40,  1.93s/it] 84%|████████▍ | 108/128 [03:29<00:38,  1.91s/it] 85%|████████▌ | 109/128 [03:31<00:36,  1.91s/it] 86%|████████▌ | 110/128 [03:33<00:34,  1.91s/it] 87%|████████▋ | 111/128 [03:35<00:32,  1.91s/it] 88%|████████▊ | 112/128 [03:37<00:30,  1.90s/it] 88%|████████▊ | 113/128 [03:39<00:28,  1.91s/it] 89%|████████▉ | 114/128 [03:41<00:29,  2.10s/it] 90%|████████▉ | 115/128 [03:43<00:26,  2.05s/it] 91%|█████████ | 116/128 [03:45<00:24,  2.02s/it] 91%|█████████▏| 117/128 [03:47<00:21,  1.99s/it] 92%|█████████▏| 118/128 [03:49<00:19,  1.96s/it] 93%|█████████▎| 119/128 [03:51<00:17,  1.94s/it] 94%|█████████▍| 120/128 [03:53<00:15,  1.93s/it] 95%|█████████▍| 121/128 [03:54<00:13,  1.92s/it] 95%|█████████▌| 122/128 [03:56<00:11,  1.91s/it] 96%|█████████▌| 123/128 [03:58<00:09,  1.92s/it] 97%|█████████▋| 124/128 [04:00<00:07,  1.93s/it] 98%|█████████▊| 125/128 [04:02<00:05,  1.94s/it] 98%|█████████▊| 126/128 [04:04<00:03,  1.92s/it] 99%|█████████▉| 127/128 [04:06<00:01,  1.91s/it]100%|██████████| 128/128 [04:08<00:00,  1.92s/it]100%|██████████| 128/128 [04:08<00:00,  1.94s/it]
+         Top positions: P2=0.0309, P9=0.0232, P3=0.0122
+   HLA-A*24:02 | 10-mers | pool=52 | bg=52 fg=52
+  0%|          | 0/52 [00:00<?, ?it/s]  2%|▏         | 1/52 [00:03<03:09,  3.72s/it]  4%|▍         | 2/52 [00:08<03:23,  4.07s/it]  6%|▌         | 3/52 [00:11<03:05,  3.79s/it]  8%|▊         | 4/52 [00:15<03:04,  3.84s/it] 10%|▉         | 5/52 [00:18<02:53,  3.70s/it] 12%|█▏        | 6/52 [00:22<02:48,  3.67s/it] 13%|█▎        | 7/52 [00:26<02:47,  3.72s/it] 15%|█▌        | 8/52 [00:30<02:43,  3.72s/it] 17%|█▋        | 9/52 [00:34<02:44,  3.81s/it] 19%|█▉        | 10/52 [00:38<02:48,  4.01s/it] 21%|██        | 11/52 [00:42<02:39,  3.89s/it] 23%|██▎       | 12/52 [00:45<02:33,  3.84s/it] 25%|██▌       | 13/52 [00:49<02:29,  3.84s/it] 27%|██▋       | 14/52 [00:53<02:24,  3.80s/it] 29%|██▉       | 15/52 [00:57<02:20,  3.79s/it] 31%|███       | 16/52 [01:00<02:15,  3.76s/it] 33%|███▎      | 17/52 [01:04<02:12,  3.78s/it] 35%|███▍      | 18/52 [01:08<02:07,  3.75s/it] 37%|███▋      | 19/52 [01:12<02:08,  3.91s/it] 38%|███▊      | 20/52 [01:16<02:01,  3.80s/it] 40%|████      | 21/52 [01:19<01:57,  3.79s/it] 42%|████▏     | 22/52 [01:23<01:53,  3.79s/it] 44%|████▍     | 23/52 [01:27<01:48,  3.74s/it] 46%|████▌     | 24/52 [01:31<01:44,  3.72s/it] 48%|████▊     | 25/52 [01:34<01:40,  3.72s/it] 50%|█████     | 26/52 [01:38<01:36,  3.72s/it] 52%|█████▏    | 27/52 [01:42<01:32,  3.70s/it] 54%|█████▍    | 28/52 [01:46<01:33,  3.92s/it] 56%|█████▌    | 29/52 [01:50<01:28,  3.86s/it] 58%|█████▊    | 30/52 [01:53<01:23,  3.81s/it] 60%|█████▉    | 31/52 [01:57<01:19,  3.77s/it] 62%|██████▏   | 32/52 [02:01<01:15,  3.77s/it] 63%|██████▎   | 33/52 [02:05<01:11,  3.76s/it] 65%|██████▌   | 34/52 [02:08<01:07,  3.73s/it] 67%|██████▋   | 35/52 [02:12<01:03,  3.76s/it] 69%|██████▉   | 36/52 [02:17<01:03,  3.95s/it] 71%|███████   | 37/52 [02:20<00:58,  3.87s/it] 73%|███████▎  | 38/52 [02:24<00:53,  3.82s/it] 75%|███████▌  | 39/52 [02:28<00:49,  3.78s/it] 77%|███████▋  | 40/52 [02:31<00:45,  3.80s/it] 79%|███████▉  | 41/52 [02:35<00:41,  3.80s/it] 81%|████████  | 42/52 [02:39<00:37,  3.79s/it] 83%|████████▎ | 43/52 [02:43<00:33,  3.76s/it] 85%|████████▍ | 44/52 [02:46<00:29,  3.73s/it] 87%|████████▋ | 45/52 [02:51<00:27,  3.96s/it] 88%|████████▊ | 46/52 [02:55<00:23,  3.90s/it] 90%|█████████ | 47/52 [02:58<00:19,  3.86s/it] 92%|█████████▏| 48/52 [03:02<00:15,  3.81s/it] 94%|█████████▍| 49/52 [03:06<00:11,  3.81s/it] 96%|█████████▌| 50/52 [03:10<00:07,  3.75s/it] 98%|█████████▊| 51/52 [03:13<00:03,  3.81s/it]100%|██████████| 52/52 [03:17<00:00,  3.80s/it]100%|██████████| 52/52 [03:17<00:00,  3.80s/it]
+         Top positions: P2=0.0245, P10=0.0237, P3=0.0131
+   HLA-A*24:02 | 11-mers: skipping (23 samples)
+   HLA-A*01:01 | 8-mers: skipping (17 samples)
+   HLA-A*01:01 | 9-mers | pool=158 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:02<05:16,  2.50s/it]  2%|▏         | 2/128 [00:04<04:28,  2.13s/it]  2%|▏         | 3/128 [00:06<04:10,  2.01s/it]  3%|▎         | 4/128 [00:08<04:03,  1.96s/it]  4%|▍         | 5/128 [00:10<03:58,  1.94s/it]  5%|▍         | 6/128 [00:11<03:54,  1.92s/it]  5%|▌         | 7/128 [00:13<03:51,  1.91s/it]  6%|▋         | 8/128 [00:15<03:48,  1.91s/it]  7%|▋         | 9/128 [00:17<03:46,  1.90s/it]  8%|▊         | 10/128 [00:19<03:44,  1.90s/it]  9%|▊         | 11/128 [00:21<03:41,  1.89s/it]  9%|▉         | 12/128 [00:23<03:38,  1.88s/it] 10%|█         | 13/128 [00:25<03:37,  1.89s/it] 11%|█         | 14/128 [00:27<03:36,  1.90s/it] 12%|█▏        | 15/128 [00:28<03:34,  1.90s/it] 12%|█▎        | 16/128 [00:30<03:33,  1.91s/it] 13%|█▎        | 17/128 [00:32<03:32,  1.92s/it] 14%|█▍        | 18/128 [00:34<03:29,  1.91s/it] 15%|█▍        | 19/128 [00:37<03:48,  2.09s/it] 16%|█▌        | 20/128 [00:39<03:38,  2.03s/it] 16%|█▋        | 21/128 [00:41<03:33,  1.99s/it] 17%|█▋        | 22/128 [00:42<03:27,  1.96s/it] 18%|█▊        | 23/128 [00:44<03:22,  1.93s/it] 19%|█▉        | 24/128 [00:46<03:20,  1.92s/it] 20%|█▉        | 25/128 [00:48<03:17,  1.92s/it] 20%|██        | 26/128 [00:50<03:15,  1.92s/it] 21%|██        | 27/128 [00:52<03:12,  1.91s/it] 22%|██▏       | 28/128 [00:54<03:10,  1.90s/it] 23%|██▎       | 29/128 [00:56<03:09,  1.91s/it] 23%|██▎       | 30/128 [00:58<03:08,  1.92s/it] 24%|██▍       | 31/128 [01:00<03:05,  1.92s/it] 25%|██▌       | 32/128 [01:01<03:04,  1.92s/it] 26%|██▌       | 33/128 [01:03<03:00,  1.90s/it] 27%|██▋       | 34/128 [01:05<02:59,  1.91s/it] 27%|██▋       | 35/128 [01:07<02:57,  1.91s/it] 28%|██▊       | 36/128 [01:10<03:10,  2.08s/it] 29%|██▉       | 37/128 [01:12<03:05,  2.03s/it] 30%|██▉       | 38/128 [01:13<02:59,  1.99s/it] 30%|███       | 39/128 [01:15<02:55,  1.97s/it] 31%|███▏      | 40/128 [01:17<02:53,  1.97s/it] 32%|███▏      | 41/128 [01:19<02:49,  1.95s/it] 33%|███▎      | 42/128 [01:21<02:46,  1.94s/it] 34%|███▎      | 43/128 [01:23<02:44,  1.94s/it] 34%|███▍      | 44/128 [01:25<02:42,  1.93s/it] 35%|███▌      | 45/128 [01:27<02:39,  1.92s/it] 36%|███▌      | 46/128 [01:29<02:38,  1.93s/it] 37%|███▋      | 47/128 [01:31<02:36,  1.93s/it] 38%|███▊      | 48/128 [01:33<02:34,  1.93s/it] 38%|███▊      | 49/128 [01:35<02:32,  1.93s/it] 39%|███▉      | 50/128 [01:37<02:29,  1.92s/it] 40%|███▉      | 51/128 [01:38<02:27,  1.91s/it] 41%|████      | 52/128 [01:40<02:24,  1.90s/it] 41%|████▏     | 53/128 [01:43<02:38,  2.11s/it] 42%|████▏     | 54/128 [01:45<02:31,  2.05s/it] 43%|████▎     | 55/128 [01:47<02:26,  2.01s/it] 44%|████▍     | 56/128 [01:49<02:23,  1.99s/it] 45%|████▍     | 57/128 [01:51<02:18,  1.95s/it] 45%|████▌     | 58/128 [01:52<02:14,  1.92s/it] 46%|████▌     | 59/128 [01:54<02:10,  1.89s/it] 47%|████▋     | 60/128 [01:56<02:09,  1.90s/it] 48%|████▊     | 61/128 [01:58<02:07,  1.91s/it] 48%|████▊     | 62/128 [02:00<02:05,  1.91s/it] 49%|████▉     | 63/128 [02:02<02:03,  1.89s/it] 50%|█████     | 64/128 [02:04<02:01,  1.91s/it] 51%|█████     | 65/128 [02:06<01:59,  1.90s/it] 52%|█████▏    | 66/128 [02:08<01:57,  1.90s/it] 52%|█████▏    | 67/128 [02:09<01:56,  1.91s/it] 53%|█████▎    | 68/128 [02:11<01:55,  1.92s/it] 54%|█████▍    | 69/128 [02:13<01:53,  1.93s/it] 55%|█████▍    | 70/128 [02:16<02:03,  2.13s/it] 55%|█████▌    | 71/128 [02:18<01:58,  2.08s/it] 56%|█████▋    | 72/128 [02:20<01:53,  2.03s/it] 57%|█████▋    | 73/128 [02:22<01:50,  2.00s/it] 58%|█████▊    | 74/128 [02:24<01:46,  1.97s/it] 59%|█████▊    | 75/128 [02:26<01:43,  1.95s/it] 59%|█████▉    | 76/128 [02:28<01:41,  1.94s/it] 60%|██████    | 77/128 [02:29<01:38,  1.93s/it] 61%|██████    | 78/128 [02:31<01:36,  1.92s/it] 62%|██████▏   | 79/128 [02:33<01:33,  1.91s/it] 62%|██████▎   | 80/128 [02:35<01:31,  1.90s/it] 63%|██████▎   | 81/128 [02:37<01:29,  1.91s/it] 64%|██████▍   | 82/128 [02:39<01:27,  1.91s/it] 65%|██████▍   | 83/128 [02:41<01:26,  1.91s/it] 66%|██████▌   | 84/128 [02:43<01:24,  1.92s/it] 66%|██████▋   | 85/128 [02:45<01:22,  1.91s/it] 67%|██████▋   | 86/128 [02:47<01:28,  2.11s/it] 68%|██████▊   | 87/128 [02:49<01:24,  2.06s/it] 69%|██████▉   | 88/128 [02:51<01:21,  2.04s/it] 70%|██████▉   | 89/128 [02:53<01:18,  2.00s/it] 70%|███████   | 90/128 [02:55<01:15,  1.98s/it] 71%|███████   | 91/128 [02:57<01:12,  1.96s/it] 72%|███████▏  | 92/128 [02:59<01:09,  1.94s/it] 73%|███████▎  | 93/128 [03:01<01:07,  1.93s/it] 73%|███████▎  | 94/128 [03:03<01:05,  1.92s/it] 74%|███████▍  | 95/128 [03:05<01:02,  1.91s/it] 75%|███████▌  | 96/128 [03:06<01:00,  1.90s/it] 76%|███████▌  | 97/128 [03:08<00:58,  1.89s/it] 77%|███████▋  | 98/128 [03:10<00:56,  1.90s/it] 77%|███████▋  | 99/128 [03:12<00:54,  1.90s/it] 78%|███████▊  | 100/128 [03:14<00:53,  1.90s/it] 79%|███████▉  | 101/128 [03:16<00:51,  1.90s/it] 80%|███████▉  | 102/128 [03:18<00:49,  1.91s/it] 80%|████████  | 103/128 [03:20<00:52,  2.11s/it] 81%|████████▏ | 104/128 [03:22<00:49,  2.07s/it] 82%|████████▏ | 105/128 [03:24<00:46,  2.04s/it] 83%|████████▎ | 106/128 [03:26<00:44,  2.00s/it] 84%|████████▎ | 107/128 [03:28<00:41,  1.96s/it] 84%|████████▍ | 108/128 [03:30<00:38,  1.94s/it] 85%|████████▌ | 109/128 [03:32<00:36,  1.94s/it] 86%|████████▌ | 110/128 [03:34<00:34,  1.92s/it] 87%|████████▋ | 111/128 [03:36<00:32,  1.93s/it] 88%|████████▊ | 112/128 [03:38<00:30,  1.91s/it] 88%|████████▊ | 113/128 [03:40<00:28,  1.91s/it] 89%|████████▉ | 114/128 [03:41<00:26,  1.90s/it] 90%|████████▉ | 115/128 [03:43<00:24,  1.90s/it] 91%|█████████ | 116/128 [03:45<00:22,  1.90s/it] 91%|█████████▏| 117/128 [03:47<00:20,  1.90s/it] 92%|█████████▏| 118/128 [03:49<00:19,  1.91s/it] 93%|█████████▎| 119/128 [03:51<00:17,  1.91s/it] 94%|█████████▍| 120/128 [03:54<00:16,  2.12s/it] 95%|█████████▍| 121/128 [03:56<00:14,  2.07s/it] 95%|█████████▌| 122/128 [03:57<00:12,  2.03s/it] 96%|█████████▌| 123/128 [03:59<00:09,  2.00s/it] 97%|█████████▋| 124/128 [04:01<00:07,  1.98s/it] 98%|█████████▊| 125/128 [04:03<00:05,  1.95s/it] 98%|█████████▊| 126/128 [04:05<00:03,  1.94s/it] 99%|█████████▉| 127/128 [04:07<00:01,  1.94s/it]100%|██████████| 128/128 [04:09<00:00,  1.92s/it]100%|██████████| 128/128 [04:09<00:00,  1.95s/it]
+         Top positions: P9=0.0299, P3=0.0227, P2=0.0214
+   HLA-A*01:01 | 10-mers | pool=60 | bg=60 fg=60
+  0%|          | 0/60 [00:00<?, ?it/s]  2%|▏         | 1/60 [00:03<03:39,  3.73s/it]  3%|▎         | 2/60 [00:07<03:54,  4.04s/it]  5%|▌         | 3/60 [00:12<03:50,  4.04s/it]  7%|▋         | 4/60 [00:16<03:58,  4.26s/it]  8%|▊         | 5/60 [00:20<03:45,  4.10s/it] 10%|█         | 6/60 [00:24<03:38,  4.04s/it] 12%|█▏        | 7/60 [00:28<03:32,  4.02s/it] 13%|█▎        | 8/60 [00:32<03:29,  4.03s/it] 15%|█▌        | 9/60 [00:36<03:27,  4.07s/it] 17%|█▋        | 10/60 [00:40<03:23,  4.08s/it] 18%|█▊        | 11/60 [00:44<03:17,  4.03s/it] 20%|██        | 12/60 [00:48<03:11,  3.98s/it] 22%|██▏       | 13/60 [00:52<03:13,  4.11s/it] 23%|██▎       | 14/60 [00:56<03:05,  4.03s/it] 25%|██▌       | 15/60 [01:00<03:01,  4.03s/it] 27%|██▋       | 16/60 [01:04<02:56,  4.02s/it] 28%|██▊       | 17/60 [01:08<02:51,  3.98s/it] 30%|███       | 18/60 [01:12<02:44,  3.92s/it] 32%|███▏      | 19/60 [01:16<02:45,  4.03s/it] 33%|███▎      | 20/60 [01:20<02:39,  3.98s/it] 35%|███▌      | 21/60 [01:25<02:41,  4.14s/it] 37%|███▋      | 22/60 [01:29<02:36,  4.12s/it] 38%|███▊      | 23/60 [01:33<02:30,  4.08s/it] 40%|████      | 24/60 [01:37<02:26,  4.08s/it] 42%|████▏     | 25/60 [01:41<02:21,  4.04s/it] 43%|████▎     | 26/60 [01:45<02:16,  4.02s/it] 45%|████▌     | 27/60 [01:49<02:13,  4.05s/it] 47%|████▋     | 28/60 [01:53<02:11,  4.09s/it] 48%|████▊     | 29/60 [01:58<02:13,  4.30s/it] 50%|█████     | 30/60 [02:02<02:06,  4.21s/it] 52%|█████▏    | 31/60 [02:06<02:01,  4.20s/it] 53%|█████▎    | 32/60 [02:10<01:55,  4.11s/it] 55%|█████▌    | 33/60 [02:14<01:49,  4.06s/it] 57%|█████▋    | 34/60 [02:18<01:44,  4.02s/it] 58%|█████▊    | 35/60 [02:22<01:41,  4.06s/it] 60%|██████    | 36/60 [02:26<01:38,  4.10s/it] 62%|██████▏   | 37/60 [02:31<01:37,  4.22s/it] 63%|██████▎   | 38/60 [02:35<01:31,  4.15s/it] 65%|██████▌   | 39/60 [02:39<01:26,  4.11s/it] 67%|██████▋   | 40/60 [02:43<01:22,  4.12s/it] 68%|██████▊   | 41/60 [02:47<01:17,  4.08s/it] 70%|███████   | 42/60 [02:51<01:13,  4.11s/it] 72%|███████▏  | 43/60 [02:55<01:09,  4.10s/it] 73%|███████▎  | 44/60 [02:59<01:04,  4.02s/it] 75%|███████▌  | 45/60 [03:04<01:03,  4.26s/it] 77%|███████▋  | 46/60 [03:07<00:57,  4.08s/it] 78%|███████▊  | 47/60 [03:11<00:52,  4.04s/it] 80%|████████  | 48/60 [03:15<00:48,  4.02s/it] 82%|████████▏ | 49/60 [03:19<00:43,  3.98s/it] 83%|████████▎ | 50/60 [03:23<00:40,  4.05s/it] 85%|████████▌ | 51/60 [03:27<00:35,  3.99s/it] 87%|████████▋ | 52/60 [03:31<00:32,  4.07s/it] 88%|████████▊ | 53/60 [03:36<00:30,  4.29s/it] 90%|█████████ | 54/60 [03:40<00:25,  4.19s/it] 92%|█████████▏| 55/60 [03:44<00:20,  4.09s/it] 93%|█████████▎| 56/60 [03:48<00:16,  4.03s/it] 95%|█████████▌| 57/60 [03:52<00:12,  4.00s/it] 97%|█████████▋| 58/60 [03:56<00:08,  4.07s/it] 98%|█████████▊| 59/60 [04:00<00:03,  3.98s/it]100%|██████████| 60/60 [04:04<00:00,  4.00s/it]100%|██████████| 60/60 [04:04<00:00,  4.07s/it]
+         Top positions: P10=0.0268, P2=0.0243, P3=0.0158
+   HLA-A*01:01 | 11-mers: skipping (29 samples)
+   HLA-B*40:02 | 8-mers | pool=36 | bg=36 fg=36
+  0%|          | 0/36 [00:00<?, ?it/s]  3%|▎         | 1/36 [00:03<02:02,  3.51s/it]  6%|▌         | 2/36 [00:06<01:44,  3.06s/it]  8%|▊         | 3/36 [00:08<01:36,  2.91s/it] 11%|█         | 4/36 [00:11<01:29,  2.81s/it] 14%|█▍        | 5/36 [00:14<01:25,  2.75s/it] 17%|█▋        | 6/36 [00:17<01:22,  2.74s/it] 19%|█▉        | 7/36 [00:19<01:19,  2.75s/it] 22%|██▏       | 8/36 [00:22<01:15,  2.70s/it] 25%|██▌       | 9/36 [00:25<01:13,  2.72s/it] 28%|██▊       | 10/36 [00:27<01:10,  2.71s/it] 31%|███       | 11/36 [00:30<01:08,  2.74s/it] 33%|███▎      | 12/36 [00:33<01:05,  2.74s/it] 36%|███▌      | 13/36 [00:36<01:07,  2.96s/it] 39%|███▉      | 14/36 [00:39<01:04,  2.93s/it] 42%|████▏     | 15/36 [00:42<01:00,  2.89s/it] 44%|████▍     | 16/36 [00:45<00:56,  2.84s/it] 47%|████▋     | 17/36 [00:47<00:53,  2.80s/it] 50%|█████     | 18/36 [00:50<00:50,  2.79s/it] 53%|█████▎    | 19/36 [00:53<00:47,  2.79s/it] 56%|█████▌    | 20/36 [00:56<00:44,  2.81s/it] 58%|█████▊    | 21/36 [00:59<00:41,  2.79s/it] 61%|██████    | 22/36 [01:01<00:39,  2.79s/it] 64%|██████▍   | 23/36 [01:04<00:35,  2.73s/it] 67%|██████▋   | 24/36 [01:07<00:32,  2.72s/it] 69%|██████▉   | 25/36 [01:10<00:31,  2.87s/it] 72%|███████▏  | 26/36 [01:13<00:28,  2.81s/it] 75%|███████▌  | 27/36 [01:15<00:25,  2.81s/it] 78%|███████▊  | 28/36 [01:18<00:22,  2.77s/it] 81%|████████  | 29/36 [01:21<00:19,  2.74s/it] 83%|████████▎ | 30/36 [01:23<00:16,  2.75s/it] 86%|████████▌ | 31/36 [01:26<00:13,  2.75s/it] 89%|████████▉ | 32/36 [01:29<00:11,  2.75s/it] 92%|█████████▏| 33/36 [01:32<00:08,  2.74s/it] 94%|█████████▍| 34/36 [01:34<00:05,  2.69s/it] 97%|█████████▋| 35/36 [01:37<00:02,  2.73s/it]100%|██████████| 36/36 [01:40<00:00,  2.79s/it]100%|██████████| 36/36 [01:40<00:00,  2.79s/it]
+         Top positions: P2=0.0224, P3=0.0141, P8=0.0125
+   HLA-B*40:02 | 9-mers | pool=163 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:00,  1.89s/it]  2%|▏         | 2/128 [00:03<03:59,  1.90s/it]  2%|▏         | 3/128 [00:05<03:55,  1.88s/it]  3%|▎         | 4/128 [00:07<03:53,  1.88s/it]  4%|▍         | 5/128 [00:09<03:49,  1.87s/it]  5%|▍         | 6/128 [00:11<03:47,  1.87s/it]  5%|▌         | 7/128 [00:13<03:46,  1.87s/it]  6%|▋         | 8/128 [00:14<03:43,  1.86s/it]  7%|▋         | 9/128 [00:16<03:41,  1.86s/it]  8%|▊         | 10/128 [00:18<03:40,  1.87s/it]  9%|▊         | 11/128 [00:20<03:38,  1.87s/it]  9%|▉         | 12/128 [00:22<03:36,  1.87s/it] 10%|█         | 13/128 [00:24<03:35,  1.87s/it] 11%|█         | 14/128 [00:26<03:34,  1.88s/it] 12%|█▏        | 15/128 [00:28<03:31,  1.87s/it] 12%|█▎        | 16/128 [00:29<03:29,  1.87s/it] 13%|█▎        | 17/128 [00:32<03:49,  2.06s/it] 14%|█▍        | 18/128 [00:34<03:39,  2.00s/it] 15%|█▍        | 19/128 [00:36<03:33,  1.96s/it] 16%|█▌        | 20/128 [00:38<03:27,  1.92s/it] 16%|█▋        | 21/128 [00:39<03:25,  1.92s/it] 17%|█▋        | 22/128 [00:41<03:20,  1.89s/it] 18%|█▊        | 23/128 [00:43<03:18,  1.90s/it] 19%|█▉        | 24/128 [00:45<03:16,  1.89s/it] 20%|█▉        | 25/128 [00:47<03:14,  1.88s/it] 20%|██        | 26/128 [00:49<03:12,  1.88s/it] 21%|██        | 27/128 [00:51<03:09,  1.88s/it] 22%|██▏       | 28/128 [00:53<03:08,  1.88s/it] 23%|██▎       | 29/128 [00:54<03:05,  1.87s/it] 23%|██▎       | 30/128 [00:56<03:03,  1.87s/it] 24%|██▍       | 31/128 [00:58<03:02,  1.88s/it] 25%|██▌       | 32/128 [01:00<02:59,  1.87s/it] 26%|██▌       | 33/128 [01:02<02:57,  1.87s/it] 27%|██▋       | 34/128 [01:04<03:14,  2.07s/it] 27%|██▋       | 35/128 [01:06<03:06,  2.00s/it] 28%|██▊       | 36/128 [01:08<03:01,  1.97s/it] 29%|██▉       | 37/128 [01:10<02:57,  1.95s/it] 30%|██▉       | 38/128 [01:12<02:51,  1.91s/it] 30%|███       | 39/128 [01:14<02:49,  1.91s/it] 31%|███▏      | 40/128 [01:16<02:48,  1.91s/it] 32%|███▏      | 41/128 [01:18<02:45,  1.90s/it] 33%|███▎      | 42/128 [01:19<02:43,  1.90s/it] 34%|███▎      | 43/128 [01:21<02:41,  1.90s/it] 34%|███▍      | 44/128 [01:23<02:38,  1.89s/it] 35%|███▌      | 45/128 [01:25<02:36,  1.89s/it] 36%|███▌      | 46/128 [01:27<02:34,  1.89s/it] 37%|███▋      | 47/128 [01:29<02:33,  1.90s/it] 38%|███▊      | 48/128 [01:31<02:31,  1.90s/it] 38%|███▊      | 49/128 [01:33<02:29,  1.89s/it] 39%|███▉      | 50/128 [01:35<02:26,  1.88s/it] 40%|███▉      | 51/128 [01:37<02:41,  2.09s/it] 41%|████      | 52/128 [01:39<02:34,  2.04s/it] 41%|████▏     | 53/128 [01:41<02:28,  1.98s/it] 42%|████▏     | 54/128 [01:43<02:24,  1.96s/it] 43%|████▎     | 55/128 [01:45<02:19,  1.91s/it] 44%|████▍     | 56/128 [01:47<02:17,  1.91s/it] 45%|████▍     | 57/128 [01:48<02:14,  1.90s/it] 45%|████▌     | 58/128 [01:50<02:12,  1.90s/it] 46%|████▌     | 59/128 [01:52<02:11,  1.91s/it] 47%|████▋     | 60/128 [01:54<02:08,  1.89s/it] 48%|████▊     | 61/128 [01:56<02:06,  1.89s/it] 48%|████▊     | 62/128 [01:58<02:04,  1.89s/it] 49%|████▉     | 63/128 [02:00<02:02,  1.89s/it] 50%|█████     | 64/128 [02:02<02:00,  1.89s/it] 51%|█████     | 65/128 [02:04<01:59,  1.89s/it] 52%|█████▏    | 66/128 [02:05<01:57,  1.89s/it] 52%|█████▏    | 67/128 [02:07<01:53,  1.87s/it] 53%|█████▎    | 68/128 [02:10<02:02,  2.04s/it] 54%|█████▍    | 69/128 [02:12<01:57,  1.99s/it] 55%|█████▍    | 70/128 [02:13<01:52,  1.94s/it] 55%|█████▌    | 71/128 [02:15<01:49,  1.92s/it] 56%|█████▋    | 72/128 [02:17<01:46,  1.90s/it] 57%|█████▋    | 73/128 [02:19<01:44,  1.89s/it] 58%|█████▊    | 74/128 [02:21<01:42,  1.89s/it] 59%|█████▊    | 75/128 [02:23<01:40,  1.90s/it] 59%|█████▉    | 76/128 [02:25<01:38,  1.90s/it] 60%|██████    | 77/128 [02:27<01:36,  1.89s/it] 61%|██████    | 78/128 [02:28<01:35,  1.90s/it] 62%|██████▏   | 79/128 [02:30<01:33,  1.91s/it] 62%|██████▎   | 80/128 [02:32<01:31,  1.90s/it] 63%|██████▎   | 81/128 [02:34<01:29,  1.90s/it] 64%|██████▍   | 82/128 [02:36<01:26,  1.89s/it] 65%|██████▍   | 83/128 [02:38<01:23,  1.86s/it] 66%|██████▌   | 84/128 [02:40<01:22,  1.87s/it] 66%|██████▋   | 85/128 [02:42<01:20,  1.88s/it] 67%|██████▋   | 86/128 [02:44<01:26,  2.06s/it] 68%|██████▊   | 87/128 [02:46<01:21,  2.00s/it] 69%|██████▉   | 88/128 [02:48<01:18,  1.97s/it] 70%|██████▉   | 89/128 [02:50<01:15,  1.95s/it] 70%|███████   | 90/128 [02:52<01:12,  1.91s/it] 71%|███████   | 91/128 [02:53<01:09,  1.88s/it] 72%|███████▏  | 92/128 [02:55<01:07,  1.87s/it] 73%|███████▎  | 93/128 [02:57<01:05,  1.88s/it] 73%|███████▎  | 94/128 [02:59<01:04,  1.88s/it] 74%|███████▍  | 95/128 [03:01<01:01,  1.88s/it] 75%|███████▌  | 96/128 [03:03<01:00,  1.88s/it] 76%|███████▌  | 97/128 [03:05<00:58,  1.88s/it] 77%|███████▋  | 98/128 [03:07<00:56,  1.89s/it] 77%|███████▋  | 99/128 [03:09<00:55,  1.91s/it] 78%|███████▊  | 100/128 [03:10<00:53,  1.90s/it] 79%|███████▉  | 101/128 [03:12<00:51,  1.90s/it] 80%|███████▉  | 102/128 [03:14<00:49,  1.90s/it] 80%|████████  | 103/128 [03:16<00:47,  1.91s/it] 81%|████████▏ | 104/128 [03:18<00:45,  1.89s/it] 82%|████████▏ | 105/128 [03:20<00:43,  1.90s/it] 83%|████████▎ | 106/128 [03:22<00:41,  1.89s/it] 84%|████████▎ | 107/128 [03:24<00:40,  1.91s/it] 84%|████████▍ | 108/128 [03:26<00:38,  1.94s/it] 85%|████████▌ | 109/128 [03:28<00:37,  1.95s/it] 86%|████████▌ | 110/128 [03:30<00:34,  1.93s/it] 87%|████████▋ | 111/128 [03:32<00:36,  2.14s/it] 88%|████████▊ | 112/128 [03:34<00:33,  2.11s/it] 88%|████████▊ | 113/128 [03:36<00:31,  2.07s/it] 89%|████████▉ | 114/128 [03:38<00:28,  2.03s/it] 90%|████████▉ | 115/128 [03:40<00:25,  1.99s/it] 91%|█████████ | 116/128 [03:42<00:23,  1.97s/it] 91%|█████████▏| 117/128 [03:44<00:21,  1.94s/it] 92%|█████████▏| 118/128 [03:46<00:19,  1.95s/it] 93%|█████████▎| 119/128 [03:48<00:17,  1.94s/it] 94%|█████████▍| 120/128 [03:50<00:15,  1.93s/it] 95%|█████████▍| 121/128 [03:52<00:13,  1.93s/it] 95%|█████████▌| 122/128 [03:54<00:11,  1.93s/it] 96%|█████████▌| 123/128 [03:55<00:09,  1.92s/it] 97%|█████████▋| 124/128 [03:57<00:07,  1.88s/it] 98%|█████████▊| 125/128 [03:59<00:05,  1.85s/it] 98%|█████████▊| 126/128 [04:01<00:03,  1.83s/it] 99%|█████████▉| 127/128 [04:03<00:01,  1.85s/it]100%|██████████| 128/128 [04:05<00:00,  1.86s/it]100%|██████████| 128/128 [04:05<00:00,  1.91s/it]
+         Top positions: P2=0.0196, P3=0.0143, P9=0.0123
+   HLA-B*40:02 | 10-mers | pool=43 | bg=43 fg=43
+  0%|          | 0/43 [00:00<?, ?it/s]  2%|▏         | 1/43 [00:03<02:15,  3.23s/it]  5%|▍         | 2/43 [00:06<02:14,  3.27s/it]  7%|▋         | 3/43 [00:09<02:11,  3.29s/it]  9%|▉         | 4/43 [00:13<02:07,  3.26s/it] 12%|█▏        | 5/43 [00:16<02:07,  3.37s/it] 14%|█▍        | 6/43 [00:19<02:02,  3.32s/it] 16%|█▋        | 7/43 [00:23<02:01,  3.38s/it] 19%|█▊        | 8/43 [00:26<02:00,  3.44s/it] 21%|██        | 9/43 [00:30<01:56,  3.41s/it] 23%|██▎       | 10/43 [00:33<01:52,  3.40s/it] 26%|██▌       | 11/43 [00:37<01:48,  3.40s/it] 28%|██▊       | 12/43 [00:40<01:45,  3.40s/it] 30%|███       | 13/43 [00:43<01:40,  3.36s/it] 33%|███▎      | 14/43 [00:47<01:37,  3.37s/it] 35%|███▍      | 15/43 [00:50<01:32,  3.32s/it] 37%|███▋      | 16/43 [00:53<01:30,  3.37s/it] 40%|███▉      | 17/43 [00:57<01:26,  3.34s/it] 42%|████▏     | 18/43 [01:00<01:21,  3.26s/it] 44%|████▍     | 19/43 [01:03<01:17,  3.23s/it] 47%|████▋     | 20/43 [01:06<01:15,  3.27s/it] 49%|████▉     | 21/43 [01:10<01:12,  3.29s/it] 51%|█████     | 22/43 [01:13<01:07,  3.22s/it] 53%|█████▎    | 23/43 [01:16<01:05,  3.28s/it] 56%|█████▌    | 24/43 [01:19<01:01,  3.24s/it] 58%|█████▊    | 25/43 [01:22<00:58,  3.25s/it] 60%|██████    | 26/43 [01:26<00:56,  3.30s/it] 63%|██████▎   | 27/43 [01:29<00:52,  3.27s/it] 65%|██████▌   | 28/43 [01:32<00:48,  3.23s/it] 67%|██████▋   | 29/43 [01:36<00:46,  3.32s/it] 70%|██████▉   | 30/43 [01:39<00:43,  3.36s/it] 72%|███████▏  | 31/43 [01:43<00:41,  3.42s/it] 74%|███████▍  | 32/43 [01:46<00:36,  3.31s/it] 77%|███████▋  | 33/43 [01:49<00:32,  3.26s/it] 79%|███████▉  | 34/43 [01:52<00:28,  3.20s/it] 81%|████████▏ | 35/43 [01:55<00:25,  3.20s/it] 84%|████████▎ | 36/43 [01:59<00:22,  3.27s/it] 86%|████████▌ | 37/43 [02:02<00:19,  3.32s/it] 88%|████████▊ | 38/43 [02:05<00:16,  3.31s/it] 91%|█████████ | 39/43 [02:09<00:13,  3.34s/it] 93%|█████████▎| 40/43 [02:12<00:09,  3.33s/it] 95%|█████████▌| 41/43 [02:15<00:06,  3.37s/it] 98%|█████████▊| 42/43 [02:19<00:03,  3.41s/it]100%|██████████| 43/43 [02:22<00:00,  3.37s/it]100%|██████████| 43/43 [02:22<00:00,  3.32s/it]
+         Top positions: P10=0.0217, P1=0.0115, P3=0.0110
+   HLA-B*40:02 | 11-mers: skipping (21 samples)
+   HLA-B*51:01 | 8-mers | pool=81 | bg=64 fg=81
+  0%|          | 0/81 [00:00<?, ?it/s]  1%|          | 1/81 [00:03<04:54,  3.68s/it]  2%|▏         | 2/81 [00:07<04:50,  3.68s/it]  4%|▎         | 3/81 [00:10<04:38,  3.57s/it]  5%|▍         | 4/81 [00:14<04:38,  3.62s/it]  6%|▌         | 5/81 [00:18<04:42,  3.71s/it]  7%|▋         | 6/81 [00:22<04:38,  3.71s/it]  9%|▊         | 7/81 [00:25<04:30,  3.66s/it] 10%|▉         | 8/81 [00:29<04:26,  3.66s/it] 11%|█         | 9/81 [00:33<04:27,  3.71s/it] 12%|█▏        | 10/81 [00:36<04:19,  3.66s/it] 14%|█▎        | 11/81 [00:40<04:16,  3.66s/it] 15%|█▍        | 12/81 [00:44<04:14,  3.69s/it] 16%|█▌        | 13/81 [00:47<04:11,  3.70s/it] 17%|█▋        | 14/81 [00:51<04:08,  3.71s/it] 19%|█▊        | 15/81 [00:55<04:05,  3.71s/it] 20%|█▉        | 16/81 [00:58<04:00,  3.71s/it] 21%|██        | 17/81 [01:02<03:57,  3.71s/it] 22%|██▏       | 18/81 [01:06<03:51,  3.68s/it] 23%|██▎       | 19/81 [01:10<03:50,  3.73s/it] 25%|██▍       | 20/81 [01:13<03:45,  3.69s/it] 26%|██▌       | 21/81 [01:17<03:40,  3.67s/it] 27%|██▋       | 22/81 [01:21<03:38,  3.70s/it] 28%|██▊       | 23/81 [01:25<03:38,  3.77s/it] 30%|██▉       | 24/81 [01:28<03:36,  3.80s/it] 31%|███       | 25/81 [01:32<03:31,  3.78s/it] 32%|███▏      | 26/81 [01:36<03:25,  3.73s/it] 33%|███▎      | 27/81 [01:39<03:16,  3.64s/it] 35%|███▍      | 28/81 [01:43<03:13,  3.65s/it] 36%|███▌      | 29/81 [01:47<03:15,  3.75s/it] 37%|███▋      | 30/81 [01:50<03:08,  3.70s/it] 38%|███▊      | 31/81 [01:54<03:02,  3.64s/it] 40%|███▉      | 32/81 [01:58<02:57,  3.63s/it] 41%|████      | 33/81 [02:01<02:57,  3.69s/it] 42%|████▏     | 34/81 [02:05<02:56,  3.75s/it] 43%|████▎     | 35/81 [02:09<02:53,  3.77s/it] 44%|████▍     | 36/81 [02:13<02:52,  3.83s/it] 46%|████▌     | 37/81 [02:17<02:47,  3.80s/it] 47%|████▋     | 38/81 [02:21<02:43,  3.80s/it] 48%|████▊     | 39/81 [02:24<02:38,  3.78s/it] 49%|████▉     | 40/81 [02:28<02:37,  3.84s/it] 51%|█████     | 41/81 [02:32<02:32,  3.80s/it] 52%|█████▏    | 42/81 [02:36<02:32,  3.92s/it] 53%|█████▎    | 43/81 [02:40<02:27,  3.89s/it] 54%|█████▍    | 44/81 [02:44<02:21,  3.83s/it] 56%|█████▌    | 45/81 [02:48<02:18,  3.84s/it] 57%|█████▋    | 46/81 [02:51<02:12,  3.80s/it] 58%|█████▊    | 47/81 [02:55<02:07,  3.76s/it] 59%|█████▉    | 48/81 [02:59<02:03,  3.74s/it] 60%|██████    | 49/81 [03:02<01:58,  3.70s/it] 62%|██████▏   | 50/81 [03:06<01:55,  3.72s/it] 63%|██████▎   | 51/81 [03:10<01:53,  3.80s/it] 64%|██████▍   | 52/81 [03:14<01:49,  3.79s/it] 65%|██████▌   | 53/81 [03:18<01:45,  3.78s/it] 67%|██████▋   | 54/81 [03:21<01:40,  3.73s/it] 68%|██████▊   | 55/81 [03:25<01:37,  3.76s/it] 69%|██████▉   | 56/81 [03:29<01:33,  3.76s/it] 70%|███████   | 57/81 [03:33<01:31,  3.82s/it] 72%|███████▏  | 58/81 [03:36<01:27,  3.82s/it] 73%|███████▎  | 59/81 [03:40<01:23,  3.82s/it] 74%|███████▍  | 60/81 [03:44<01:20,  3.82s/it] 75%|███████▌  | 61/81 [03:48<01:18,  3.90s/it] 77%|███████▋  | 62/81 [03:52<01:13,  3.88s/it] 78%|███████▊  | 63/81 [03:56<01:09,  3.84s/it] 79%|███████▉  | 64/81 [04:00<01:04,  3.82s/it] 80%|████████  | 65/81 [04:03<01:00,  3.78s/it] 81%|████████▏ | 66/81 [04:07<00:57,  3.81s/it] 83%|████████▎ | 67/81 [04:11<00:53,  3.81s/it] 84%|████████▍ | 68/81 [04:15<00:49,  3.81s/it] 85%|████████▌ | 69/81 [04:19<00:45,  3.80s/it] 86%|████████▋ | 70/81 [04:22<00:41,  3.77s/it] 88%|████████▊ | 71/81 [04:26<00:37,  3.77s/it] 89%|████████▉ | 72/81 [04:30<00:34,  3.78s/it] 90%|█████████ | 73/81 [04:34<00:30,  3.86s/it] 91%|█████████▏| 74/81 [04:37<00:26,  3.78s/it] 93%|█████████▎| 75/81 [04:41<00:22,  3.73s/it] 94%|█████████▍| 76/81 [04:45<00:18,  3.67s/it] 95%|█████████▌| 77/81 [04:48<00:14,  3.71s/it] 96%|█████████▋| 78/81 [04:52<00:11,  3.74s/it] 98%|█████████▊| 79/81 [04:56<00:07,  3.79s/it] 99%|█████████▉| 80/81 [05:00<00:03,  3.83s/it]100%|██████████| 81/81 [05:04<00:00,  3.77s/it]100%|██████████| 81/81 [05:04<00:00,  3.76s/it]
+         Top positions: P8=0.0123, P1=0.0113, P2=0.0112
+   HLA-B*51:01 | 9-mers | pool=135 | bg=64 fg=128
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:01<04:02,  1.91s/it]  2%|▏         | 2/128 [00:03<04:05,  1.95s/it]  2%|▏         | 3/128 [00:05<04:09,  2.00s/it]  3%|▎         | 4/128 [00:07<04:06,  1.99s/it]  4%|▍         | 5/128 [00:09<04:03,  1.98s/it]  5%|▍         | 6/128 [00:11<04:00,  1.97s/it]  5%|▌         | 7/128 [00:13<04:02,  2.00s/it]  6%|▋         | 8/128 [00:15<03:59,  2.00s/it]  7%|▋         | 9/128 [00:17<03:56,  1.99s/it]  8%|▊         | 10/128 [00:19<03:52,  1.97s/it]  9%|▊         | 11/128 [00:21<03:50,  1.97s/it]  9%|▉         | 12/128 [00:23<03:45,  1.95s/it] 10%|█         | 13/128 [00:25<03:42,  1.93s/it] 11%|█         | 14/128 [00:27<03:41,  1.94s/it] 12%|█▏        | 15/128 [00:29<03:38,  1.94s/it] 12%|█▎        | 16/128 [00:31<03:36,  1.93s/it] 13%|█▎        | 17/128 [00:33<03:34,  1.94s/it] 14%|█▍        | 18/128 [00:35<03:32,  1.93s/it] 15%|█▍        | 19/128 [00:37<03:31,  1.94s/it] 16%|█▌        | 20/128 [00:38<03:24,  1.89s/it] 16%|█▋        | 21/128 [00:40<03:19,  1.86s/it] 17%|█▋        | 22/128 [00:42<03:14,  1.84s/it] 18%|█▊        | 23/128 [00:44<03:11,  1.82s/it] 19%|█▉        | 24/128 [00:46<03:15,  1.88s/it] 20%|█▉        | 25/128 [00:48<03:16,  1.91s/it] 20%|██        | 26/128 [00:50<03:14,  1.90s/it] 21%|██        | 27/128 [00:52<03:12,  1.90s/it] 22%|██▏       | 28/128 [00:53<03:10,  1.90s/it] 23%|██▎       | 29/128 [00:55<03:08,  1.91s/it] 23%|██▎       | 30/128 [00:57<03:08,  1.93s/it] 24%|██▍       | 31/128 [00:59<03:06,  1.92s/it] 25%|██▌       | 32/128 [01:01<03:05,  1.94s/it] 26%|██▌       | 33/128 [01:03<03:03,  1.93s/it] 27%|██▋       | 34/128 [01:05<03:02,  1.94s/it] 27%|██▋       | 35/128 [01:07<03:01,  1.96s/it] 28%|██▊       | 36/128 [01:09<03:02,  1.98s/it] 29%|██▉       | 37/128 [01:11<02:59,  1.97s/it] 30%|██▉       | 38/128 [01:13<02:56,  1.96s/it] 30%|███       | 39/128 [01:15<02:54,  1.97s/it] 31%|███▏      | 40/128 [01:17<02:52,  1.96s/it] 32%|███▏      | 41/128 [01:19<02:49,  1.95s/it] 33%|███▎      | 42/128 [01:21<02:46,  1.94s/it] 34%|███▎      | 43/128 [01:23<02:44,  1.94s/it] 34%|███▍      | 44/128 [01:25<02:42,  1.94s/it] 35%|███▌      | 45/128 [01:27<02:39,  1.92s/it] 36%|███▌      | 46/128 [01:28<02:35,  1.90s/it] 37%|███▋      | 47/128 [01:30<02:33,  1.90s/it] 38%|███▊      | 48/128 [01:32<02:32,  1.90s/it] 38%|███▊      | 49/128 [01:34<02:30,  1.91s/it] 39%|███▉      | 50/128 [01:36<02:29,  1.92s/it] 40%|███▉      | 51/128 [01:38<02:29,  1.95s/it] 41%|████      | 52/128 [01:40<02:28,  1.96s/it] 41%|████▏     | 53/128 [01:42<02:27,  1.97s/it] 42%|████▏     | 54/128 [01:44<02:24,  1.95s/it] 43%|████▎     | 55/128 [01:46<02:20,  1.93s/it] 44%|████▍     | 56/128 [01:48<02:19,  1.94s/it] 45%|████▍     | 57/128 [01:50<02:18,  1.94s/it] 45%|████▌     | 58/128 [01:52<02:15,  1.94s/it] 46%|████▌     | 59/128 [01:54<02:13,  1.94s/it] 47%|████▋     | 60/128 [01:56<02:12,  1.94s/it] 48%|████▊     | 61/128 [01:58<02:09,  1.94s/it] 48%|████▊     | 62/128 [01:59<02:06,  1.92s/it] 49%|████▉     | 63/128 [02:01<02:04,  1.91s/it] 50%|█████     | 64/128 [02:03<02:02,  1.92s/it] 51%|█████     | 65/128 [02:05<02:01,  1.92s/it] 52%|█████▏    | 66/128 [02:07<01:59,  1.93s/it] 52%|█████▏    | 67/128 [02:09<01:56,  1.92s/it] 53%|█████▎    | 68/128 [02:11<01:56,  1.94s/it] 54%|█████▍    | 69/128 [02:13<01:54,  1.95s/it] 55%|█████▍    | 70/128 [02:15<01:52,  1.95s/it] 55%|█████▌    | 71/128 [02:17<01:51,  1.96s/it] 56%|█████▋    | 72/128 [02:19<01:50,  1.97s/it] 57%|█████▋    | 73/128 [02:21<01:48,  1.97s/it] 58%|█████▊    | 74/128 [02:23<01:45,  1.95s/it] 59%|█████▊    | 75/128 [02:25<01:42,  1.93s/it] 59%|█████▉    | 76/128 [02:27<01:40,  1.93s/it] 60%|██████    | 77/128 [02:29<01:39,  1.94s/it] 61%|██████    | 78/128 [02:30<01:36,  1.93s/it] 62%|██████▏   | 79/128 [02:32<01:34,  1.92s/it] 62%|██████▎   | 80/128 [02:34<01:32,  1.93s/it] 63%|██████▎   | 81/128 [02:36<01:30,  1.92s/it] 64%|██████▍   | 82/128 [02:38<01:28,  1.93s/it] 65%|██████▍   | 83/128 [02:40<01:27,  1.94s/it] 66%|██████▌   | 84/128 [02:42<01:30,  2.06s/it] 66%|██████▋   | 85/128 [02:44<01:27,  2.03s/it] 67%|██████▋   | 86/128 [02:46<01:23,  1.99s/it] 68%|██████▊   | 87/128 [02:48<01:19,  1.95s/it] 69%|██████▉   | 88/128 [02:50<01:19,  1.98s/it] 70%|██████▉   | 89/128 [02:52<01:16,  1.97s/it] 70%|███████   | 90/128 [02:54<01:14,  1.95s/it] 71%|███████   | 91/128 [02:56<01:11,  1.92s/it] 72%|███████▏  | 92/128 [02:58<01:08,  1.89s/it] 73%|███████▎  | 93/128 [03:00<01:07,  1.92s/it] 73%|███████▎  | 94/128 [03:02<01:05,  1.92s/it] 74%|███████▍  | 95/128 [03:04<01:03,  1.92s/it] 75%|███████▌  | 96/128 [03:05<01:01,  1.91s/it] 76%|███████▌  | 97/128 [03:07<00:59,  1.92s/it] 77%|███████▋  | 98/128 [03:09<00:57,  1.93s/it] 77%|███████▋  | 99/128 [03:11<00:56,  1.94s/it] 78%|███████▊  | 100/128 [03:13<00:54,  1.94s/it] 79%|███████▉  | 101/128 [03:16<00:55,  2.06s/it] 80%|███████▉  | 102/128 [03:18<00:52,  2.03s/it] 80%|████████  | 103/128 [03:20<00:50,  2.00s/it] 81%|████████▏ | 104/128 [03:21<00:47,  1.98s/it] 82%|████████▏ | 105/128 [03:23<00:45,  1.96s/it] 83%|████████▎ | 106/128 [03:25<00:43,  1.96s/it] 84%|████████▎ | 107/128 [03:27<00:41,  1.96s/it] 84%|████████▍ | 108/128 [03:29<00:39,  1.95s/it] 85%|████████▌ | 109/128 [03:31<00:37,  1.95s/it] 86%|████████▌ | 110/128 [03:33<00:34,  1.93s/it] 87%|████████▋ | 111/128 [03:35<00:32,  1.93s/it] 88%|████████▊ | 112/128 [03:37<00:30,  1.92s/it] 88%|████████▊ | 113/128 [03:39<00:28,  1.90s/it] 89%|████████▉ | 114/128 [03:41<00:26,  1.89s/it] 90%|████████▉ | 115/128 [03:42<00:24,  1.89s/it] 91%|█████████ | 116/128 [03:44<00:22,  1.87s/it] 91%|█████████▏| 117/128 [03:46<00:20,  1.87s/it] 92%|█████████▏| 118/128 [03:49<00:20,  2.01s/it] 93%|█████████▎| 119/128 [03:50<00:17,  2.00s/it] 94%|█████████▍| 120/128 [03:52<00:15,  1.96s/it] 95%|█████████▍| 121/128 [03:54<00:13,  1.95s/it] 95%|█████████▌| 122/128 [03:56<00:11,  1.93s/it] 96%|█████████▌| 123/128 [03:58<00:09,  1.93s/it] 97%|█████████▋| 124/128 [04:00<00:07,  1.90s/it] 98%|█████████▊| 125/128 [04:02<00:05,  1.89s/it] 98%|█████████▊| 126/128 [04:04<00:03,  1.88s/it] 99%|█████████▉| 127/128 [04:06<00:01,  1.91s/it]100%|██████████| 128/128 [04:08<00:00,  1.93s/it]100%|██████████| 128/128 [04:08<00:00,  1.94s/it]
+         Top positions: P9=0.0166, P2=0.0159, P1=0.0124
+   HLA-B*51:01 | 10-mers: skipping (25 samples)
+   HLA-B*51:01 | 11-mers: skipping (9 samples)
+
+   [OK] SHAP heatmaps saved -> outputs/predictor_full_10alleles_20260328_1545/shap_results.json
+   [OK] SHAP NPZ saved      -> outputs/predictor_full_10alleles_20260328_1545/shap_heatmaps.npz
+
+   Position importance (merged, normalised):
+   Allele                P 1  P 2  P 3  P 4  P 5  P 6  P 7  P 8  P 9  P10  P11
+   ---------------------------------------------------------------------------
+   HLA-B*07:02           0.12  0.18  0.15  0.04  0.04  0.04  0.05  0.07  0.05  0.11  0.15
+   HLA-A*03:01           0.12  0.13  0.12  0.04  0.05  0.04  0.05  0.05  0.07  0.06  0.25
+   HLA-B*40:01           0.13  0.09  0.11  0.05  0.07  0.05  0.07  0.07  0.07  0.11  0.17
+   HLA-B*15:02           0.13  0.15  0.12  0.05  0.05  0.00  0.05  0.06  0.06  0.12  0.21
+   HLA-B*57:01           0.11  0.20  0.08  0.05  0.05  0.02  0.04  0.03  0.05  0.04  0.33
+   HLA-B*15:01           0.09  0.21  0.11  0.04  0.05  0.00  0.07  0.07  0.07  0.09  0.19
+   HLA-A*24:02           0.09  0.25  0.11  0.04  0.05  0.00  0.05  0.07  0.07  0.06  0.21
+   HLA-A*01:01           0.10  0.21  0.18  0.03  0.03  0.00  0.04  0.04  0.06  0.05  0.26
+   HLA-B*40:02           0.10  0.18  0.13  0.04  0.08  0.00  0.07  0.08  0.08  0.08  0.16
+   HLA-B*51:01           0.16  0.19  0.16  0.05  0.06  0.00  0.00  0.07  0.06  0.07  0.20
+
+Calculating performance metrics (standard, leakage-safe)...
+
+================================================================================
+TABLE I - NETMHCPAN 4.2 PREDICTOR PERFORMANCE (AFFINITY)
+================================================================================
+R^2 (log10 nM, higher better)        -0.308
+Pearson r (log10, higher better)     0.592
+Spearman rho (log10, higher better)  0.548
+RMSE (log10, lower better)           1.003
+MAE (log10, lower better)            0.777
+N (exact quantitative affinity)      10000
+Accuracy @ 500 nM (higher better)    0.721
+Precision @ 500 nM (higher better)   0.983
+Recall @ 500 nM (higher better)      0.669
+F1 @ 500 nM (higher better)          0.796
+N (definite labels after <,>)        10000
+Confusion (TN,FP,FN,TP)              1749,94,2697,5460
+================================================================================
+
+Mass-spec evaluation (EL ligands) with decoys...
+   (No mass_spec rows found; skipping MS evaluation.)
+
+Saving results...
+   [OK] Detailed predictions: outputs/predictor_full_10alleles_20260328_1545/mhc1_netmhcpan_predictions.csv
+   [OK] Summary: outputs/predictor_full_10alleles_20260328_1545/mhc1_netmhcpan_summary.csv
+
+================================================================================
+[OK] EVALUATION COMPLETE!
+================================================================================
+
+Key Findings:
+   [WARN] Performance below expectations
+
+Comparison with Previous Results:
+   - MHCflurry (Test): Spearman=0.512, Accuracy=0.814
+   - NetMHCpan (Test): Spearman=0.530, Accuracy=0.875
+   - NetMHCpan (MHC1): Spearman=0.548, Accuracy=0.721
+
+Next Steps:
+   1. Visualize predictions vs actual in a notebook
+   2. Analyze performance by HLA allele type
+   3. Compare quantitative vs qualitative measurements
+   4. Run on larger sample if needed (adjust SAMPLE_SIZE)
+
+================================================================================
+Total runtime: 2.3 minutes
+================================================================================

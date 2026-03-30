@@ -1,0 +1,41 @@
+{
+  "allele": "HLA-B*08:01",
+  "suffix": "nodiv",
+  "total_peptides": 50,
+  "score_stats": {
+    "mean": -0.5364596661078412,
+    "median": -0.5483855082666126,
+    "max": -0.37657695705651195,
+    "min": -0.6655809910179531,
+    "std": 0.08198886692634995
+  },
+  "diversity_stats": {
+    "count": 50,
+    "avg_pairwise_edit_distance": 5.8946938775510205,
+    "min_pairwise_edit_distance": 2,
+    "max_pairwise_edit_distance": 9,
+    "avg_pairwise_hamming": 6.025956284153006,
+    "unique_3mers": 255,
+    "length_distribution": {
+      "9": 37,
+      "8": 12,
+      "10": 1
+    }
+  },
+  "motifs": {
+    "P2": {
+      "L": 0.62,
+      "M": 0.26,
+      "A": 0.06,
+      "I": 0.04,
+      "P": 0.02
+    },
+    "P-1(C-term)": {
+      "L": 0.98,
+      "I": 0.02
+    }
+  },
+  "source_distribution": {
+    "AR+SHAP": 50
+  }
+}

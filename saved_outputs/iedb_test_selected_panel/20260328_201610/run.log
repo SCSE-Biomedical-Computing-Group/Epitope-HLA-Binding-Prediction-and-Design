@@ -1,0 +1,334 @@
+2026-03-28 20:16:10 INFO generator.run.generator.pipeline: Using device: mps
+2026-03-28 20:16:10 INFO generator.run.generator.pipeline: Run ID: 20260328_201610
+2026-03-28 20:16:11 INFO generator.run.generator.pipeline: Loading data from data_processing/data/iedb.npz...
+2026-03-28 20:16:15 INFO generator.run.generator.pipeline: Loaded 131 peptides
+2026-03-28 20:16:15 INFO generator.run.generator.pipeline: Unique alleles: 121
+2026-03-28 20:16:16 INFO generator.run.generator.pipeline: Loading pre-trained AR model from outputs/generator_no_xai_ablation_20260328_095726/20260328_095803/ar_model.pt...
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Loading predictor (NetMHCpan 4.2)...
+2026-03-28 20:16:20 INFO generator.run.generator.scoring.scoring_wrapper: PredictorWrapper: using NetMHCpan at /Users/pranavipanduga/Downloads/netMHCpan-4.2/Darwin_arm64/bin/netMHCpan-4.2
+2026-03-28 20:16:20 INFO generator.run.generator.scoring.scoring_wrapper: PredictorWrapper: NetMHCpan parallel jobs=1, batch_size=2000
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Using uniform position weights (without SHAP)...
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Position weights: [0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091]
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Generating for HLA-A*02:01
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:16:20 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:17:15 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-A*02:01
+2026-03-28 20:17:15 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 20:17:15 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:17:28 INFO generator.run.generator.pipeline: Top-10 scores: -0.4360 +/- 0.0838
+2026-03-28 20:17:28 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:17:28 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Improved 196/200 candidates through refinement
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 20:30:02 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Score: -0.7629 +/- 0.8366
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.76
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 20:30:02 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.68, median=9.5, min=9, exact_matches=0
+2026-03-28 20:30:03 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_02_01/final_peptides_div.csv
+2026-03-28 20:30:03 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_02_01/final_peptides_nodiv.csv
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: Generating for HLA-A*03:01
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:30:03 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:30:40 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-A*03:01
+2026-03-28 20:30:40 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 20:30:40 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:30:46 INFO generator.run.generator.pipeline: Top-10 scores: -0.7642 +/- 0.0952
+2026-03-28 20:30:46 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:30:46 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Improved 197/200 candidates through refinement
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 20:36:38 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Score: -1.0130 +/- 0.7545
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.62
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 20:36:38 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_03_01/final_peptides_div.csv
+2026-03-28 20:36:38 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_03_01/final_peptides_nodiv.csv
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Generating for HLA-A*24:02
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:36:38 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:36:57 INFO generator.run.generator.training: Generated 511 unique peptides for HLA-A*24:02
+2026-03-28 20:36:57 INFO generator.run.generator.pipeline: Generated 511 unique candidates
+2026-03-28 20:36:57 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:37:00 INFO generator.run.generator.pipeline: Top-10 scores: -0.6101 +/- 0.0564
+2026-03-28 20:37:00 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:37:00 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Improved 199/200 candidates through refinement
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Uniqueness: 511/511 (100.0%)
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 20:42:58 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Score: -0.9592 +/- 0.7180
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.73
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 20:42:58 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_24_02/final_peptides_div.csv
+2026-03-28 20:42:58 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_24_02/final_peptides_nodiv.csv
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Generating for HLA-B*07:02
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:42:58 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:43:23 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-B*07:02
+2026-03-28 20:43:23 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 20:43:23 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:43:26 INFO generator.run.generator.pipeline: Top-10 scores: -0.3980 +/- 0.0263
+2026-03-28 20:43:26 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:43:26 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Improved 190/200 candidates through refinement
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 20:49:25 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Score: -1.0233 +/- 0.7876
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.45
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 20:49:25 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_07_02/final_peptides_div.csv
+2026-03-28 20:49:25 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_07_02/final_peptides_nodiv.csv
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Generating for HLA-B*44:02
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:49:25 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:49:49 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-B*44:02
+2026-03-28 20:49:49 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 20:49:49 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:49:52 INFO generator.run.generator.pipeline: Top-10 scores: -0.8863 +/- 0.0500
+2026-03-28 20:49:52 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:49:52 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Improved 196/200 candidates through refinement
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 20:56:17 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Score: -1.1165 +/- 0.5723
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.56
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 20:56:17 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_44_02/final_peptides_div.csv
+2026-03-28 20:56:17 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_44_02/final_peptides_nodiv.csv
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Generating for HLA-B*57:01
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 20:56:17 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 20:56:40 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-B*57:01
+2026-03-28 20:56:40 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 20:56:40 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 20:56:43 INFO generator.run.generator.pipeline: Top-10 scores: -0.6870 +/- 0.0507
+2026-03-28 20:56:43 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 20:56:43 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Improved 199/200 candidates through refinement
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 21:02:34 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Score: -0.7947 +/- 0.4448
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.74
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.48, median=9.0, min=8, exact_matches=0
+2026-03-28 21:02:34 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_57_01/final_peptides_div.csv
+2026-03-28 21:02:34 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_57_01/final_peptides_nodiv.csv
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Generating for HLA-A*01:01
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 21:02:34 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 21:02:54 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-A*01:01
+2026-03-28 21:02:54 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 21:02:54 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 21:02:57 INFO generator.run.generator.pipeline: Top-10 scores: -0.7303 +/- 0.0902
+2026-03-28 21:02:57 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 21:02:57 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Improved 196/200 candidates through refinement
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 21:09:10 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Score: -1.4176 +/- 0.9861
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.54
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 21:09:10 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_01_01/final_peptides_div.csv
+2026-03-28 21:09:10 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-A_01_01/final_peptides_nodiv.csv
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Generating for HLA-B*08:01
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 21:09:10 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 21:09:30 INFO generator.run.generator.training: Generated 510 unique peptides for HLA-B*08:01
+2026-03-28 21:09:30 INFO generator.run.generator.pipeline: Generated 510 unique candidates
+2026-03-28 21:09:30 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 21:09:34 INFO generator.run.generator.pipeline: Top-10 scores: -0.6096 +/- 0.0455
+2026-03-28 21:09:34 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 21:09:34 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Improved 195/200 candidates through refinement
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Uniqueness: 510/510 (100.0%)
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 21:15:26 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Score: -1.5717 +/- 0.7253
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.81
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 21:15:26 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_08_01/final_peptides_div.csv
+2026-03-28 21:15:26 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_08_01/final_peptides_nodiv.csv
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Generating for HLA-B*27:05
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 21:15:26 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 21:15:46 INFO generator.run.generator.training: Generated 512 unique peptides for HLA-B*27:05
+2026-03-28 21:15:46 INFO generator.run.generator.pipeline: Generated 512 unique candidates
+2026-03-28 21:15:46 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 21:15:49 INFO generator.run.generator.pipeline: Top-10 scores: -1.1497 +/- 0.0893
+2026-03-28 21:15:49 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 21:15:49 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Improved 199/200 candidates through refinement
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Uniqueness: 512/512 (100.0%)
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 21:21:44 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Score: -1.0865 +/- 0.4884
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.71
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 21:21:44 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_27_05/final_peptides_div.csv
+2026-03-28 21:21:44 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_27_05/final_peptides_nodiv.csv
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Generating for HLA-B*58:01
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Length weights: default
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: Candidate length mix: {8: 0.1, 9: 0.4, 10: 0.3, 11: 0.2}
+2026-03-28 21:21:44 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-28 21:22:00 INFO generator.run.generator.training: Generated 509 unique peptides for HLA-B*58:01
+2026-03-28 21:22:00 INFO generator.run.generator.pipeline: Generated 509 unique candidates
+2026-03-28 21:22:00 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-28 21:22:03 INFO generator.run.generator.pipeline: Top-10 scores: -0.3737 +/- 0.0420
+2026-03-28 21:22:03 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-28 21:22:03 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Improved 199/200 candidates through refinement
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Uniqueness: 509/509 (100.0%)
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Final length quotas: {8: 5, 9: 20, 10: 15, 11: 10}
+2026-03-28 21:27:25 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Score: -0.5309 +/- 0.3785
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.60
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-28 21:27:25 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_58_01/final_peptides_div.csv
+2026-03-28 21:27:25 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_test_selected_panel/20260328_201610/HLA-B_58_01/final_peptides_nodiv.csv
+2026-03-28 21:27:25 INFO generator.run.generator.utils: Run summary saved to outputs/iedb_test_selected_panel/20260328_201610/run_summary.json
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Generation complete!
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: ============================================================
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Run ID: 20260328_201610
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Output directory: outputs/iedb_test_selected_panel/20260328_201610
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Alleles processed: 10
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Total peptides: 500
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: Aggregate binding pass-rates (macro-avg over 10 alleles):
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: %SB  (IC50 <= 50 nM): 85.4%
+2026-03-28 21:27:25 INFO generator.run.generator.pipeline: %WB  (IC50 <= 500 nM): 94.8%
+/Users/pranavipanduga/Documents/fyp/Epitote-HLA-Binding-Prediction-and-Design-1/generator/pipeline.py:429: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(args.ar_ckpt, map_location=device)
+
+  Binding pass-rates for HLA-A*02:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   90.0%  (45/50)
+     %WB  (IC50 <= 500 nM):  90.0%  (45/50)
+     Median affinity:        3.3 nM
+     Mean score (-log10 nM): -0.763
+
+  Binding pass-rates for HLA-A*03:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   90.0%  (45/50)
+     %WB  (IC50 <= 500 nM):  90.0%  (45/50)
+     Median affinity:        6.1 nM
+     Mean score (-log10 nM): -1.013
+
+  Binding pass-rates for HLA-A*24:02 (50 peptides):
+     %SB  (IC50 <= 50 nM):   90.0%  (45/50)
+     %WB  (IC50 <= 500 nM):  92.0%  (46/50)
+     Median affinity:        5.9 nM
+     Mean score (-log10 nM): -0.959
+
+  Binding pass-rates for HLA-B*07:02 (50 peptides):
+     %SB  (IC50 <= 50 nM):   86.0%  (43/50)
+     %WB  (IC50 <= 500 nM):  94.0%  (47/50)
+     Median affinity:        4.9 nM
+     Mean score (-log10 nM): -1.023
+
+  Binding pass-rates for HLA-B*44:02 (50 peptides):
+     %SB  (IC50 <= 50 nM):   90.0%  (45/50)
+     %WB  (IC50 <= 500 nM):  94.0%  (47/50)
+     Median affinity:        8.8 nM
+     Mean score (-log10 nM): -1.117
+
+  Binding pass-rates for HLA-B*57:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   92.0%  (46/50)
+     %WB  (IC50 <= 500 nM):  100.0%  (50/50)
+     Median affinity:        4.3 nM
+     Mean score (-log10 nM): -0.795
+
+  Binding pass-rates for HLA-A*01:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   78.0%  (39/50)
+     %WB  (IC50 <= 500 nM):  90.0%  (45/50)
+     Median affinity:        11.8 nM
+     Mean score (-log10 nM): -1.418
+
+  Binding pass-rates for HLA-B*08:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   50.0%  (25/50)
+     %WB  (IC50 <= 500 nM):  100.0%  (50/50)
+     Median affinity:        51.7 nM
+     Mean score (-log10 nM): -1.572
+
+  Binding pass-rates for HLA-B*27:05 (50 peptides):
+     %SB  (IC50 <= 50 nM):   92.0%  (46/50)
+     %WB  (IC50 <= 500 nM):  98.0%  (49/50)
+     Median affinity:        8.4 nM
+     Mean score (-log10 nM): -1.086
+
+  Binding pass-rates for HLA-B*58:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   96.0%  (48/50)
+     %WB  (IC50 <= 500 nM):  100.0%  (50/50)
+     Median affinity:        2.5 nM
+     Mean score (-log10 nM): -0.531

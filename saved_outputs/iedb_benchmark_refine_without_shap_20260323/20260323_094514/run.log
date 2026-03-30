@@ -1,0 +1,51 @@
+2026-03-23 09:45:14 INFO generator.run.generator.pipeline: Using device: mps
+2026-03-23 09:45:14 INFO generator.run.generator.pipeline: Run ID: 20260323_094514
+2026-03-23 09:45:14 INFO generator.run.generator.pipeline: Loading data from data_processing/data/iedb.npz...
+2026-03-23 09:45:15 INFO generator.run.generator.pipeline: Loaded 131 peptides
+2026-03-23 09:45:15 INFO generator.run.generator.pipeline: Unique alleles: 121
+2026-03-23 09:45:15 INFO generator.run.generator.pipeline: Loading pre-trained AR model from outputs/generator_no_xai_ablation_20260323_0637/20260323_063426/ar_model.pt...
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: Loading predictor (NetMHCpan 4.2)...
+2026-03-23 09:45:18 INFO generator.run.generator.scoring.scoring_wrapper: PredictorWrapper: using NetMHCpan at /Users/pranavipanduga/Downloads/netMHCpan-4.2/Darwin_arm64/bin/netMHCpan-4.2
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: Using uniform position weights (without SHAP)...
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: Position weights: [0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091 0.091]
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: ============================================================
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: Generating for HLA-A*02:01
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: ============================================================
+2026-03-23 09:45:18 INFO generator.run.generator.pipeline: [1/4] Generating candidate peptides...
+2026-03-23 09:46:27 INFO generator.run.generator.training: Generated 218 unique peptides for HLA-A*02:01
+2026-03-23 09:46:27 INFO generator.run.generator.pipeline: Generated 218 unique candidates
+2026-03-23 09:46:27 INFO generator.run.generator.pipeline: [2/4] Scoring candidates with predictor...
+2026-03-23 09:46:33 INFO generator.run.generator.pipeline: Top-10 scores: -0.4414 +/- 0.0724
+2026-03-23 09:46:33 INFO generator.run.generator.pipeline: [3/4] Refining top candidates without SHAP guidance...
+2026-03-23 09:46:33 INFO generator.run.generator.refinement_loop.loop: Scoring 200 candidates...
+2026-03-23 09:59:51 INFO generator.run.generator.pipeline: Improved 198/200 candidates through refinement
+2026-03-23 09:59:51 INFO generator.run.generator.pipeline: Uniqueness: 218/218 (100.0%)
+2026-03-23 09:59:51 INFO generator.run.generator.pipeline: Duplicates: 0 -> 0
+2026-03-23 09:59:51 INFO generator.run.generator.pipeline: [4/4] Selecting final diverse set...
+2026-03-23 09:59:51 INFO generator.run.generator.selection.diversity: min_dist=6: {8: 5, 9: 20, 10: 15, 11: 10} (target: {8: 5, 9: 20, 10: 15, 11: 10})
+2026-03-23 09:59:52 INFO generator.run.generator.pipeline: Final selection: 50 peptides
+2026-03-23 09:59:52 INFO generator.run.generator.pipeline: Score: -0.9045 +/- 1.0085
+2026-03-23 09:59:52 INFO generator.run.generator.pipeline: Avg pairwise edit distance: 7.90
+2026-03-23 09:59:52 INFO generator.run.generator.pipeline: Length distribution: {9: 20, 10: 15, 11: 10, 8: 5}
+2026-03-23 09:59:52 INFO generator.run.generator.pipeline: Novelty: mean NN dist=9.70, median=9.5, min=9, exact_matches=0
+2026-03-23 09:59:53 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_benchmark_refine_without_shap_20260323/20260323_094514/HLA-A_02_01/final_peptides_div.csv
+2026-03-23 09:59:53 INFO generator.run.generator.utils: Saved 50 peptides to outputs/iedb_benchmark_refine_without_shap_20260323/20260323_094514/HLA-A_02_01/final_peptides_nodiv.csv
+2026-03-23 09:59:53 INFO generator.run.generator.utils: Run summary saved to outputs/iedb_benchmark_refine_without_shap_20260323/20260323_094514/run_summary.json
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: ============================================================
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Generation complete!
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: ============================================================
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Run ID: 20260323_094514
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Output directory: outputs/iedb_benchmark_refine_without_shap_20260323/20260323_094514
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Alleles processed: 1
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Total peptides: 50
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: Aggregate binding pass-rates (macro-avg over 1 alleles):
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: %SB  (IC50 <= 50 nM): 92.0%
+2026-03-23 09:59:53 INFO generator.run.generator.pipeline: %WB  (IC50 <= 500 nM): 92.0%
+/Users/pranavipanduga/Documents/fyp/Epitote-HLA-Binding-Prediction-and-Design-1/generator/pipeline.py:359: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(args.ar_ckpt, map_location=device)
+
+  Binding pass-rates for HLA-A*02:01 (50 peptides):
+     %SB  (IC50 <= 50 nM):   92.0%  (46/50)
+     %WB  (IC50 <= 500 nM):  92.0%  (46/50)
+     Median affinity:        4.2 nM
+     Mean score (-log10 nM): -0.905
